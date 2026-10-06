@@ -1,0 +1,176 @@
+element_id,framework,level,parent_id,code,label,source_type,disposition,reason,n_controls,n_integral,strongest_property,controls,review_status
+RMF:GOVERN-1.1,AI RMF 1.0,subcategory,RMF:GOVERN-1,GOVERN 1.1,GOVERN 1.1,guidance,mapped,,2,1,integral_to,GM-CMP-01;GM-CMP-02,proposed
+RMF:GOVERN-1.2,AI RMF 1.0,subcategory,RMF:GOVERN-1,GOVERN 1.2,GOVERN 1.2,guidance,mapped,,1,0,example_of,GM-GOV-01,proposed
+RMF:GOVERN-1.3,AI RMF 1.0,subcategory,RMF:GOVERN-1,GOVERN 1.3,GOVERN 1.3,guidance,mapped,,1,0,example_of,GM-GOV-01,proposed
+RMF:GOVERN-1.4,AI RMF 1.0,subcategory,RMF:GOVERN-1,GOVERN 1.4,GOVERN 1.4,guidance,mapped,,1,0,example_of,GM-GOV-01,proposed
+RMF:GOVERN-1.5,AI RMF 1.0,subcategory,RMF:GOVERN-1,GOVERN 1.5,GOVERN 1.5,guidance,mapped,,1,0,example_of,GM-GOV-01,proposed
+RMF:GOVERN-1.6,AI RMF 1.0,subcategory,RMF:GOVERN-1,GOVERN 1.6,GOVERN 1.6,guidance,mapped,,1,1,integral_to,GM-GOV-02,proposed
+RMF:GOVERN-1.7,AI RMF 1.0,subcategory,RMF:GOVERN-1,GOVERN 1.7,GOVERN 1.7,guidance,mapped,,2,0,example_of,GM-FUN-06;GM-OPS-04,proposed
+RMF:GOVERN-2.1,AI RMF 1.0,subcategory,RMF:GOVERN-2,GOVERN 2.1,GOVERN 2.1,guidance,mapped,,1,0,example_of,GM-GOV-01,proposed
+RMF:GOVERN-2.2,AI RMF 1.0,subcategory,RMF:GOVERN-2,GOVERN 2.2,GOVERN 2.2,guidance,mapped,,1,0,example_of,GM-GOV-06,proposed
+RMF:GOVERN-2.3,AI RMF 1.0,subcategory,RMF:GOVERN-2,GOVERN 2.3,GOVERN 2.3,guidance,out_of_scope,"(2026-10-05 review) Executive leadership responsibility for AI risk decisions is a governance-structure outcome; GAP-M controls name a governance body, not executive accountability.",0,0,,,proposed
+RMF:GOVERN-3.1,AI RMF 1.0,subcategory,RMF:GOVERN-3,GOVERN 3.1,GOVERN 3.1,guidance,out_of_scope,Team diversity in risk decisions is an organizational composition outcome; monitoring results do not show it.,0,0,,,proposed
+RMF:GOVERN-3.2,AI RMF 1.0,subcategory,RMF:GOVERN-3,GOVERN 3.2,GOVERN 3.2,guidance,out_of_scope,(2026-10-05 review) Defining roles for human-AI configurations is a policy-design activity; GAP-M telemetry observes roles but does not define them.,0,0,,,proposed
+RMF:GOVERN-4.1,AI RMF 1.0,subcategory,RMF:GOVERN-4,GOVERN 4.1,GOVERN 4.1,guidance,out_of_scope,"A critical-thinking and safety-first culture is an organizational culture outcome, not a monitoring activity.",0,0,,,proposed
+RMF:GOVERN-4.2,AI RMF 1.0,subcategory,RMF:GOVERN-4,GOVERN 4.2,GOVERN 4.2,guidance,mapped,,2,0,example_of,GM-GOV-05;GM-HF-03,proposed
+RMF:GOVERN-4.3,AI RMF 1.0,subcategory,RMF:GOVERN-4,GOVERN 4.3,GOVERN 4.3,guidance,mapped,,3,0,example_of,GM-GOV-04;GM-GOV-05;GM-LSI-01,proposed
+RMF:GOVERN-5.1,AI RMF 1.0,subcategory,RMF:GOVERN-5,GOVERN 5.1,GOVERN 5.1,guidance,mapped,,2,0,example_of,GM-HF-01;GM-LSI-03,proposed
+RMF:GOVERN-5.2,AI RMF 1.0,subcategory,RMF:GOVERN-5,GOVERN 5.2,GOVERN 5.2,guidance,mapped,,1,0,example_of,GM-HF-01,proposed
+RMF:GOVERN-6.1,AI RMF 1.0,subcategory,RMF:GOVERN-6,GOVERN 6.1,GOVERN 6.1,guidance,mapped,,2,0,example_of,GM-GOV-03;GM-SEC-02,proposed
+RMF:GOVERN-6.2,AI RMF 1.0,subcategory,RMF:GOVERN-6,GOVERN 6.2,GOVERN 6.2,guidance,mapped,,1,0,example_of,GM-GOV-03,proposed
+RMF:MAP-1.1,AI RMF 1.0,subcategory,RMF:MAP-1,MAP 1.1,MAP 1.1,guidance,mapped,,2,0,example_of,GM-CMP-01;GM-CMP-03,proposed
+RMF:MAP-1.2,AI RMF 1.0,subcategory,RMF:MAP-1,MAP 1.2,MAP 1.2,guidance,out_of_scope,Interdisciplinary participation in establishing context is a design-time activity.,0,0,,,proposed
+RMF:MAP-1.3,AI RMF 1.0,subcategory,RMF:MAP-1,MAP 1.3,MAP 1.3,guidance,out_of_scope,Documenting the organization's mission and AI goals is a strategy activity that comes before deployment.,0,0,,,proposed
+RMF:MAP-1.4,AI RMF 1.0,subcategory,RMF:MAP-1,MAP 1.4,MAP 1.4,guidance,mapped,,1,0,example_of,GM-LSI-02,proposed
+RMF:MAP-1.5,AI RMF 1.0,subcategory,RMF:MAP-1,MAP 1.5,MAP 1.5,guidance,mapped,,1,0,example_of,GM-FUN-01,proposed
+RMF:MAP-1.6,AI RMF 1.0,subcategory,RMF:MAP-1,MAP 1.6,MAP 1.6,guidance,mapped,,1,0,example_of,GM-SEC-04,proposed
+RMF:MAP-2.1,AI RMF 1.0,subcategory,RMF:MAP-2,MAP 2.1,MAP 2.1,guidance,mapped,,1,0,example_of,GM-GOV-02,proposed
+RMF:MAP-2.2,AI RMF 1.0,subcategory,RMF:MAP-2,MAP 2.2,MAP 2.2,guidance,mapped,,2,0,example_of,GM-CMP-03;GM-HF-03,proposed
+RMF:MAP-2.3,AI RMF 1.0,subcategory,RMF:MAP-2,MAP 2.3,MAP 2.3,guidance,mapped,,2,0,example_of,GM-FAIR-01;GM-FUN-04,proposed
+RMF:MAP-3.1,AI RMF 1.0,subcategory,RMF:MAP-3,MAP 3.1,MAP 3.1,guidance,mapped,,1,0,example_of,GM-LSI-02,proposed
+RMF:MAP-3.2,AI RMF 1.0,subcategory,RMF:MAP-3,MAP 3.2,MAP 3.2,guidance,uncovered,"(2026-10-05 review) Costs that result from AI errors and trustworthiness failures are relevant after deployment, but no GAP-M v0.1.0 control measures them; operating-cost tracking (GM-OPS-02) is a different cost.",0,0,,,proposed
+RMF:MAP-3.3,AI RMF 1.0,subcategory,RMF:MAP-3,MAP 3.3,MAP 3.3,guidance,mapped,,1,0,example_of,GM-CMP-03,proposed
+RMF:MAP-3.4,AI RMF 1.0,subcategory,RMF:MAP-3,MAP 3.4,MAP 3.4,guidance,mapped,,1,0,example_of,GM-GOV-06,proposed
+RMF:MAP-3.5,AI RMF 1.0,subcategory,RMF:MAP-3,MAP 3.5,MAP 3.5,guidance,mapped,,1,0,example_of,GM-HF-02,proposed
+RMF:MAP-4.1,AI RMF 1.0,subcategory,RMF:MAP-4,MAP 4.1,MAP 4.1,guidance,out_of_scope,(2026-10-05 review) Mapping technology and legal (including intellectual-property) risks of components is a pre-deployment legal-review activity.,0,0,,,proposed
+RMF:MAP-4.2,AI RMF 1.0,subcategory,RMF:MAP-4,MAP 4.2,MAP 4.2,guidance,mapped,,1,0,example_of,GM-GOV-03,proposed
+RMF:MAP-5.1,AI RMF 1.0,subcategory,RMF:MAP-5,MAP 5.1,MAP 5.1,guidance,mapped,,2,0,example_of,GM-LSI-01;GM-LSI-02,proposed
+RMF:MAP-5.2,AI RMF 1.0,subcategory,RMF:MAP-5,MAP 5.2,MAP 5.2,guidance,mapped,,2,0,example_of,GM-HF-01;GM-LSI-03,proposed
+RMF:MEASURE-1.1,AI RMF 1.0,subcategory,RMF:MEASURE-1,MEASURE 1.1,MEASURE 1.1,guidance,mapped,,3,0,example_of,GM-FAIR-01;GM-FUN-01;GM-FUN-04,proposed
+RMF:MEASURE-1.2,AI RMF 1.0,subcategory,RMF:MEASURE-1,MEASURE 1.2,MEASURE 1.2,guidance,mapped,,1,0,example_of,GM-GOV-07,proposed
+RMF:MEASURE-1.3,AI RMF 1.0,subcategory,RMF:MEASURE-1,MEASURE 1.3,MEASURE 1.3,guidance,mapped,,2,0,example_of,GM-GOV-07;GM-LSI-03,proposed
+RMF:MEASURE-2.1,AI RMF 1.0,subcategory,RMF:MEASURE-2,MEASURE 2.1,MEASURE 2.1,guidance,mapped,,1,0,example_of,GM-FUN-01,proposed
+RMF:MEASURE-2.2,AI RMF 1.0,subcategory,RMF:MEASURE-2,MEASURE 2.2,MEASURE 2.2,guidance,out_of_scope,"Human-subject protection governs research evaluations; routine operational monitoring is outside it, and studies that qualify follow their own oversight process.",0,0,,,proposed
+RMF:MEASURE-2.3,AI RMF 1.0,subcategory,RMF:MEASURE-2,MEASURE 2.3,MEASURE 2.3,guidance,mapped,,1,0,example_of,GM-FUN-01,proposed
+RMF:MEASURE-2.4,AI RMF 1.0,subcategory,RMF:MEASURE-2,MEASURE 2.4,MEASURE 2.4,guidance,mapped,,4,0,example_of,GM-FAIR-02;GM-FUN-02;GM-FUN-03;GM-OPS-01,proposed
+RMF:MEASURE-2.5,AI RMF 1.0,subcategory,RMF:MEASURE-2,MEASURE 2.5,MEASURE 2.5,guidance,mapped,,3,0,example_of,GM-FUN-01;GM-FUN-02;GM-FUN-03,proposed
+RMF:MEASURE-2.6,AI RMF 1.0,subcategory,RMF:MEASURE-2,MEASURE 2.6,MEASURE 2.6,guidance,mapped,,5,0,example_of,GM-CMP-03;GM-FUN-06;GM-OPS-02;GM-OPS-04;GM-SEC-01,proposed
+RMF:MEASURE-2.7,AI RMF 1.0,subcategory,RMF:MEASURE-2,MEASURE 2.7,MEASURE 2.7,guidance,mapped,,3,0,example_of,GM-SEC-01;GM-SEC-02;GM-SEC-03,proposed
+RMF:MEASURE-2.8,AI RMF 1.0,subcategory,RMF:MEASURE-2,MEASURE 2.8,MEASURE 2.8,guidance,mapped,,2,0,example_of,GM-HF-03;GM-OPS-01,proposed
+RMF:MEASURE-2.9,AI RMF 1.0,subcategory,RMF:MEASURE-2,MEASURE 2.9,MEASURE 2.9,guidance,mapped,,2,0,example_of,GM-HF-02;GM-HF-03,proposed
+RMF:MEASURE-2.10,AI RMF 1.0,subcategory,RMF:MEASURE-2,MEASURE 2.10,MEASURE 2.10,guidance,mapped,,1,0,example_of,GM-SEC-04,proposed
+RMF:MEASURE-2.11,AI RMF 1.0,subcategory,RMF:MEASURE-2,MEASURE 2.11,MEASURE 2.11,guidance,mapped,,2,0,example_of,GM-FAIR-01;GM-FAIR-02,proposed
+RMF:MEASURE-2.12,AI RMF 1.0,subcategory,RMF:MEASURE-2,MEASURE 2.12,MEASURE 2.12,guidance,uncovered,(2026-10-05 review) No GAP-M v0.1.0 control assesses environmental impact or sustainability.,0,0,,,proposed
+RMF:MEASURE-2.13,AI RMF 1.0,subcategory,RMF:MEASURE-2,MEASURE 2.13,MEASURE 2.13,guidance,mapped,,1,0,example_of,GM-GOV-07,proposed
+RMF:MEASURE-3.1,AI RMF 1.0,subcategory,RMF:MEASURE-3,MEASURE 3.1,MEASURE 3.1,guidance,mapped,,5,0,example_of,GM-FAIR-02;GM-FUN-02;GM-FUN-03;GM-FUN-05;GM-LSI-01,proposed
+RMF:MEASURE-3.2,AI RMF 1.0,subcategory,RMF:MEASURE-3,MEASURE 3.2,MEASURE 3.2,guidance,mapped,,1,0,example_of,GM-FUN-04,proposed
+RMF:MEASURE-3.3,AI RMF 1.0,subcategory,RMF:MEASURE-3,MEASURE 3.3,MEASURE 3.3,guidance,mapped,,2,2,integral_to,GM-HF-01;GM-LSI-03,proposed
+RMF:MEASURE-4.1,AI RMF 1.0,subcategory,RMF:MEASURE-4,MEASURE 4.1,MEASURE 4.1,guidance,mapped,,1,0,example_of,GM-GOV-01,proposed
+RMF:MEASURE-4.2,AI RMF 1.0,subcategory,RMF:MEASURE-4,MEASURE 4.2,MEASURE 4.2,guidance,mapped,,2,0,example_of,GM-FUN-02;GM-GOV-07,proposed
+RMF:MEASURE-4.3,AI RMF 1.0,subcategory,RMF:MEASURE-4,MEASURE 4.3,MEASURE 4.3,guidance,mapped,,3,1,integral_to,GM-FUN-05;GM-LSI-02;GM-LSI-03,proposed
+RMF:MANAGE-1.1,AI RMF 1.0,subcategory,RMF:MANAGE-1,MANAGE 1.1,MANAGE 1.1,guidance,mapped,,2,0,example_of,GM-FUN-01;GM-LSI-02,proposed
+RMF:MANAGE-1.2,AI RMF 1.0,subcategory,RMF:MANAGE-1,MANAGE 1.2,MANAGE 1.2,guidance,mapped,,1,0,example_of,GM-FUN-06,proposed
+RMF:MANAGE-1.3,AI RMF 1.0,subcategory,RMF:MANAGE-1,MANAGE 1.3,MANAGE 1.3,guidance,mapped,,1,0,example_of,GM-FUN-06,proposed
+RMF:MANAGE-1.4,AI RMF 1.0,subcategory,RMF:MANAGE-1,MANAGE 1.4,MANAGE 1.4,guidance,mapped,,1,0,example_of,GM-HF-03,proposed
+RMF:MANAGE-2.1,AI RMF 1.0,subcategory,RMF:MANAGE-2,MANAGE 2.1,MANAGE 2.1,guidance,mapped,,3,0,example_of,GM-GOV-06;GM-OPS-02;GM-OPS-04,proposed
+RMF:MANAGE-2.2,AI RMF 1.0,subcategory,RMF:MANAGE-2,MANAGE 2.2,MANAGE 2.2,guidance,mapped,,3,0,example_of,GM-FUN-02;GM-LSI-02;GM-OPS-02,proposed
+RMF:MANAGE-2.3,AI RMF 1.0,subcategory,RMF:MANAGE-2,MANAGE 2.3,MANAGE 2.3,guidance,mapped,,2,0,example_of,GM-GOV-04;GM-OPS-04,proposed
+RMF:MANAGE-2.4,AI RMF 1.0,subcategory,RMF:MANAGE-2,MANAGE 2.4,MANAGE 2.4,guidance,mapped,,2,1,integral_to,GM-FUN-06;GM-OPS-04,proposed
+RMF:MANAGE-3.1,AI RMF 1.0,subcategory,RMF:MANAGE-3,MANAGE 3.1,MANAGE 3.1,guidance,mapped,,2,0,example_of,GM-GOV-03;GM-SEC-02,proposed
+RMF:MANAGE-3.2,AI RMF 1.0,subcategory,RMF:MANAGE-3,MANAGE 3.2,MANAGE 3.2,guidance,out_of_scope,(2026-10-05 author review) Applies to organizations that develop on pre-trained models; GAP-M addresses deploying organizations' monitoring of finished interventions. Its only link was removed by the author in the guided review.,0,0,,,proposed
+RMF:MANAGE-4.1,AI RMF 1.0,subcategory,RMF:MANAGE-4,MANAGE 4.1,MANAGE 4.1,guidance,mapped,,6,1,integral_to,GM-GOV-01;GM-GOV-04;GM-HF-01;GM-HF-02;GM-OPS-01;GM-OPS-03,proposed
+RMF:MANAGE-4.2,AI RMF 1.0,subcategory,RMF:MANAGE-4,MANAGE 4.2,MANAGE 4.2,guidance,mapped,,1,0,example_of,GM-FUN-05,proposed
+RMF:MANAGE-4.3,AI RMF 1.0,subcategory,RMF:MANAGE-4,MANAGE 4.3,MANAGE 4.3,guidance,mapped,,4,1,integral_to,GM-GOV-04;GM-GOV-05;GM-LSI-01;GM-LSI-03,proposed
+A84:FUN,NIST AI 800-4,monitoring_category,,FUN,Functionality Monitoring,monitoring_challenge,mapped,,2,0,example_of,GM-FUN-01;GM-FUN-02,proposed
+A84:OPS,NIST AI 800-4,monitoring_category,,OPS,Operational Monitoring,monitoring_challenge,mapped,,2,0,example_of,GM-OPS-01;GM-OPS-02,proposed
+A84:HF,NIST AI 800-4,monitoring_category,,HF,Human Factors Monitoring,monitoring_challenge,mapped,,2,0,example_of,GM-HF-01;GM-HF-03,proposed
+A84:SEC,NIST AI 800-4,monitoring_category,,SEC,Security Monitoring,monitoring_challenge,mapped,,3,0,example_of,GM-SEC-01;GM-SEC-02;GM-SEC-03,proposed
+A84:CMP,NIST AI 800-4,monitoring_category,,CMP,Compliance Monitoring,monitoring_challenge,mapped,,2,0,example_of,GM-CMP-01;GM-CMP-02,proposed
+A84:LSI,NIST AI 800-4,monitoring_category,,LSI,Large-Scale Impacts Monitoring,monitoring_challenge,mapped,,4,0,example_of,GM-FAIR-02;GM-LSI-01;GM-LSI-02;GM-LSI-03,proposed
+A84:FUN-G1,NIST AI 800-4,category_gap,A84:FUN,FUN-G1,Lack of systematic model comparison,monitoring_challenge,mapped,,1,0,example_of,GM-FUN-05,proposed
+A84:FUN-G2,NIST AI 800-4,category_gap,A84:FUN,FUN-G2,Establishing performance baselines and thresholds,monitoring_challenge,mapped,,3,0,example_of,GM-FAIR-01;GM-FUN-01;GM-FUN-06,proposed
+A84:FUN-B1,NIST AI 800-4,category_barrier,A84:FUN,FUN-B1,Detecting performance degradation and drift,monitoring_challenge,mapped,,3,0,example_of,GM-FAIR-02;GM-FUN-02;GM-FUN-03,proposed
+A84:FUN-B2,NIST AI 800-4,category_barrier,A84:FUN,FUN-B2,Missing high-quality ground truth datasets,monitoring_challenge,mapped,,1,0,example_of,GM-FUN-04,proposed
+A84:FUN-B3,NIST AI 800-4,category_barrier,A84:FUN,FUN-B3,Overhead of longitudinal tracking,monitoring_challenge,mapped,,1,0,example_of,GM-FUN-05,proposed
+A84:OPS-G1,NIST AI 800-4,category_gap,A84:OPS,OPS-G1,Tracking indirect costs beyond compute,monitoring_challenge,mapped,,1,0,example_of,GM-OPS-02,proposed
+A84:OPS-B1,NIST AI 800-4,category_barrier,A84:OPS,OPS-B1,Fragmented logging across distributed infrastructure,monitoring_challenge,mapped,,1,0,example_of,GM-OPS-01,proposed
+A84:HF-G1,NIST AI 800-4,category_gap,A84:HF,HF-G1,Insufficient research on human-AI feedback loops,monitoring_challenge,mapped,,1,0,example_of,GM-HF-02,proposed
+A84:HF-G2,NIST AI 800-4,category_gap,A84:HF,HF-G2,Limited understanding of user intent or perception through usage monitoring,monitoring_challenge,mapped,,2,0,example_of,GM-CMP-03;GM-HF-02,proposed
+A84:HF-G3,NIST AI 800-4,category_gap,A84:HF,HF-G3,Limited understanding of user interaction and behavior,monitoring_challenge,mapped,,1,0,example_of,GM-HF-02,proposed
+A84:HF-G4,NIST AI 800-4,category_gap,A84:HF,HF-G4,Lack of insight into characteristics of system users,monitoring_challenge,mapped,,1,0,example_of,GM-HF-02,proposed
+A84:HF-G5,NIST AI 800-4,category_gap,A84:HF,HF-G5,Underutilization of telemetry data,monitoring_challenge,mapped,,2,0,example_of,GM-HF-02;GM-OPS-01,proposed
+A84:HF-B1,NIST AI 800-4,category_barrier,A84:HF,HF-B1,Overhead of collecting and gauging user feedback,monitoring_challenge,mapped,,1,0,example_of,GM-HF-01,proposed
+A84:SEC-B1,NIST AI 800-4,category_barrier,A84:SEC,SEC-B1,Detecting deceptive behavior,monitoring_challenge,mapped,,1,0,example_of,GM-SEC-01,proposed
+A84:CMP-G1,NIST AI 800-4,category_gap,A84:CMP,CMP-G1,Minimal tracking of terms of service violations,monitoring_challenge,mapped,,1,0,example_of,GM-CMP-03,proposed
+A84:CMP-B1,NIST AI 800-4,category_barrier,A84:CMP,CMP-B1,Navigating the complexity of the policy landscape,monitoring_challenge,mapped,,1,0,example_of,GM-CMP-01,proposed
+A84:LSI-G1,NIST AI 800-4,category_gap,A84:LSI,LSI-G1,Defining metrics for beneficial impacts to humans,monitoring_challenge,mapped,,1,0,example_of,GM-LSI-02,proposed
+A84:LSI-G2,NIST AI 800-4,category_gap,A84:LSI,LSI-G2,Capturing large-scale impacts within incident logging,monitoring_challenge,mapped,,2,0,example_of,GM-GOV-05;GM-LSI-01,proposed
+A84:LSI-B1,NIST AI 800-4,category_barrier,A84:LSI,LSI-B1,Capturing downstream effects of open-weight models,monitoring_challenge,out_of_scope,(2026-10-05 review) Downstream effects of open-weight model releases are a developer and ecosystem matter; GAP-M addresses organizations deploying predictive interventions.,0,0,,,proposed
+A84:XC-TMT-G1,NIST AI 800-4,crosscutting_gap,A84:XC-TMT,XC-TMT-G1,Lack of trusted guidelines or standards for methods and tools,monitoring_challenge,mapped,,1,0,example_of,GM-GOV-04,proposed
+A84:XC-TMT-B1,NIST AI 800-4,crosscutting_barrier,A84:XC-TMT,XC-TMT-B1,Monitoring is use-case-specific,monitoring_challenge,mapped,,1,0,example_of,GM-GOV-01,proposed
+A84:XC-TMT-B2,NIST AI 800-4,crosscutting_barrier,A84:XC-TMT,XC-TMT-B2,Uncertainty and variability in results from models,monitoring_challenge,mapped,,2,0,example_of,GM-FUN-04;GM-GOV-07,proposed
+A84:XC-TMT-B3,NIST AI 800-4,crosscutting_barrier,A84:XC-TMT,XC-TMT-B3,Monitoring may infringe security and privacy,monitoring_challenge,mapped,,1,0,example_of,GM-SEC-04,proposed
+A84:XC-VT-G1,NIST AI 800-4,crosscutting_gap,A84:XC-VT,XC-VT-G1,Lack of direct visibility into model properties,monitoring_challenge,mapped,,1,0,example_of,GM-HF-03,proposed
+A84:XC-VT-G2,NIST AI 800-4,crosscutting_gap,A84:XC-VT,XC-VT-G2,Immature information sharing ecosystem,monitoring_challenge,mapped,,2,0,example_of,GM-GOV-03;GM-GOV-05,proposed
+A84:XC-PC-B1,NIST AI 800-4,crosscutting_barrier,A84:XC-PC,XC-PC-B1,Rapidly shifting landscape across the AI stack,monitoring_challenge,mapped,,4,0,example_of,GM-FUN-03;GM-GOV-02;GM-OPS-03;GM-SEC-02,proposed
+A84:XC-PC-B2,NIST AI 800-4,crosscutting_barrier,A84:XC-PC,XC-PC-B2,Scaling human-driven monitoring alongside rapid rollouts,monitoring_challenge,mapped,,1,0,example_of,GM-GOV-06,proposed
+A84:XC-IOC-B1,NIST AI 800-4,crosscutting_barrier,A84:XC-IOC,XC-IOC-B1,Balancing competitive pressures with necessary oversight,monitoring_challenge,uncovered,(2026-10-05 review) Balancing competitive pressure against oversight is an incentive problem; no GAP-M v0.1.0 control addresses organizational incentives.,0,0,,,proposed
+A84:XC-IOC-B2,NIST AI 800-4,crosscutting_barrier,A84:XC-IOC,XC-IOC-B2,Lower prioritization for ecosystem-wide transparency,monitoring_challenge,mapped,,1,0,example_of,GM-GOV-05,proposed
+A84:XC-IOC-B3,NIST AI 800-4,crosscutting_barrier,A84:XC-IOC,XC-IOC-B3,Administrative burden,monitoring_challenge,mapped,,1,0,example_of,GM-GOV-06,proposed
+A84:XC-RR-B1,NIST AI 800-4,crosscutting_barrier,A84:XC-RR,XC-RR-B1,Financial costs and compute/human resources,monitoring_challenge,mapped,,2,0,example_of,GM-GOV-06;GM-OPS-02,proposed
+A84:XC-RR-B2,NIST AI 800-4,crosscutting_barrier,A84:XC-RR,XC-RR-B2,Hiring and training qualified AI experts,monitoring_challenge,mapped,,1,0,example_of,GM-GOV-06,proposed
+HTI:B1.i,ONC HTI-1 (b)(11),source_attribute,HTI:B1,(B)(1)(i),Name and contact information for the intervention developer,regulatory_disclosure_requirement,mapped,,2,0,example_of,GM-GOV-02;GM-HF-03,proposed
+HTI:B1.ii,ONC HTI-1 (b)(11),source_attribute,HTI:B1,(B)(1)(ii),Funding source of the technical implementation for the intervention(s) development,regulatory_disclosure_requirement,mapped,,1,0,example_of,GM-HF-03,proposed
+HTI:B1.iii,ONC HTI-1 (b)(11),source_attribute,HTI:B1,(B)(1)(iii),Description of value that the intervention produces as an output,regulatory_disclosure_requirement,mapped,,1,0,example_of,GM-HF-03,proposed
+HTI:B1.iv,ONC HTI-1 (b)(11),source_attribute,HTI:B1,(B)(1)(iv),"Whether the intervention output is a prediction, classification, recommendation, evaluation, analysis, or other type of output",regulatory_disclosure_requirement,mapped,,2,0,example_of,GM-GOV-02;GM-HF-03,proposed
+HTI:B2.i,ONC HTI-1 (b)(11),source_attribute,HTI:B2,(B)(2)(i),Intended use of the intervention,regulatory_disclosure_requirement,mapped,,2,0,example_of,GM-CMP-03;GM-HF-03,proposed
+HTI:B2.ii,ONC HTI-1 (b)(11),source_attribute,HTI:B2,(B)(2)(ii),Intended patient population(s) for the intervention's use,regulatory_disclosure_requirement,mapped,,2,0,example_of,GM-CMP-03;GM-HF-03,proposed
+HTI:B2.iii,ONC HTI-1 (b)(11),source_attribute,HTI:B2,(B)(2)(iii),Intended user(s),regulatory_disclosure_requirement,mapped,,3,0,example_of,GM-CMP-03;GM-HF-02;GM-HF-03,proposed
+HTI:B2.iv,ONC HTI-1 (b)(11),source_attribute,HTI:B2,(B)(2)(iv),"Intended decision-making role for which the intervention was designed to be used/for (e.g., informs, augments, replaces clinical management)",regulatory_disclosure_requirement,mapped,,3,0,example_of,GM-CMP-03;GM-HF-02;GM-HF-03,proposed
+HTI:B3.i,ONC HTI-1 (b)(11),source_attribute,HTI:B3,(B)(3)(i),"Description of tasks, situations, or populations where a user is cautioned against applying the intervention",regulatory_disclosure_requirement,mapped,,2,0,example_of,GM-CMP-03;GM-HF-03,proposed
+HTI:B3.ii,ONC HTI-1 (b)(11),source_attribute,HTI:B3,(B)(3)(ii),"Known risks, inappropriate settings, inappropriate uses, or known limitations",regulatory_disclosure_requirement,mapped,,5,0,example_of,GM-GOV-05;GM-HF-01;GM-HF-03;GM-LSI-01;GM-SEC-01,proposed
+HTI:B4.i,ONC HTI-1 (b)(11),source_attribute,HTI:B4,(B)(4)(i),Exclusion and inclusion criteria that influenced the training data set,regulatory_disclosure_requirement,mapped,,2,0,example_of,GM-FUN-03;GM-HF-03,proposed
+HTI:B4.ii,ONC HTI-1 (b)(11),source_attribute,HTI:B4,(B)(4)(ii),Use of variables in paragraphs (b)(11)(iv)(A)(5) through (13) of this section as input features,regulatory_disclosure_requirement,mapped,,2,0,example_of,GM-FAIR-01;GM-HF-03,proposed
+HTI:B4.iii,ONC HTI-1 (b)(11),source_attribute,HTI:B4,(B)(4)(iii),"Description of demographic representativeness according to variables in paragraphs (b)(11)(iv)(A)(5) through (13) of this section including, at a minimum, those used as input features in the intervention",regulatory_disclosure_requirement,mapped,,3,0,example_of,GM-FAIR-01;GM-FUN-03;GM-HF-03,proposed
+HTI:B4.iv,ONC HTI-1 (b)(11),source_attribute,HTI:B4,(B)(4)(iv),Description of relevance of training data to intended deployed setting,regulatory_disclosure_requirement,mapped,,3,0,example_of,GM-FUN-01;GM-FUN-03;GM-HF-03,proposed
+HTI:B5.i,ONC HTI-1 (b)(11),source_attribute,HTI:B5,(B)(5)(i),Description of the approach the intervention developer has taken to ensure that the intervention's output is fair,regulatory_disclosure_requirement,mapped,,1,0,example_of,GM-HF-03,proposed
+HTI:B5.ii,ONC HTI-1 (b)(11),source_attribute,HTI:B5,(B)(5)(ii),"Description of approaches to manage, reduce, or eliminate bias",regulatory_disclosure_requirement,mapped,,1,0,example_of,GM-HF-03,proposed
+HTI:B6.i,ONC HTI-1 (b)(11),source_attribute,HTI:B6,(B)(6)(i),"Description of the data source, clinical setting, or environment where an intervention's validity and fairness has been assessed, other than the source of training and testing data",regulatory_disclosure_requirement,mapped,,3,0,example_of,GM-CMP-02;GM-GOV-03;GM-HF-03,proposed
+HTI:B6.ii,ONC HTI-1 (b)(11),source_attribute,HTI:B6,(B)(6)(ii),Party that conducted the external testing,regulatory_disclosure_requirement,mapped,,3,0,example_of,GM-CMP-02;GM-GOV-03;GM-HF-03,proposed
+HTI:B6.iii,ONC HTI-1 (b)(11),source_attribute,HTI:B6,(B)(6)(iii),"Description of demographic representativeness of external data according to variables in paragraph (b)(11)(iv)(A)(5)-(13) including, at a minimum, those used as input features in the intervention",regulatory_disclosure_requirement,mapped,,4,0,example_of,GM-CMP-02;GM-FAIR-01;GM-GOV-03;GM-HF-03,proposed
+HTI:B6.iv,ONC HTI-1 (b)(11),source_attribute,HTI:B6,(B)(6)(iv),Description of external validation process,regulatory_disclosure_requirement,mapped,,3,0,example_of,GM-CMP-02;GM-GOV-03;GM-HF-03,proposed
+HTI:B7.i,ONC HTI-1 (b)(11),source_attribute,HTI:B7,(B)(7)(i),Validity of intervention in test data derived from the same source as the initial training data,regulatory_disclosure_requirement,mapped,,2,0,example_of,GM-FUN-01;GM-HF-03,proposed
+HTI:B7.ii,ONC HTI-1 (b)(11),source_attribute,HTI:B7,(B)(7)(ii),Fairness of intervention in test data derived from the same source as the initial training data,regulatory_disclosure_requirement,mapped,,2,0,example_of,GM-FAIR-01;GM-HF-03,proposed
+HTI:B7.iii,ONC HTI-1 (b)(11),source_attribute,HTI:B7,(B)(7)(iii),Validity of intervention in data external to or from a different source than the initial training data,regulatory_disclosure_requirement,mapped,,4,0,example_of,GM-CMP-02;GM-FUN-01;GM-GOV-03;GM-HF-03,proposed
+HTI:B7.iv,ONC HTI-1 (b)(11),source_attribute,HTI:B7,(B)(7)(iv),Fairness of intervention in data external to or from a different source than the initial training data,regulatory_disclosure_requirement,mapped,,4,0,example_of,GM-CMP-02;GM-FAIR-01;GM-GOV-03;GM-HF-03,proposed
+HTI:B7.v,ONC HTI-1 (b)(11),source_attribute,HTI:B7,(B)(7)(v),"References to evaluation of use of the intervention on outcomes, including, bibliographic citations or hyperlinks to evaluations of how well the intervention reduced morbidity, mortality, length of stay, or other outcomes",regulatory_disclosure_requirement,mapped,,4,0,example_of,GM-CMP-02;GM-GOV-05;GM-HF-03;GM-LSI-02,proposed
+HTI:B8.i,ONC HTI-1 (b)(11),source_attribute,HTI:B8,(B)(8)(i),Description of process and frequency by which the intervention's validity is monitored over time,regulatory_disclosure_requirement,mapped,,3,0,example_of,GM-FUN-02;GM-GOV-01;GM-HF-03,proposed
+HTI:B8.ii,ONC HTI-1 (b)(11),source_attribute,HTI:B8,(B)(8)(ii),Validity of intervention in local data,regulatory_disclosure_requirement,mapped,,5,1,integral_to,GM-CMP-02;GM-FUN-01;GM-FUN-02;GM-FUN-04;GM-HF-03,proposed
+HTI:B8.iii,ONC HTI-1 (b)(11),source_attribute,HTI:B8,(B)(8)(iii),Description of the process and frequency by which the intervention's fairness is monitored over time,regulatory_disclosure_requirement,mapped,,3,0,example_of,GM-FAIR-02;GM-GOV-01;GM-HF-03,proposed
+HTI:B8.iv,ONC HTI-1 (b)(11),source_attribute,HTI:B8,(B)(8)(iv),Fairness of intervention in local data,regulatory_disclosure_requirement,mapped,,4,0,example_of,GM-CMP-02;GM-FAIR-02;GM-FUN-04;GM-HF-03,proposed
+HTI:B9.i,ONC HTI-1 (b)(11),source_attribute,HTI:B9,(B)(9)(i),Description of process and frequency by which the intervention is updated,regulatory_disclosure_requirement,mapped,,5,0,example_of,GM-CMP-02;GM-FUN-05;GM-GOV-03;GM-HF-03;GM-OPS-03,proposed
+HTI:B9.ii,ONC HTI-1 (b)(11),source_attribute,HTI:B9,(B)(9)(ii),Description of frequency by which the intervention's performance is corrected when risks related to validity and fairness are identified,regulatory_disclosure_requirement,mapped,,4,0,example_of,GM-CMP-02;GM-FUN-05;GM-FUN-06;GM-HF-03,proposed
+CPG:1.A,CISA CPG 2.0,goal,CPG:GOVERN,1.A,Establish Cybersecurity Responsibilities,voluntary_practice,mapped,,1,0,example_of,GM-CMP-01,proposed
+CPG:1.B,CISA CPG 2.0,goal,CPG:GOVERN,1.B,Manage Cybersecurity Oversight,voluntary_practice,mapped,,1,0,example_of,GM-CMP-01,proposed
+CPG:1.C,CISA CPG 2.0,goal,CPG:GOVERN,1.C,Manage Incident Response Plans,voluntary_practice,mapped,,1,0,example_of,GM-GOV-04,proposed
+CPG:1.D,CISA CPG 2.0,goal,CPG:GOVERN,1.D,Supply Chain Incident Reporting & Vulnerability Disclosure,voluntary_practice,mapped,,2,1,integral_to,GM-GOV-03;GM-SEC-02,proposed
+CPG:1.E,CISA CPG 2.0,goal,CPG:GOVERN,1.E,Manage Risks from Managed Service Providers,voluntary_practice,mapped,,1,0,example_of,GM-GOV-03,proposed
+CPG:2.A,CISA CPG 2.0,goal,CPG:IDENTIFY,2.A,Manage Organizational Assets,voluntary_practice,mapped,,1,0,example_of,GM-GOV-02,proposed
+CPG:2.B,CISA CPG 2.0,goal,CPG:IDENTIFY,2.B,Mitigate Known Vulnerabilities,voluntary_practice,mapped,,1,1,integral_to,GM-SEC-02,proposed
+CPG:2.C,CISA CPG 2.0,goal,CPG:IDENTIFY,2.C,Obtain Independent Validation of Cybersecurity Controls,voluntary_practice,prerequisite,"(2026-10-05 review) Third-party validation of cybersecurity defenses (penetration tests, exercises) is a hosting-environment baseline; GAP-M assumes it.",0,0,,,proposed
+CPG:2.D,CISA CPG 2.0,goal,CPG:IDENTIFY,2.D,Maintain Vulnerability Disclosure/Reporting Process,voluntary_practice,prerequisite,(2026-10-05 review) A public vulnerability disclosure route is an enterprise baseline; GAP-M assumes it.,0,0,,,proposed
+CPG:2.E,CISA CPG 2.0,goal,CPG:IDENTIFY,2.E,Document Network Topology,voluntary_practice,prerequisite,Network topology documentation is a hosting-environment baseline; GAP-M assumes it.,0,0,,,proposed
+CPG:3.A,CISA CPG 2.0,goal,CPG:PROTECT,3.A,Changing Default Passwords,voluntary_practice,prerequisite,Default-password hygiene is a hosting-environment baseline; GAP-M assumes it.,0,0,,,proposed
+CPG:3.B,CISA CPG 2.0,goal,CPG:PROTECT,3.B,Establish Minimum Password Strength,voluntary_practice,prerequisite,Password strength policy is a hosting-environment baseline; GAP-M assumes it.,0,0,,,proposed
+CPG:3.C,CISA CPG 2.0,goal,CPG:PROTECT,3.C,Create Unique Credentials,voluntary_practice,prerequisite,Unique credentials are a hosting-environment baseline; GAP-M assumes it.,0,0,,,proposed
+CPG:3.D,CISA CPG 2.0,goal,CPG:PROTECT,3.D,Revoking Credentials for Departing Staff,voluntary_practice,mapped,,1,0,example_of,GM-SEC-03,proposed
+CPG:3.E,CISA CPG 2.0,goal,CPG:PROTECT,3.E,Monitor Unsuccessful (Automated) Login Attempts,voluntary_practice,mapped,,1,0,example_of,GM-SEC-03,proposed
+CPG:3.F,CISA CPG 2.0,goal,CPG:PROTECT,3.F,Implement Multi-factor Authentication,voluntary_practice,mapped,,1,0,example_of,GM-SEC-03,proposed
+CPG:3.G,CISA CPG 2.0,goal,CPG:PROTECT,3.G,Administrators Maintain Separate User and Privileged Accounts,voluntary_practice,mapped,,1,0,example_of,GM-SEC-03,proposed
+CPG:3.H,CISA CPG 2.0,goal,CPG:PROTECT,3.H,Implement the Principles of Least Privilege,voluntary_practice,mapped,,1,1,integral_to,GM-SEC-03,proposed
+CPG:3.I,CISA CPG 2.0,goal,CPG:PROTECT,3.I,Implement Logical/Physical Network Segmentation,voluntary_practice,prerequisite,Network segmentation of AI hosting is a hosting-environment baseline; GAP-M assumes it.,0,0,,,proposed
+CPG:3.J,CISA CPG 2.0,goal,CPG:PROTECT,3.J,Implement Cybersecurity Training,voluntary_practice,prerequisite,"(2026-10-05 review) Cybersecurity awareness training is an enterprise baseline; GAP-M's user training covers intended use, not security awareness.",0,0,,,proposed
+CPG:3.K,CISA CPG 2.0,goal,CPG:PROTECT,3.K,Utilize Strong Encryption,voluntary_practice,mapped,,1,0,example_of,GM-SEC-04,proposed
+CPG:3.L,CISA CPG 2.0,goal,CPG:PROTECT,3.L,Enable Email Security,voluntary_practice,prerequisite,Email security is an enterprise baseline unrelated to monitoring a deployed AI system.,0,0,,,proposed
+CPG:3.M,CISA CPG 2.0,goal,CPG:PROTECT,3.M,Disable Autorun & Macros By Default,voluntary_practice,prerequisite,Disabling autorun and macros is an endpoint baseline unrelated to monitoring a deployed AI system.,0,0,,,proposed
+CPG:3.N,CISA CPG 2.0,goal,CPG:PROTECT,3.N,Establish Change Management Processes,voluntary_practice,mapped,,1,1,integral_to,GM-OPS-03,proposed
+CPG:3.O,CISA CPG 2.0,goal,CPG:PROTECT,3.O,Maintain System Backups & Restoration Ability,voluntary_practice,mapped,,1,0,example_of,GM-OPS-04,proposed
+CPG:3.P,CISA CPG 2.0,goal,CPG:PROTECT,3.P,Maintain Hardware & Software Approval Process,voluntary_practice,mapped,,1,0,example_of,GM-OPS-03,proposed
+CPG:3.Q,CISA CPG 2.0,goal,CPG:PROTECT,3.Q,Maintain Log Collection & Storage,voluntary_practice,mapped,,1,1,integral_to,GM-OPS-01,proposed
+CPG:3.R,CISA CPG 2.0,goal,CPG:PROTECT,3.R,Prohibit Connection of Unauthorized Devices,voluntary_practice,prerequisite,Blocking unauthorized devices is an endpoint baseline; GAP-M assumes it.,0,0,,,proposed
+CPG:3.S,CISA CPG 2.0,goal,CPG:PROTECT,3.S,Secure Internet Facing Devices,voluntary_practice,prerequisite,(2026-10-05 review) Securing internet-facing assets is a hosting-environment baseline; whether model endpoints face the internet is deployment-specific.,0,0,,,proposed
+CPG:4.A,CISA CPG 2.0,goal,CPG:DETECT,4.A,Establish Malicious Code Detection,voluntary_practice,prerequisite,(2026-10-05 review) Malicious code detection is a hosting-environment baseline; GAP-M assumes it.,0,0,,,proposed
+CPG:4.B,CISA CPG 2.0,goal,CPG:DETECT,4.B,Identify Adverse Events,voluntary_practice,mapped,,1,0,example_of,GM-SEC-01,proposed
+CPG:5.A,CISA CPG 2.0,goal,CPG:RESPOND,5.A,Establish Incident Communication Procedures,voluntary_practice,mapped,,1,0,example_of,GM-GOV-04,proposed
+CPG:5.B,CISA CPG 2.0,goal,CPG:RESPOND,5.B,Establish Incident Reporting Procedures,voluntary_practice,mapped,,1,0,example_of,GM-GOV-04,proposed
+CPG:6.A,CISA CPG 2.0,goal,CPG:RECOVER,6.A,Incident Planning and Preparedness,voluntary_practice,mapped,,2,0,example_of,GM-GOV-04;GM-OPS-04,proposed

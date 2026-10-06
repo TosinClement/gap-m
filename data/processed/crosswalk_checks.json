@@ -1,0 +1,29 @@
+{
+ "schema_controls": [],
+ "schema_links": [],
+ "schema_dispositions": [],
+ "schema_bundle": [],
+ "schema_elements": [],
+ "schema_oscal": [],
+ "errors": [],
+ "rules": [
+  "R1 every link target exists in the registry and is mappable",
+  "R2 every link property is integral_to, example_of, or precedes",
+  "R3 no control links the same target twice",
+  "R4 control ids are unique and every control has a family defined in the YAML",
+  "R5 every mappable element is either linked or dispositioned, never both",
+  "R6 every control has objective, activity, evidence, cadence, owner_role",
+  "R7 every link has a non-empty rationale ending in a period",
+  "R8 every JSON output validates against its schema",
+  "R9 every integral_to or precedes link has a necessity-audit entry with verdict 'supported'",
+  "R10 every audit entry matches the link's current property, and every audited control has a core statement",
+  "R11 no example_of rationale asserts necessity (cannot, must, requires, only if, depends on, needs)",
+  "R12 every link outside the necessity audit has an example_of review decision (keep or revise)",
+  "R13 no link removed by the example_of review is present; every removal names a test and a basis"
+ ],
+ "counts": {
+  "controls": 32,
+  "links": 283,
+  "dispositions": 175
+ }
+}

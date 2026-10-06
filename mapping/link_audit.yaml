@@ -1,0 +1,735 @@
+# Necessity audit of every link that asserted necessity (all integral_to and precedes links
+# as they stood before the audit). Pre-review audit prepared with AI assistance; it is NOT
+# the author's review. Every link stays review_status: proposed
+prepared: '2026-10-05'
+cores:
+  GM-GOV-01: A post-deployment monitoring plan covering the system exists.
+  GM-GOV-02: Deployed AI systems are recorded in an inventory.
+  GM-GOV-03: Contracts with the developer require notice of security incidents and vulnerabilities.
+  GM-GOV-04: The incident response plan addresses AI-specific incidents.
+  GM-GOV-05: A defined policy governs sharing monitoring findings outside the organization.
+  GM-GOV-06: Monitoring has a budget, and monitoring staff and users are trained for the system.
+  GM-GOV-07: Someone independent of the build/operate team periodically assesses the monitoring.
+  GM-FUN-01: A pre-deployment local baseline with deviation thresholds is recorded.
+  GM-FUN-02: Validity is measured in the deploying organization's own data.
+  GM-FUN-03: Input data and population mix are compared against a reference distribution.
+  GM-FUN-04: Reference-standard outcome labels are obtained for monitored cases.
+  GM-FUN-05: Performance results from earlier points in time remain available for comparison.
+  GM-FUN-06: A mechanism with assigned authority exists to supersede, disengage, or deactivate the system.
+  GM-FAIR-01: Subgroup performance is evaluated before deployment.
+  GM-FAIR-02: Fairness of the intervention is measured in the deploying organization's own data (subgroup performance and output disparities).
+  GM-OPS-01: Administrative and security logs of the AI system's components that the organization operates go to the organization's central, access-protected log store, with an alert if logging stops.
+  GM-OPS-02: Service levels and indirect costs of the AI system are tracked.
+  GM-OPS-03: Changes the organization makes to AI models and configuration pass through change control.
+  GM-OPS-04: AI artifacts and configuration are backed up and restorable; a fallback workflow exists.
+  GM-HF-01: End users can report problems with outputs, and the reports are integrated into monitoring metrics.
+  GM-HF-02: User interactions with outputs are measured.
+  GM-HF-03: The deploying organization updates the source-attribute record when an underlying fact changes.
+  GM-SEC-01: AI-specific anomalous or adversarial behavior is detected.
+  GM-SEC-02: AI software components the organization operates are in its vulnerability management program.
+  GM-SEC-03: Access to AI configuration and monitoring data follows least privilege.
+  GM-SEC-04: Monitoring data are handled with privacy protections.
+  GM-CMP-02: Each source attribute is periodically checked for population, currency, evidence, or a not-available indication.
+  GM-CMP-01: Applicable AI legal and regulatory requirements are documented.
+  GM-CMP-03: Use of the system is checked against its documented intended scope.
+  GM-LSI-01: AI incidents and errors are recorded.
+  GM-LSI-02: Benefit measures are defined and tracked.
+  GM-LSI-03: Patients and affected communities have a route to report problems and appeal outcomes, fed into metrics.
+links:
+- link: GM-GOV-01>RMF:GOVERN-1.5
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: GOVERN 1.5 concerns monitoring and periodic review of the risk management process and its outcomes, not monitoring of the AI system; a per-system monitoring plan feeds that review but is not required for it.
+  rationale: The plan's review cycle and named roles feed the organization's periodic review of its risk management process.
+- link: GM-GOV-01>RMF:MANAGE-4.1
+  was: integral_to
+  verdict: supported
+  now: integral_to
+  basis: MANAGE 4.1 reads 'Post-deployment AI system monitoring plans are implemented'; a plan cannot be implemented unless it exists, so a plan for the system is a component of the outcome.
+- link: GM-GOV-01>RMF:GOVERN-2.1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: GOVERN 2.1 asks that AI risk roles be documented and clear 'throughout the organization'; an enterprise governance charter can achieve this without a per-system RACI.
+  rationale: The plan's RACI is one place monitoring roles and lines of communication are documented.
+- link: GM-GOV-01>HTI:B8.i
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: (B)(8)(i) requires a description of the process and frequency of validity monitoring; the regulation does not say who monitors, and the description can describe the developer's process. A deployer plan is not required to produce it.
+  rationale: Where the deploying organization runs validity monitoring, its plan is the process the attribute can describe.
+- link: GM-GOV-01>HTI:B8.iii
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: 'Same as (B)(8)(i): the fairness-monitoring description can describe any party''s process.'
+  rationale: Where the deploying organization runs fairness monitoring, its plan is the process the attribute can describe.
+- link: GM-GOV-02>RMF:GOVERN-1.6
+  was: integral_to
+  verdict: supported
+  now: integral_to
+  basis: GOVERN 1.6 reads 'Mechanisms are in place to inventory AI systems'; the core (AI systems recorded in an inventory) is what the subcategory names.
+- link: GM-GOV-02>CPG:2.A
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: 'Second pass: CPG 2.A requires an inventory of all assets but does not set its granularity. An AI intervention embedded in the EHR can be covered by the EHR''s inventory entry without being recorded individually, so recording each AI system is not necessary to the goal.'
+  pass1:
+    verdict: supported
+    now: integral_to
+    basis: CPG 2.A's Recommended Action is an inventory of 'all organizational assets (i.e., data, hardware, software, systems ...)' and its Scope lists data, software, and systems; a deployed AI model and its intervention are software and data assets, so an inventory that omits them does not meet the goal.
+  rationale: Recording each deployed AI intervention in the asset inventory is one way to bring AI components into the asset-inventory goal.
+- link: GM-GOV-03>CPG:1.D
+  was: integral_to
+  verdict: supported
+  now: integral_to
+  basis: CPG 1.D's Recommended Action is that contracts 'stipulate that vendors and/or service providers notify the procuring customer of security incidents and vulnerabilities'; Scope is third-party vendors. For the AI developer as vendor, the notice clause is the action itself. Only the security-incident and vulnerability clauses are integral; model-change clauses are extras.
+- link: GM-GOV-03>RMF:MANAGE-3.1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: MANAGE 3.1 asks that third-party AI risks be regularly monitored; the deployer can monitor through its own testing (GM-FUN-02, GM-FUN-03) without contractual notice.
+  rationale: Contractual notice of developer changes is one input to regular monitoring of third-party AI risk.
+- link: GM-GOV-04>CPG:1.C
+  was: integral_to
+  verdict: unresolved
+  now: example_of
+  basis: CPG 1.C asks for IR plans covering 'common and organizationally specific ... threat scenarios'. Whether compromise of an AI model or its data is an organizationally specific scenario is a risk judgment the deploying organization makes; CPG 1.C also covers only cybersecurity incidents, while GM-GOV-04 adds non-cyber AI incidents.
+  condition: integral_to for the cybersecurity subset (model or data compromise) if the author judges that subset an organizationally specific threat scenario for the intended deployers.
+  rationale: Adding AI compromise scenarios to the IR plan is one way to cover organizationally specific threats.
+  relevance: supported
+  relevance_basis: CPG 1.C's action is to develop and regularly exercise IR plans for 'common and organizationally specific ... threat scenarios'. GM-GOV-04 adds AI scenarios, including compromise of the model or its data, to the IR plan and exercises one annually. The cybersecurity subset of the control is relevant; non-cyber AI incidents are outside CPG 1.C.
+- link: GM-GOV-04>CPG:5.A
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: CPG 5.A asks for an organization-wide incident communications plan; a general plan covers incidents affecting the AI system without an AI-specific annex.
+  rationale: The AI annex adds AI-specific stakeholders to the incident communications plan.
+- link: GM-GOV-04>CPG:5.B
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: CPG 5.B asks for policy on reporting 'all confirmed cybersecurity incidents'; a general reporting policy already covers confirmed incidents involving the AI system.
+  rationale: The AI annex makes explicit that confirmed cybersecurity incidents involving the AI system (for example, compromise of the model or its data) are reported under the general policy.
+- link: GM-GOV-04>CPG:6.A
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: CPG 6.A asks for recovery plans for assets impacted by a cybersecurity incident; general recovery planning can cover the AI system without AI-specific steps.
+  rationale: Updating the AI annex after each AI incident is one way to refine the incident response plan from lessons learned.
+- link: GM-GOV-04>RMF:MANAGE-4.3
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: MANAGE 4.3 requires processes for tracking, responding to, and recovering from incidents to be followed and documented; a separate AI or patient-safety incident process could satisfy it without an annex to the IR plan.
+  rationale: An AI annex to the IR plan is one documented process for responding to and recovering from AI incidents.
+- link: GM-GOV-05>RMF:GOVERN-4.2
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: GOVERN 4.2 asks teams to document risks and 'communicate about the impacts more broadly'; broader communication does not require an external findings-sharing policy.
+  rationale: A findings-sharing policy is one way to communicate risks and impacts more broadly.
+- link: GM-GOV-05>RMF:GOVERN-4.3
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: GOVERN 4.3 asks for practices that enable 'information sharing' without saying with whom; internal sharing practices satisfy it without an external policy.
+  rationale: An external sharing policy is one practice that enables information sharing about AI incidents and testing.
+- link: GM-GOV-05>A84:XC-VT-G2
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: 'AI 800-4 rule: a challenge has no completion condition, so no control is necessary to it.'
+  rationale: Deployers sharing findings is one contribution to a more mature information-sharing ecosystem.
+- link: GM-GOV-06>RMF:GOVERN-2.2
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: 'Second pass: GOVERN 2.2 asks for AI risk management training that enables personnel to perform their duties. General AI risk management training could meet it, so system-specific training is not necessary.'
+  pass1:
+    verdict: supported
+    now: integral_to
+    basis: GOVERN 2.2 requires training 'to enable them to perform their duties and responsibilities'; for personnel whose duty is monitoring this system, training for that duty is entailed. Scoped to monitoring personnel; the budget part of the core is not integral.
+  rationale: System-specific training for monitoring staff and users is one form of AI risk management training that enables them to perform their duties.
+- link: GM-GOV-06>RMF:MAP-3.4
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: MAP 3.4 asks that 'processes for operator and practitioner proficiency' be defined, assessed, and documented; proficiency can be established by competency assessment or credentialing instead of training.
+  rationale: System-specific training is one process for establishing operator and practitioner proficiency.
+- link: GM-GOV-06>RMF:MANAGE-2.1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: MANAGE 2.1 asks that resources be 'taken into account'; a monitoring budget line is one way, not the only one.
+  rationale: A monitoring budget is one way resources required to manage AI risk are taken into account.
+- link: GM-GOV-06>A84:XC-RR-B1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: A monitoring budget makes financial, compute, and human resource costs explicit.
+- link: GM-GOV-07>RMF:MEASURE-1.3
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: 'Second pass: MEASURE 1.3 is met by ''internal experts who did not serve as front-line developers'', which includes members of the operating team. GM-GOV-07 excludes the operating team, so its core is sufficient but not necessary.'
+  pass1:
+    verdict: supported
+    now: integral_to
+    basis: MEASURE 1.3 reads 'Internal experts who did not serve as front-line developers ... and/or independent assessors are involved in regular assessments'; the core (assessment by someone independent of the build/operate team) is what the subcategory names.
+  rationale: An assessor independent of both the build and operate teams is one way to involve experts who did not serve as front-line developers in regular assessments.
+- link: GM-GOV-07>CPG:2.C
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: CPG 2.C's Recommended Action is third-party validation of cybersecurity defenses (penetration tests, bug bounties, incident simulations); an assessment of AI monitoring design is neither that activity nor required by it.
+  rationale: Independent review of AI monitoring can be scheduled alongside third-party validation of security controls.
+- link: GM-FUN-01>A84:FUN-G2
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Recording a local baseline with deviation thresholds is one response to the baseline-and-threshold gap.
+- link: GM-FUN-01>A84:FUN
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule; the category is defined 'for example'.
+  rationale: A baseline is one reference point for functionality monitoring.
+- link: GM-FUN-01>RMF:MEASURE-1.1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: MEASURE 1.1 asks that measurement approaches be selected and unmeasurable risks documented; this can happen without a local baseline or silent trial.
+  rationale: Choosing baseline metrics and recording what cannot be measured is part of selecting measurement approaches.
+- link: GM-FUN-01>RMF:MEASURE-2.3
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: MEASURE 2.3 asks for performance demonstrated 'for conditions similar to deployment setting(s)'; external validation in a similar setting can meet this without a local silent trial.
+  rationale: A local silent trial measures performance under conditions like the deployment setting.
+- link: GM-FUN-01>RMF:MANAGE-1.1
+  was: precedes
+  verdict: revised
+  now: example_of
+  basis: MANAGE 1.1's go/no-go determination can rest on developer or external evidence; a local baseline is not a prerequisite.
+  rationale: A local baseline informs the determination of whether deployment should proceed.
+- link: GM-FUN-01>HTI:B8.ii
+  was: precedes
+  verdict: revised
+  now: example_of
+  basis: (B)(8)(ii) is the value of validity in local data; measuring it needs no baseline (judging it against thresholds does).
+  rationale: A baseline gives the local validity value a reference for interpretation.
+- link: GM-FUN-02>HTI:B8.ii
+  was: integral_to
+  verdict: supported
+  now: integral_to
+  basis: '''Validity of intervention in local data'' can only be produced by measuring validity in the deploying organization''s data, which only the deployer (or someone it gives the data to) can do. Scope note: necessary for a populated, current value (GAP-M''s objective); (v)(A)(2) lets the module show this attribute as not available, so the control is not necessary for certification.'
+- link: GM-FUN-02>HTI:B8.i
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: The process description can describe any party's monitoring process.
+  rationale: Where the deploying organization runs it, local validity monitoring is the process the attribute can describe.
+- link: GM-FUN-02>A84:FUN-B1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Measuring local validity over time is one way to detect performance degradation.
+- link: GM-FUN-02>A84:FUN
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Local validity monitoring is one form of functionality monitoring.
+- link: GM-FUN-02>RMF:MEASURE-2.4
+  was: integral_to
+  verdict: unresolved
+  now: example_of
+  basis: MEASURE 2.4 requires functionality and behavior to be 'monitored when in production'. Behavior can be monitored through proxies (output distributions, alert volumes) without outcome-based validity. Whether a predictive system's 'functionality' can be monitored without measuring validity is a judgment about what the system's function is.
+  condition: integral_to if the author holds that a predictive intervention's functionality is its predictive validity, so production monitoring of functionality entails measuring validity.
+  rationale: Measuring validity in production is one way to monitor the system's functionality.
+  relevance: supported
+  relevance_basis: MEASURE 2.4 asks that 'the functionality and behavior of the AI system ... are monitored when in production'. Measuring a predictive intervention's validity in local production data is monitoring its functionality.
+- link: GM-FUN-02>RMF:MEASURE-3.1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: MEASURE 3.1 tracks risks 'based on factors such as intended and actual performance'; 'such as' makes performance illustrative, not required.
+  rationale: Local validity results are one factor for tracking emergent risk in the deployed context.
+- link: GM-FUN-03>A84:FUN-B1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Input drift detection is one way to detect drift before outcome labels arrive.
+- link: GM-FUN-03>HTI:B4.iv
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: (B)(4)(iv) is a description of relevance of training data to the 'intended deployed setting', a developer statement; drift monitoring tests it locally but is not needed to produce or maintain it. GAP-M's 'evidence_accruing' class for this attribute is an analytic choice, not source text.
+  rationale: Drift monitoring gives local evidence on whether the training-data relevance statement holds.
+- link: GM-FUN-04>A84:FUN-B2
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: A label specification with adjudication is one response to missing ground truth.
+- link: GM-FUN-04>HTI:B8.ii
+  was: precedes
+  verdict: unresolved
+  now: example_of
+  basis: 'Second pass, as substantiated on 2026-10-05: outcome-based validity measures (discrimination, calibration, positive predictive value) use local outcome labels. Label-free performance estimation exists in the literature: Garg et al. (ICLR 2022, arXiv:2201.04234) propose Average Thresholded Confidence (ATC), which predicts accuracy "as the fraction of unlabeled examples for which model confidence exceeds that threshold" learned on labeled source data. The same paper shows that "absent further assumptions, accuracy on the target is identifiable iff p_t(y|x) is uniquely identified", and names covariate shift (p_s(y|x) = p_t(y|x)) and label shift as conditions under which estimation can work; it estimates accuracy only and was evaluated on image benchmarks. A label-free estimate of local validity therefore rests on an assumption that the outcome relationship has not shifted, which is part of what local validation would test. Whether such an estimate counts as "validity of intervention in local data" is an interpretive question, so the precedes claim is neither supported nor refuted; it is held as unresolved.'
+  condition: 'Labels must come first if "validity of intervention in local data" means validity measured against local outcomes, rather than estimated from unlabeled local data under an assumption that p(y|x) is unchanged from the development setting.'
+  relevance: supported
+  relevance_basis: '(B)(8)(ii) names "Validity of intervention in local data". GM-FUN-04 obtains local outcome labels, which every outcome-based validity measure uses. The control is therefore one substantive way to support the attribute even if labels are not strictly required.'
+  pass1:
+    verdict: supported
+    now: precedes
+    basis: Validity is agreement between outputs and true outcomes; validity in local data cannot be computed until local outcomes (labels) exist, so obtaining them must come first.
+  rationale: Local outcome labels come first for outcome-based validity measures such as discrimination and calibration; whether every local validity value is label-based is unresolved.
+- link: GM-FUN-04>HTI:B8.iv
+  was: precedes
+  verdict: revised
+  now: example_of
+  basis: 'Second pass: fairness measures such as demographic or output-rate parity compare outputs across groups and need no outcome labels, so obtaining labels is not a prerequisite for every local fairness value. The precedes claim holds only for label-dependent measures and is downgraded.'
+  pass1:
+    verdict: supported
+    now: precedes
+    basis: Fairness of the intervention in local data compares subgroup performance against true outcomes; local outcomes must exist first.
+  rationale: For label-dependent fairness measures such as subgroup calibration or error-rate parity, local outcome labels come first; label-free measures such as output-rate parity can be computed without them.
+- link: GM-FUN-05>A84:FUN-G1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Same-data comparison of model versions is one form of systematic model comparison.
+- link: GM-FUN-05>A84:FUN-B3
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: A retained time series is one way to lower the overhead of longitudinal tracking.
+- link: GM-FUN-05>RMF:MEASURE-4.3
+  was: integral_to
+  verdict: supported
+  now: integral_to
+  basis: MEASURE 4.3 requires that 'measurable performance improvements or declines ... are identified and documented'; an improvement or decline is a comparison across time, which needs results retained from more than one point in time. Version comparison is an extra and not integral.
+- link: GM-FUN-06>RMF:MANAGE-2.4
+  was: integral_to
+  verdict: supported
+  now: integral_to
+  basis: MANAGE 2.4 reads 'Mechanisms are in place and applied, and responsibilities are assigned and understood, to supersede, disengage, or deactivate AI systems'; the core (a deactivation mechanism with an assigned authority) is what the subcategory names. Pre-set numeric triggers are extras.
+- link: GM-FUN-06>RMF:MANAGE-1.3
+  was: integral_to
+  verdict: unresolved
+  now: example_of
+  basis: MANAGE 1.3 covers responses to risks 'deemed high priority, as identified by the MAP function'. A documented mechanism to supersede, disengage, or deactivate the system (this control's core) is necessary only if performance degradation is among the deploying organization's high-priority risks, which GAP-M cannot know.
+  condition: integral_to if the author scopes GAP-M to deployments where performance degradation is mapped as high priority (arguably every clinical predictive intervention), so that a documented deactivation mechanism is a necessary response.
+  rationale: A trigger-action table is a documented response plan for performance risks the organization rates high priority.
+  relevance: supported
+  relevance_basis: MANAGE 1.3 asks that responses to high-priority risks be 'developed, planned, and documented', with options including mitigation. A documented trigger-action table for performance breaches is a planned mitigation response for performance risk.
+- link: GM-FUN-06>HTI:B9.ii
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: (B)(9)(ii) describes how often performance is corrected; it can describe the developer's correction practice, so deployer triggers are not required to produce it.
+  rationale: Deployer triggers show how often performance is corrected locally, which the attribute can describe.
+- link: GM-FAIR-01>RMF:MEASURE-2.11
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: MEASURE 2.11 requires fairness to be 'evaluated and results ... documented' without saying when or in whose data; developer evaluation can satisfy it, so a deployer pre-deployment baseline is not required.
+  rationale: A local subgroup baseline is one documented fairness evaluation.
+- link: GM-FAIR-02>HTI:B8.iv
+  was: integral_to
+  verdict: unresolved
+  now: example_of
+  basis: 'Second pass: ''Fairness of intervention in local data'' does not define fairness. Necessity holds only if fairness is read as a comparison across groups (the regulation lists demographic characteristics in (A)(5)–(13) for evidence-based interventions, which points toward, but does not establish, a group reading); individual-fairness measures are an alternative. This is the same condition as GM-FAIR-02>RMF:MEASURE-2.11.'
+  pass1:
+    verdict: supported
+    now: integral_to
+    basis: '''Fairness of intervention in local data'' can only be produced from the deploying organization''s data. Same scope note as (B)(8)(ii): necessary for a populated value, not for certification, since (v)(A)(2) allows ''not available''.'
+  condition: integral_to if the author adopts a group-based reading of fairness for (B)(8)(iv).
+  rationale: Measuring subgroup performance and output disparities in local data is one way to produce the local fairness value.
+  relevance: supported
+  relevance_basis: (B)(8)(iv) is 'Fairness of intervention in local data'. Measuring fairness in the deploying organization's own data produces that value.
+- link: GM-FAIR-02>HTI:B8.iii
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: The process description can describe any party's monitoring process.
+  rationale: Where the deploying organization runs it, local fairness monitoring is the process the attribute can describe.
+- link: GM-FAIR-02>RMF:MEASURE-2.11
+  was: integral_to
+  verdict: unresolved
+  now: example_of
+  basis: 'Necessity depends on two readings of MEASURE 2.11: that ''evaluated'' means evaluated in production on an ongoing basis (the AI RMF asks users to keep applying MEASURE as risks evolve), and that fairness is measured by group comparison (the regulation lists demographic characteristics in (A)(5)-(13) for evidence-based interventions, which points toward, but does not establish, a group reading). Both are defensible; neither is in the subcategory text.'
+  condition: integral_to if the author adopts both readings.
+  rationale: Measuring subgroup performance in production is one ongoing fairness evaluation.
+  relevance: supported
+  relevance_basis: MEASURE 2.11 asks that 'fairness and bias ... are evaluated and results are documented'. Measuring subgroup performance and disparities in production, and documenting breaches, is a fairness evaluation.
+- link: GM-OPS-01>CPG:3.Q
+  was: integral_to
+  verdict: supported
+  now: integral_to
+  basis: CPG 3.Q's Recommended Action requires logs from 'operating systems, applications, and services' to be collected, stored centrally with restricted access, and an alert when a critical log function is disabled; its Scope is 'all assets, where safe and technically feasible'. The AI system is an application and service asset, so its logs must be in scope. Inference-level content (input hashes, monitoring results) is an extra.
+- link: GM-OPS-01>A84:OPS-B1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule; a federated query layer is another answer.
+  rationale: A central log store is one answer to fragmented logging across distributed infrastructure.
+- link: GM-OPS-01>A84:OPS
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Complete logs are one basis for infrastructure-level monitoring.
+- link: GM-OPS-01>RMF:MEASURE-2.4
+  was: precedes
+  verdict: revised
+  now: example_of
+  basis: Production monitoring can query source data directly; a central protected log store is not a prerequisite.
+  rationale: Central logs are one data source for production monitoring.
+- link: GM-OPS-01>A84:HF-G5
+  was: precedes
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Captured logs are one source of telemetry to put to use.
+- link: GM-OPS-01>A84:FUN-B3
+  was: precedes
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Retained logs are one input to longitudinal tracking.
+- link: GM-OPS-02>A84:OPS-G1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Tracking reviewer time, labeling, and energy is one way to track indirect costs beyond compute.
+- link: GM-OPS-02>A84:OPS
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Service-level monitoring is one form of operational monitoring.
+- link: GM-OPS-03>CPG:3.N
+  was: integral_to
+  verdict: supported
+  now: integral_to
+  basis: CPG 3.N's Recommended Action requires change management for technology platforms and configuration change control 'prohibiting unauthorized changes unless approved'; Scope is organizational assets. Model versions and AI configuration are configuration of an organizational asset. Updating the baseline and source attributes after a change is an extra.
+- link: GM-OPS-03>HTI:B9.i
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: (B)(9)(i) describes the update process and frequency; it can describe the developer's process.
+  rationale: The deployer's change process is one update process the attribute can describe.
+- link: GM-OPS-04>CPG:3.O
+  was: integral_to
+  verdict: unresolved
+  now: example_of
+  basis: CPG 3.O's Scope is 'organizational assets necessary for business operations'. Whether a predictive intervention is such an asset depends on the deployment; GM-OPS-04's own fallback workflow is meant to make the intervention non-essential.
+  condition: integral_to for the backup-and-restore part if the deploying organization classifies the AI system as necessary for business operations.
+  rationale: Backing up model artifacts and configuration applies the backup practice to the AI system.
+  relevance: supported
+  relevance_basis: CPG 3.O's action includes backing up 'configuration information' and testing recovery for systems necessary for operations. GM-OPS-04 backs up AI artifacts and configuration and tests restore annually, which is that action applied to the AI system. Whether CPG 3.O's scope reaches a given AI system is the open necessity question, not a relevance question.
+- link: GM-HF-01>A84:HF-B1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Low-effort in-workflow capture is one way to reduce the overhead of collecting user feedback.
+- link: GM-HF-01>A84:HF
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: User feedback is one measure of human-system interaction.
+- link: GM-HF-01>RMF:MEASURE-3.3
+  was: integral_to
+  verdict: supported
+  now: integral_to
+  basis: MEASURE 3.3 reads 'Feedback processes for end users ... to report problems ... are established and integrated into AI system evaluation metrics'; the core (end-user problem reporting fed into monitoring metrics) is the end-user half of what the subcategory names. The impacted-community half is GM-LSI-03.
+- link: GM-HF-01>RMF:GOVERN-5.2
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: GOVERN 5.2 asks for mechanisms to incorporate adjudicated feedback 'from relevant AI actors' into design and implementation; adjudicated feedback from other actors (external reviewers, auditors) can satisfy it, and HF-01 feeds metrics, not design.
+  rationale: Adjudicated end-user feedback is one stream a team can incorporate into design and implementation.
+- link: GM-HF-01>RMF:MANAGE-4.1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: 'Second pass: MANAGE 4.1 names ''mechanisms for capturing and evaluating input from users''. Periodic user surveys or interviews capture and evaluate user input without a problem-reporting route, so HF-01''s core is not necessary.'
+  pass1:
+    verdict: supported
+    now: integral_to
+    basis: MANAGE 4.1 names 'mechanisms for capturing and evaluating input from users' as part of an implemented monitoring plan; the core of HF-01 is that mechanism.
+  rationale: An in-workflow problem-reporting route is one mechanism for capturing and evaluating input from users.
+- link: GM-HF-02>A84:HF-G3
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Interaction telemetry is one way to understand user interaction and behavior.
+- link: GM-HF-02>A84:HF-G5
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Interaction reporting is one way to use telemetry that would otherwise sit unused.
+- link: GM-HF-02>A84:HF-G4
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Results by role, specialty, and site give some insight into the characteristics of system users.
+- link: GM-HF-03>RMF:MAP-2.2
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: MAP 2.2 asks that knowledge limits and appropriate use be documented sufficiently for decision-makers; developer documentation or other user guidance can satisfy it without a deployer-maintained attribute register.
+  rationale: A current source-attribute record is one form of documentation of knowledge limits and appropriate use.
+- link: GM-HF-03>HTI:B3.ii
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: The developer can update known risks under (v)(A)(1); deployer recording under (v)(B)(1) is one route, not the only one.
+  rationale: Recording newly found risks and limitations is one way the deploying organization keeps this attribute current.
+- link: GM-HF-03>HTI:B4.iv
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: Developer statement about the intended deployed setting; the developer can keep it current. The 'evidence_accruing' class is GAP-M's analytic choice.
+  rationale: Recording local drift findings is one way to keep the relevance statement accurate.
+- link: GM-HF-03>HTI:B6.i
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: External validation descriptions are developer-held; the developer can keep them current under (v)(A)(1).
+  rationale: Updating the record when a new external validation appears is one way to keep this attribute current.
+- link: GM-HF-03>HTI:B6.ii
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: As (B)(6)(i).
+  rationale: Updating the record when a new external validation appears is one way to keep this attribute current.
+- link: GM-HF-03>HTI:B6.iii
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: As (B)(6)(i).
+  rationale: Updating the record when a new external validation appears is one way to keep this attribute current.
+- link: GM-HF-03>HTI:B6.iv
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: As (B)(6)(i).
+  rationale: Updating the record when a new external validation appears is one way to keep this attribute current.
+- link: GM-HF-03>HTI:B7.iii
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: Developer-held external result; the developer can keep it current.
+  rationale: Updating the record when new external validity results appear is one way to keep this attribute current.
+- link: GM-HF-03>HTI:B7.iv
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: Developer-held external result; the developer can keep it current.
+  rationale: Updating the record when new external fairness results appear is one way to keep this attribute current.
+- link: GM-HF-03>HTI:B7.v
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: References can cite evaluations the developer tracks.
+  rationale: Adding new outcome evaluations to the record is one way to keep this attribute current.
+- link: GM-HF-03>HTI:B8.i
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: The process description may describe the developer's process.
+  rationale: Keeping the displayed process description in line with the process actually run is one way to keep this attribute accurate.
+- link: GM-HF-03>HTI:B8.ii
+  was: integral_to
+  verdict: unresolved
+  now: example_of
+  basis: Only the deployer holds local data, so some deployer action is necessary for a current local validity value. That action can be recording it in the module under (v)(B)(1) (HF-03) or sending results to the developer to publish. HF-03 is necessary only if the deployer records the value itself.
+  condition: integral_to if GAP-M specifies that deploying organizations record local values themselves under (v)(B)(1).
+  rationale: Recording each new local validity result is one way the value shown to users stays current.
+  relevance: supported
+  relevance_basis: (B)(8)(ii) is 'Validity of intervention in local data'. Recording each new local validity result in the attribute record is one way a measured value reaches the record.
+- link: GM-HF-03>HTI:B8.iii
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: The process description may describe the developer's process.
+  rationale: Keeping the displayed process description in line with the process actually run is one way to keep this attribute accurate.
+- link: GM-HF-03>HTI:B8.iv
+  was: integral_to
+  verdict: unresolved
+  now: example_of
+  basis: 'As (B)(8)(ii): deployer action is necessary, but HF-03''s recording route is one of two routes.'
+  condition: integral_to if GAP-M specifies that deploying organizations record local values themselves under (v)(B)(1).
+  rationale: Recording each new local fairness result is one way the value shown to users stays current.
+  relevance: supported
+  relevance_basis: (B)(8)(iv) is 'Fairness of intervention in local data'. Recording each new local fairness result in the attribute record is one way a measured value reaches the record.
+- link: GM-HF-03>HTI:B9.i
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: The update-process description may describe the developer's process.
+  rationale: Keeping the displayed update process in line with practice is one way to keep this attribute accurate.
+- link: GM-HF-03>HTI:B9.ii
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: The correction-frequency description may describe the developer's practice.
+  rationale: Keeping the displayed correction frequency in line with practice is one way to keep this attribute accurate.
+- link: GM-SEC-01>A84:SEC-B1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Comparing production with evaluation behavior is one check for deceptive behavior.
+- link: GM-SEC-01>A84:SEC
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Detecting attack and misuse attempts is one form of security monitoring.
+- link: GM-SEC-01>CPG:4.B
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: 'CPG 4.B''s Recommended Action is organization-wide adverse-event criteria and processes (Scope: organization-wide); general criteria can cover the AI host without AI-specific detection rules such as crafted-input or out-of-distribution detection.'
+  rationale: AI-specific anomaly rules extend the organization's adverse-event criteria to the AI system.
+- link: GM-SEC-02>CPG:2.B
+  was: integral_to
+  verdict: supported
+  now: integral_to
+  basis: CPG 2.B's Scope is 'All organizational assets' and its Recommended Action is a vulnerability management program to patch and mitigate software; AI serving software and libraries are organizational software assets. AI-specific weaknesses (beyond CVEs) are an extra.
+- link: GM-SEC-03>CPG:3.H
+  was: integral_to
+  verdict: supported
+  now: integral_to
+  basis: 'CPG 3.H''s Recommended Action is that ''All user accounts, system roles, and processes operate with the minimum privileges necessary'' (Scope: all organizational accounts); accounts with access to AI configuration and monitoring data are included.'
+- link: GM-SEC-04>A84:XC-TMT-B3
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Privacy-preserving handling of monitoring data is one response to the concern that monitoring may infringe privacy.
+- link: GM-CMP-01>RMF:GOVERN-1.1
+  was: integral_to
+  verdict: supported
+  now: integral_to
+  basis: GOVERN 1.1 requires legal and regulatory requirements involving AI to be 'documented'; the core (a documented record of applicable AI requirements, organization-level or system-level) is that documentation. The per-system evidence mapping is an extra.
+- link: GM-CMP-01>A84:CMP-B1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: A maintained requirements register is one tool for navigating a complex policy landscape.
+- link: GM-CMP-01>A84:CMP
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: A requirements register lists the obligations compliance monitoring measures against.
+- link: GM-CMP-03>A84:CMP-G1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Flagging use against terms and cautioned uses is one way to track terms-of-service violations.
+- link: GM-CMP-03>HTI:B2.i
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: (B)(2)(i) is a description of intended use; use monitoring checks conformance to it but the description stays accurate whether or not use conforms.
+  rationale: Use monitoring checks actual use against the stated intended use.
+- link: GM-CMP-03>HTI:B2.ii
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: 'As (B)(2)(i): the intended-population description does not depend on monitoring actual patients.'
+  rationale: Use monitoring checks the patients the intervention runs on against the stated intended population.
+- link: GM-CMP-03>HTI:B3.i
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: 'As (B)(2)(i): the cautioned-use description does not depend on enforcing it.'
+  rationale: Use monitoring flags use against the stated cautioned uses.
+- link: GM-LSI-01>A84:LSI-G2
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Impact fields are one way to capture large-scale impacts in incident logging.
+- link: GM-LSI-01>A84:LSI
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Aggregated impact data are one measure of wide downstream effects.
+- link: GM-LSI-01>RMF:MANAGE-4.3
+  was: integral_to
+  verdict: supported
+  now: integral_to
+  basis: MANAGE 4.3 requires processes for 'tracking ... incidents and errors' to be followed and documented; incidents cannot be tracked unless they are recorded. Impact fields are an extra.
+- link: GM-LSI-02>A84:LSI-G1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Defining benefit measures is one response to the gap in metrics for beneficial impacts.
+- link: GM-LSI-02>A84:LSI
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: AI 800-4 rule.
+  rationale: Population-level benefit measures are one form of large-scale impact monitoring.
+- link: GM-LSI-02>HTI:B7.v
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: (B)(7)(v) asks for 'references to evaluation of use ... on outcomes'; external evaluations can be cited without local benefit measurement.
+  rationale: A local outcome evaluation adds a reference the attribute can cite.
+- link: GM-LSI-03>RMF:MEASURE-3.3
+  was: integral_to
+  verdict: supported
+  now: integral_to
+  basis: MEASURE 3.3 reads 'Feedback processes for ... impacted communities to report problems and appeal system outcomes are established and integrated into AI system evaluation metrics'; the core of LSI-03 is that route.
+- link: GM-LSI-03>RMF:MAP-5.2
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: MAP 5.2 asks for engagement with 'relevant AI actors'; engagement with affected communities specifically is not required by the text.
+  rationale: Engagement with affected communities is one practice for regular engagement with relevant AI actors.
+- link: GM-LSI-03>RMF:GOVERN-5.1
+  was: integral_to
+  verdict: revised
+  now: example_of
+  basis: GOVERN 5.1 asks for feedback from 'those external to the team'; clinician users and external reviewers are also external to the team, so a patient-facing route is not required.
+  rationale: A patient and community reporting route is one way to collect feedback from people external to the team.
+second_pass:
+  date: '2026-10-05'
+  by: AI assistant (tooling-assisted); not independent expert validation; not the author's review
+  scope: All 21 links still asserting integral_to or precedes after the first pass, rechecked against the narrowed control core and exact source text; relevance of every unresolved link assessed separately from necessity.
+  cores_previous:
+    GM-GOV-01: A written post-deployment monitoring plan with a named owner exists for the system.
+    GM-GOV-03: Contracts with the developer require notice of security incidents and vulnerabilities (and model changes).
+    GM-FUN-05: Performance results are retained over time so they can be compared.
+    GM-FUN-06: A deactivation/correction mechanism exists with an assigned authority.
+    GM-FAIR-02: Subgroup performance is measured in the deploying organization's own data.
+    GM-OPS-01: AI system logs go to the organization's central, access-protected log store, with alerts if logging stops.
+    GM-HF-01: End users can report problems with outputs, and reports are evaluated and fed into monitoring metrics.
+    GM-SEC-02: AI software components are in the vulnerability management program.
+    GM-LSI-01: AI incidents and near misses are recorded.

@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.env
+*.pem
+.DS_Store
+.venv/
+venv/
+*.log
+dist/
+# Internet Archive snapshot of the CISA page: kept locally, not redistributed (archive markup is not a U.S. Government work).
+# The parsed goal records are committed as data/raw/cisa_cpg2_records.json and verified by hash.
+data/raw/cisa_cpg2_wayback_*.html
+# Sync bookkeeping from the build workspace (not part of the release)
+.cloud_hashes.txt

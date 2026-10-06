@@ -1,0 +1,170 @@
+GAP-M v0.1.0 QA report  (build 2026-10-05)
+========================================================================
+Automated tooling checks only. These do not replace the author's review, and mapping coverage
+reported here does not demonstrate compliance or monitoring effectiveness.
+
+1. SOURCE REGISTRIES
+  AI RMF 1.0      categories 19 (expect 19), subcategories 72 (expect 72): {'GOVERN': 19, 'MAP': 18, 'MEASURE': 22, 'MANAGE': 13}
+                  line-break hyphens resolved: 53; non-trivial decisions:
+                    du-|ties -> duties (default rule)
+                    in-|fringement -> infringement (default rule)
+                    context-|specific kept hyphen (hyphenated compound pattern in document)
+                    par-|ticipation -> participation (default rule)
+                    in-|fringement -> infringement (default rule)
+                    de-|clines -> declines (default rule)
+                    context-|relevant kept hyphen (hyphenated compound pattern in document)
+                    transfer-|ring -> transferring (default rule)
+  NIST AI 800-4   categories 6 (expect 6), category challenges 19, cross-cutting items 13
+                  transcribed strings verified verbatim in PDF: 55/55
+  HTI-1 (b)(11)   groups 9, attributes 31 (expect 31): {'1': 4, '2': 4, '3': 2, '4': 4, '5': 2, '6': 4, '7': 5, '8': 4, '9': 2}
+                  eCFR text date 2026-10-01; section last amended 2025-10-01
+  CISA CPG 2.0    goals 34 (expect 34): {'Govern': 5, 'Identify': 5, 'Protect': 19, 'Detect': 2, 'Respond': 2, 'Recover': 1}; empty fields: none
+                  record SHA-256 7d3afda4ba166c6d… matches live-page capture: True
+
+2. CROSSWALK RULES
+  R1 every link target exists in the registry and is mappable
+  R2 every link property is integral_to, example_of, or precedes
+  R3 no control links the same target twice
+  R4 control ids are unique and every control has a family defined in the YAML
+  R5 every mappable element is either linked or dispositioned, never both
+  R6 every control has objective, activity, evidence, cadence, owner_role
+  R7 every link has a non-empty rationale ending in a period
+  R8 every JSON output validates against its schema
+  R9 every integral_to or precedes link has a necessity-audit entry with verdict 'supported'
+  R10 every audit entry matches the link's current property, and every audited control has a core statement
+  R11 no example_of rationale asserts necessity (cannot, must, requires, only if, depends on, needs)
+  R12 every link outside the necessity audit has an example_of review decision (keep or revise)
+  R13 no link removed by the example_of review is present; every removal names a test and a basis
+  violations: 0
+  schema_controls        valid
+  schema_links           valid
+  schema_dispositions    valid
+  schema_bundle          valid
+  schema_elements        valid
+  schema_oscal           valid
+
+  Negative tests (corrupted inputs must be rejected):
+    bad_property_rejected                    caught
+    bad_target_prefix_rejected               caught
+    rationale_without_period_rejected        caught
+    mapped_with_zero_controls_rejected       caught
+    unmapped_without_reason_rejected         caught
+
+3. COUNTS
+  controls 32 in 8 families {'GOV': 7, 'FUN': 6, 'FAIR': 2, 'OPS': 4, 'HF': 3, 'SEC': 4, 'CMP': 3, 'LSI': 3}
+  links 283; properties {'integral_to': 14, 'example_of': 269, 'precedes': 0}
+  links per control: min 4, median 7.0, max 38 (GM-HF-03)
+  controls per mapped element: min 1, median 2, max 6 (RMF:MANAGE-4.1)
+  controls linking all four frameworks: 4; three or more: 27
+
+4. COVERAGE (mappable elements)
+  framework elements  mapped      % integral  prereq   out  uncov  links
+  rmf            72      61   84.7        7       0     9      2    114
+  a84            38      36   94.7        0       0     1      1     58
+  hti            31      31  100.0        1       0     0      0     88
+  cpg            34      21   61.8        5      13     0      0     23
+  total mapped 149/175 (85.1%)
+  AI RMF by function: GOVERN 15/19; MAP 14/18; MEASURE 20/22; MANAGE 12/13
+  CPG by function: Govern 5/5; Identify 2/5; Protect 10/19; Detect 1/2; Respond 2/2; Recover 1/1
+  HTI by group: B1 4/4; B2 4/4; B3 2/2; B4 4/4; B5 2/2; B6 4/4; B7 5/5; B8 4/4; B9 2/2
+  AI 800-4 by category: FUN 6/6; OPS 3/3; HF 7/7; SEC 2/2; CMP 3/3; LSI 3/4; XC 12/13
+
+  Not mapped (with disposition):
+    RMF:GOVERN-2.3     out_of_scope  (2026-10-05 review) Executive leadership responsibility for AI risk decisions is a governance-structure outcome; GAP-M controls name a governance body, not executive accountability.
+    RMF:GOVERN-3.1     out_of_scope  Team diversity in risk decisions is an organizational composition outcome; monitoring results do not show it.
+    RMF:GOVERN-3.2     out_of_scope  (2026-10-05 review) Defining roles for human-AI configurations is a policy-design activity; GAP-M telemetry observes roles but does not define them.
+    RMF:GOVERN-4.1     out_of_scope  A critical-thinking and safety-first culture is an organizational culture outcome, not a monitoring activity.
+    RMF:MAP-1.2        out_of_scope  Interdisciplinary participation in establishing context is a design-time activity.
+    RMF:MAP-1.3        out_of_scope  Documenting the organization's mission and AI goals is a strategy activity that comes before deployment.
+    RMF:MAP-3.2        uncovered     (2026-10-05 review) Costs that result from AI errors and trustworthiness failures are relevant after deployment, but no GAP-M v0.1.0 control measures them; operating-cost tracking (GM-OPS-02) is a different cost.
+    RMF:MAP-4.1        out_of_scope  (2026-10-05 review) Mapping technology and legal (including intellectual-property) risks of components is a pre-deployment legal-review activity.
+    RMF:MEASURE-2.2    out_of_scope  Human-subject protection governs research evaluations; routine operational monitoring is outside it, and studies that qualify follow their own oversight process.
+    RMF:MEASURE-2.12   uncovered     (2026-10-05 review) No GAP-M v0.1.0 control assesses environmental impact or sustainability.
+    RMF:MANAGE-3.2     out_of_scope  (2026-10-05 author review) Applies to organizations that develop on pre-trained models; GAP-M addresses deploying organizations' monitoring of finished interventions. Its only link was removed by the author in the guided review.
+    A84:LSI-B1         out_of_scope  (2026-10-05 review) Downstream effects of open-weight model releases are a developer and ecosystem matter; GAP-M addresses organizations deploying predictive interventions.
+    A84:XC-IOC-B1      uncovered     (2026-10-05 review) Balancing competitive pressure against oversight is an incentive problem; no GAP-M v0.1.0 control addresses organizational incentives.
+    CPG:2.C            prerequisite  (2026-10-05 review) Third-party validation of cybersecurity defenses (penetration tests, exercises) is a hosting-environment baseline; GAP-M assumes it.
+    CPG:2.D            prerequisite  (2026-10-05 review) A public vulnerability disclosure route is an enterprise baseline; GAP-M assumes it.
+    CPG:2.E            prerequisite  Network topology documentation is a hosting-environment baseline; GAP-M assumes it.
+    CPG:3.A            prerequisite  Default-password hygiene is a hosting-environment baseline; GAP-M assumes it.
+    CPG:3.B            prerequisite  Password strength policy is a hosting-environment baseline; GAP-M assumes it.
+    CPG:3.C            prerequisite  Unique credentials are a hosting-environment baseline; GAP-M assumes it.
+    CPG:3.I            prerequisite  Network segmentation of AI hosting is a hosting-environment baseline; GAP-M assumes it.
+    CPG:3.J            prerequisite  (2026-10-05 review) Cybersecurity awareness training is an enterprise baseline; GAP-M's user training covers intended use, not security awareness.
+    CPG:3.L            prerequisite  Email security is an enterprise baseline unrelated to monitoring a deployed AI system.
+    CPG:3.M            prerequisite  Disabling autorun and macros is an endpoint baseline unrelated to monitoring a deployed AI system.
+    CPG:3.R            prerequisite  Blocking unauthorized devices is an endpoint baseline; GAP-M assumes it.
+    CPG:3.S            prerequisite  (2026-10-05 review) Securing internet-facing assets is a hosting-environment baseline; whether model endpoints face the internet is deployment-specific.
+    CPG:4.A            prerequisite  (2026-10-05 review) Malicious code detection is a hosting-environment baseline; GAP-M assumes it.
+
+  Mapped only by example_of links (136): RMF:GOVERN-1.2, RMF:GOVERN-1.3, RMF:GOVERN-1.4, RMF:GOVERN-1.5, RMF:GOVERN-1.7, RMF:GOVERN-2.1, RMF:GOVERN-2.2, RMF:GOVERN-4.2, RMF:GOVERN-4.3, RMF:GOVERN-5.1, RMF:GOVERN-5.2, RMF:GOVERN-6.1, RMF:GOVERN-6.2, RMF:MAP-1.1, RMF:MAP-1.4, RMF:MAP-1.5, RMF:MAP-1.6, RMF:MAP-2.1, RMF:MAP-2.2, RMF:MAP-2.3, RMF:MAP-3.1, RMF:MAP-3.3, RMF:MAP-3.4, RMF:MAP-3.5, RMF:MAP-4.2, RMF:MAP-5.1, RMF:MAP-5.2, RMF:MEASURE-1.1, RMF:MEASURE-1.2, RMF:MEASURE-1.3, RMF:MEASURE-2.1, RMF:MEASURE-2.3, RMF:MEASURE-2.4, RMF:MEASURE-2.5, RMF:MEASURE-2.6, RMF:MEASURE-2.7, RMF:MEASURE-2.8, RMF:MEASURE-2.9, RMF:MEASURE-2.10, RMF:MEASURE-2.11, RMF:MEASURE-2.13, RMF:MEASURE-3.1, RMF:MEASURE-3.2, RMF:MEASURE-4.1, RMF:MEASURE-4.2, RMF:MANAGE-1.1, RMF:MANAGE-1.2, RMF:MANAGE-1.3, RMF:MANAGE-1.4, RMF:MANAGE-2.1, RMF:MANAGE-2.2, RMF:MANAGE-2.3, RMF:MANAGE-3.1, RMF:MANAGE-4.2, A84:FUN, A84:OPS, A84:HF, A84:SEC, A84:CMP, A84:LSI, A84:FUN-G1, A84:FUN-G2, A84:FUN-B1, A84:FUN-B2, A84:FUN-B3, A84:OPS-G1, A84:OPS-B1, A84:HF-G1, A84:HF-G2, A84:HF-G3, A84:HF-G4, A84:HF-G5, A84:HF-B1, A84:SEC-B1, A84:CMP-G1, A84:CMP-B1, A84:LSI-G1, A84:LSI-G2, A84:XC-TMT-G1, A84:XC-TMT-B1, A84:XC-TMT-B2, A84:XC-TMT-B3, A84:XC-VT-G1, A84:XC-VT-G2, A84:XC-PC-B1, A84:XC-PC-B2, A84:XC-IOC-B2, A84:XC-IOC-B3, A84:XC-RR-B1, A84:XC-RR-B2, HTI:B1.i, HTI:B1.ii, HTI:B1.iii, HTI:B1.iv, HTI:B2.i, HTI:B2.ii, HTI:B2.iii, HTI:B2.iv, HTI:B3.i, HTI:B3.ii, HTI:B4.i, HTI:B4.ii, HTI:B4.iii, HTI:B4.iv, HTI:B5.i, HTI:B5.ii, HTI:B6.i, HTI:B6.ii, HTI:B6.iii, HTI:B6.iv, HTI:B7.i, HTI:B7.ii, HTI:B7.iii, HTI:B7.iv, HTI:B7.v, HTI:B8.i, HTI:B8.iii, HTI:B8.iv, HTI:B9.i, HTI:B9.ii, CPG:1.A, CPG:1.B, CPG:1.C, CPG:1.E, CPG:2.A, CPG:3.D, CPG:3.E, CPG:3.F, CPG:3.G, CPG:3.K, CPG:3.O, CPG:3.P, CPG:4.B, CPG:5.A, CPG:5.B, CPG:6.A
+
+5. HTI-1 ATTRIBUTES BY GAP-M CHANGE CLASS (analytic classification, not source text)
+  class                  attrs integral precedes example only NA flag
+  static_at_release         16        0        0           16       0
+  process_description        4        0        0            4       2
+  evidence_accruing          9        0        0            9       7
+  locally_measured           2        1        0            1       2
+  total                     31        1                    30      11
+  attributes with an integral link: HTI:B8.ii
+
+6. NECESSITY AUDIT (pre-review, AI-assisted; NOT the author's review)
+  links audited 107 (originally integral_to 100, precedes 7)
+  supported 14, revised 84, unresolved 9
+    guidance                             supported   8  revised  21  unresolved   3
+    monitoring_challenge                 supported   0  revised  31  unresolved   0
+    regulatory_disclosure_requirement    supported   1  revised  26  unresolved   4
+    voluntary_practice                   supported   5  revised   6  unresolved   2
+  unresolved (set to example_of until the author rules): GM-GOV-04>CPG:1.C, GM-FUN-02>RMF:MEASURE-2.4, GM-FUN-04>HTI:B8.ii, GM-FUN-06>RMF:MANAGE-1.3, GM-FAIR-02>HTI:B8.iv, GM-FAIR-02>RMF:MEASURE-2.11, GM-OPS-04>CPG:3.O, GM-HF-03>HTI:B8.ii, GM-HF-03>HTI:B8.iv
+  Author review: complete. The author individually reviewed all 32 practice definitions, every integral_to link (14), every conditional link (9), a seeded random sample of 66 of the 262 other example_of links (25%, seed 20261005), plus 11 links in targeted checks; ruled on all 32 removals from the earlier AI-assisted review; and spot-checked source text in 4 of the 4 sources. 185 of the 283 current links have not been individually reviewed by the author. Details and the remaining checklist items are in docs/AUTHOR_REVIEW.md.
+  release statement vs review record: 12 figures checked, all match
+
+6b. LINK LEDGER (original build -> current), by original relationship type
+  integral_to  original 100, still_integral_to 14, to_example_of_revised 77, to_example_of_conditional_unresolved 8, removed_by_example_review 1, removed_by_author_review 0
+  precedes     original 7, still_precedes 0, to_example_of_revised 5, to_example_of_conditional_unresolved 1, removed_by_example_review 0, removed_by_author_review 1
+  example_of   original 210, kept 170, kept_rationale_revised 8, removed 31, removed_by_author_review 1
+  total: original 317 - removed 34 = current 283 {'integral_to': 14, 'example_of': 269, 'precedes': 0}
+  conditional (necessity unresolved, held at example_of; each reviewed and accepted as conditional by the author): 9
+
+6c. TOOLING-ASSISTED EXAMPLE_OF REVIEW (AI assistant; not independent expert validation; not the author's review)
+  reviewed 210: kept 170, rationale revised 9, removed 31 (+1 audited link removed for consistency)
+  all 32 removals by failed test: {'T1': 13, 'T2': 7, 'T3': 12}  (T1 relevance, T2 source interpretation, T3 unsupported claim)
+  elements left without links and given a disposition instead: RMF:GOVERN-2.3, RMF:GOVERN-3.2, RMF:MAP-3.2, RMF:MAP-4.1, RMF:MEASURE-2.12, A84:LSI-B1, A84:XC-IOC-B1, CPG:2.C, CPG:2.D, CPG:3.J, CPG:3.S, CPG:4.A
+
+7. NAMED SPOT CHECKS (compare each against the source page by hand)
+  [RMF:GOVERN-1.4] NIST AI 100-1, p. 22
+      text: The risk management process and its outcomes are established through transparent policies, procedures, and other controls based on organizational risk priorities.
+      GAP-M: mapped; controls GM-GOV-01
+  [RMF:MAP-1.1] NIST AI 100-1, p. 26
+      text: Intended purposes, potentially beneficial uses, context-specific laws, norms and expectations, and prospective settings in which the AI system will be deployed are understood and documented. Considerations include: the specific set or types of users along with their expectations; potential positive and negative impacts of system uses to individuals, communities, organizations, society, and the planet; assumptions and related limitations about AI system purposes, uses, and risks across the development or product AI lifecycle; and related TEVV and system metrics.
+      GAP-M: mapped; controls GM-CMP-01;GM-CMP-03
+  [RMF:MEASURE-2.4] NIST AI 100-1, p. 29
+      text: The functionality and behavior of the AI system and its components – as identified in the MAP function – are monitored when in production.
+      GAP-M: mapped; controls GM-FAIR-02;GM-FUN-02;GM-FUN-03;GM-OPS-01
+  [RMF:MANAGE-4.1] NIST AI 100-1, p. 33
+      text: Post-deployment AI system monitoring plans are implemented, including mechanisms for capturing and evaluating input from users and other relevant AI actors, appeal and override, decommissioning, incident response, recovery, and change management.
+      GAP-M: mapped; controls GM-GOV-01;GM-GOV-04;GM-HF-01;GM-HF-02;GM-OPS-01;GM-OPS-03
+  [A84:HF-G2] NIST AI 800-4, Table 3, p. 17
+      text: Limited understanding of user intent or perception through usage monitoring
+      GAP-M: mapped; controls GM-CMP-03;GM-HF-02
+  [A84:XC-TMT-B3] NIST AI 800-4, Table 2, p. 9
+      text: Monitoring may infringe security and privacy
+      GAP-M: mapped; controls GM-SEC-04
+  [HTI:B4.iv] 45 CFR 170.315(b)(11)(iv)(B)(4)(iv)
+      text: Description of relevance of training data to intended deployed setting; and
+      GAP-M: mapped; controls GM-FUN-01;GM-FUN-03;GM-HF-03
+  [HTI:B7.v] 45 CFR 170.315(b)(11)(iv)(B)(7)(v)
+      text: References to evaluation of use of the intervention on outcomes, including, bibliographic citations or hyperlinks to evaluations of how well the intervention reduced morbidity, mortality, length of stay, or other outcomes;
+      GAP-M: mapped; controls GM-CMP-02;GM-GOV-05;GM-HF-03;GM-LSI-02
+  [HTI:B8.ii] 45 CFR 170.315(b)(11)(iv)(B)(8)(ii)
+      text: Validity of intervention in local data;
+      GAP-M: mapped; controls GM-CMP-02;GM-FUN-01;GM-FUN-02;GM-FUN-04;GM-HF-03
+  [CPG:3.Q] CISA CPG 2.0, goal 3.Q
+      text: Enhance visibility to detect and respond to cyber incidents while ensuring security logs are protected from unauthorized access and tampering.
+      GAP-M: mapped; controls GM-OPS-01
+  [CPG:1.D] CISA CPG 2.0, goal 1.D
+      text: Organizations more rapidly learn about and respond to known incidents or breaches across vendors and service providers
+      GAP-M: mapped; controls GM-GOV-03;GM-SEC-02
+  [CPG:4.B] CISA CPG 2.0, goal 4.B
+      text: Organizations can identify adverse security events.
+      GAP-M: mapped; controls GM-SEC-01

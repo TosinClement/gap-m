@@ -1,0 +1,41 @@
+# Source elements that GAP-M deliberately does not map (judgment call J5).
+# Every mappable element must either have at least one link in gapm_controls.yaml or
+# appear here; 04_build.py fails otherwise, and also fails if an element appears in both.
+#   prerequisite  — baseline practice GAP-M assumes is already in place for the systems that
+#                   host the AI; necessary, but not a post-deployment monitoring control
+#   out_of_scope  — a design-time, organizational-culture, or research-governance outcome
+#                   that monitoring evidence does not demonstrate
+#   uncovered     — relevant to post-deployment monitoring, but no GAP-M v0.1.0 control
+#                   substantively supports it (a known gap in the control set, not a scope decision)
+# Entries marked (2026-10-05 review) lost their only links in the tooling-assisted example_of
+# review; they were not added to preserve coverage.
+review_status: proposed
+
+elements:
+  RMF:MANAGE-3.2: {disposition: out_of_scope, reason: "(2026-10-05 author review) Applies to organizations that develop on pre-trained models; GAP-M addresses deploying organizations' monitoring of finished interventions. Its only link was removed by the author in the guided review."}
+  RMF:GOVERN-3.1: {disposition: out_of_scope, reason: "Team diversity in risk decisions is an organizational composition outcome; monitoring results do not show it."}
+  RMF:GOVERN-4.1: {disposition: out_of_scope, reason: "A critical-thinking and safety-first culture is an organizational culture outcome, not a monitoring activity."}
+  RMF:MAP-1.2: {disposition: out_of_scope, reason: "Interdisciplinary participation in establishing context is a design-time activity."}
+  RMF:MAP-1.3: {disposition: out_of_scope, reason: "Documenting the organization's mission and AI goals is a strategy activity that comes before deployment."}
+  RMF:MEASURE-2.2: {disposition: out_of_scope, reason: "Human-subject protection governs research evaluations; routine operational monitoring is outside it, and studies that qualify follow their own oversight process."}
+  CPG:2.E: {disposition: prerequisite, reason: "Network topology documentation is a hosting-environment baseline; GAP-M assumes it."}
+  CPG:3.A: {disposition: prerequisite, reason: "Default-password hygiene is a hosting-environment baseline; GAP-M assumes it."}
+  CPG:3.B: {disposition: prerequisite, reason: "Password strength policy is a hosting-environment baseline; GAP-M assumes it."}
+  CPG:3.C: {disposition: prerequisite, reason: "Unique credentials are a hosting-environment baseline; GAP-M assumes it."}
+  CPG:3.I: {disposition: prerequisite, reason: "Network segmentation of AI hosting is a hosting-environment baseline; GAP-M assumes it."}
+  CPG:3.L: {disposition: prerequisite, reason: "Email security is an enterprise baseline unrelated to monitoring a deployed AI system."}
+  CPG:3.M: {disposition: prerequisite, reason: "Disabling autorun and macros is an endpoint baseline unrelated to monitoring a deployed AI system."}
+  CPG:3.R: {disposition: prerequisite, reason: "Blocking unauthorized devices is an endpoint baseline; GAP-M assumes it."}
+  # ---- added 2026-10-05 after the tooling-assisted example_of review
+  RMF:GOVERN-2.3: {disposition: out_of_scope, reason: "(2026-10-05 review) Executive leadership responsibility for AI risk decisions is a governance-structure outcome; GAP-M controls name a governance body, not executive accountability."}
+  RMF:GOVERN-3.2: {disposition: out_of_scope, reason: "(2026-10-05 review) Defining roles for human-AI configurations is a policy-design activity; GAP-M telemetry observes roles but does not define them."}
+  RMF:MAP-4.1: {disposition: out_of_scope, reason: "(2026-10-05 review) Mapping technology and legal (including intellectual-property) risks of components is a pre-deployment legal-review activity."}
+  RMF:MAP-3.2: {disposition: uncovered, reason: "(2026-10-05 review) Costs that result from AI errors and trustworthiness failures are relevant after deployment, but no GAP-M v0.1.0 control measures them; operating-cost tracking (GM-OPS-02) is a different cost."}
+  RMF:MEASURE-2.12: {disposition: uncovered, reason: "(2026-10-05 review) No GAP-M v0.1.0 control assesses environmental impact or sustainability."}
+  A84:LSI-B1: {disposition: out_of_scope, reason: "(2026-10-05 review) Downstream effects of open-weight model releases are a developer and ecosystem matter; GAP-M addresses organizations deploying predictive interventions."}
+  A84:XC-IOC-B1: {disposition: uncovered, reason: "(2026-10-05 review) Balancing competitive pressure against oversight is an incentive problem; no GAP-M v0.1.0 control addresses organizational incentives."}
+  CPG:2.C: {disposition: prerequisite, reason: "(2026-10-05 review) Third-party validation of cybersecurity defenses (penetration tests, exercises) is a hosting-environment baseline; GAP-M assumes it."}
+  CPG:2.D: {disposition: prerequisite, reason: "(2026-10-05 review) A public vulnerability disclosure route is an enterprise baseline; GAP-M assumes it."}
+  CPG:3.J: {disposition: prerequisite, reason: "(2026-10-05 review) Cybersecurity awareness training is an enterprise baseline; GAP-M's user training covers intended use, not security awareness."}
+  CPG:3.S: {disposition: prerequisite, reason: "(2026-10-05 review) Securing internet-facing assets is a hosting-environment baseline; whether model endpoints face the internet is deployment-specific."}
+  CPG:4.A: {disposition: prerequisite, reason: "(2026-10-05 review) Malicious code detection is a hosting-environment baseline; GAP-M assumes it."}

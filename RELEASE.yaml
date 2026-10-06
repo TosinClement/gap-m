@@ -1,0 +1,24 @@
+# Release metadata read by every build step. Edit here only.
+name: GAP-M
+title: "GAP-M: Governance-Aligned Post-deployment Monitoring"
+version: 0.1.0
+# Release date and DOI set 2026-10-05 after the author reserved the DOI in a Zenodo draft (not yet published).
+release_date: "2026-10-05"
+doi: "10.5281/zenodo.23178136"
+build_date: "2026-10-05"
+repository: https://github.com/TosinClement/gap-m
+final: true
+# Author review of every link and disposition: pending | complete. A final build is refused while pending.
+author_review: complete
+# The author's release statement, approved by her on 2026-10-05 after confirming each paragraph's factual claims.
+# She confirmed on 2026-10-05 (21:45 CT) that her review is complete within the scope stated here.
+ai_statement_final: |
+  GAP-M v0.1.0 was prepared with substantial assistance from an AI assistant, Claude (Anthropic). I set the project's scope and target. The assistant wrote the code that retrieves, parses, and validates the sources and builds the documents; drafted the 32 practice definitions, every link and its rationale, the source-element dispositions, and the text of the README, technical report, and supporting documents; and carried out, with tooling support, a necessity audit of every link that claimed a practice was necessary and a relevance review of the 210 links that were `example_of` from the start.
+
+  I then reviewed the work in a guided process. For each item the assistant showed the exact source text, the practice's core, the proposed relationship and rationale, and a recommendation, and I recorded my decision. I reviewed all 32 practice definitions, accepting 18 as written and 14 with edits. I individually reviewed 100 links: all 14 `integral_to` links, all 9 conditional links, a random sample of 66 of the 262 other `example_of` links (25%, drawn once with seed 20261005), and 11 links in targeted checks. Of these I accepted 87 as written, accepted 11 with reworded rationales, and removed 2. I also ruled on every change made by the AI-assisted review: I confirmed its 32 removals and accepted 8 of its 9 reworded rationales (the ninth applied to a link I had removed). I made the open framing decisions recorded in docs/AUTHOR_DECISIONS.md, and I spot-checked named passages and counts in all four sources against the original documents. In nearly every case I accepted the assistant's recommended option, and I ruled on many links as groups after reading each one.
+
+  Separately from my review, the build pipeline runs automated checks that the assistant wrote and ran. They compare source element counts with the documents; check transcribed text verbatim, including 55 strings from NIST AI 800-4; compare the CPG 2.0 records against a hash of the live CISA page; enforce the crosswalk's consistency rules; validate every output against its JSON Schema and the OSCAL catalog against NIST's OSCAL 1.1.3 schema; and confirm that corrupted inputs are rejected (5 of 5 tests). A clean rebuild in the same environment reproduces every file byte for byte; a rebuild on a second computer reproduces the data and text exactly. These checks show that the package is internally consistent and faithful to the source text as parsed. They do not show that any mapping is correct, and they are not part of my review.
+
+  My review covered a defined subset. Of the 283 links in this release, 185 were not individually reviewed by me; they rest on the assistant's drafting and the AI-assisted reviews, and they are marked `review_status: proposed` and `author_response: not_reviewed` in the data. Sixteen of them received wording-only consistency edits that I approved without reviewing each link. Links that the necessity audit downgraded to `example_of` had a lighter relevance check than the rest: I reviewed 27 of the 82, through my random sample and one targeted check. My source check was a spot-check of named items; full verification of the transcribed text was done by the automated checks.
+
+  Neither my review nor the AI-assisted reviews is independent expert validation, and no inter-rater agreement has been measured. The practices have not been piloted in any deploying organization. GAP-M is independent work; it is not a product of NIST, ONC/ASTP, or CISA, and none of these agencies has reviewed or endorsed it. Mapping coverage does not demonstrate compliance with any regulation, achievement of any framework outcome, or effective monitoring. I take responsibility for the decisions recorded in docs/AUTHOR_REVIEW.md and docs/AUTHOR_DECISIONS.md.

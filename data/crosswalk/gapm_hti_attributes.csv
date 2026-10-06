@@ -1,0 +1,32 @@
+element_id,cfr_paragraph,attribute,gapm_change_class,must_indicate_if_not_available,integral_controls,precedes_controls,example_controls
+HTI:B1.i,45 CFR 170.315(b)(11)(iv)(B)(1)(i),Name and contact information for the intervention developer,static_at_release,False,,,GM-GOV-02;GM-HF-03
+HTI:B1.ii,45 CFR 170.315(b)(11)(iv)(B)(1)(ii),Funding source of the technical implementation for the intervention(s) development,static_at_release,False,,,GM-HF-03
+HTI:B1.iii,45 CFR 170.315(b)(11)(iv)(B)(1)(iii),Description of value that the intervention produces as an output,static_at_release,False,,,GM-HF-03
+HTI:B1.iv,45 CFR 170.315(b)(11)(iv)(B)(1)(iv),"Whether the intervention output is a prediction, classification, recommendation, evaluation, analysis, or other type of output",static_at_release,False,,,GM-GOV-02;GM-HF-03
+HTI:B2.i,45 CFR 170.315(b)(11)(iv)(B)(2)(i),Intended use of the intervention,static_at_release,False,,,GM-CMP-03;GM-HF-03
+HTI:B2.ii,45 CFR 170.315(b)(11)(iv)(B)(2)(ii),Intended patient population(s) for the intervention's use,static_at_release,False,,,GM-CMP-03;GM-HF-03
+HTI:B2.iii,45 CFR 170.315(b)(11)(iv)(B)(2)(iii),Intended user(s),static_at_release,False,,,GM-CMP-03;GM-HF-02;GM-HF-03
+HTI:B2.iv,45 CFR 170.315(b)(11)(iv)(B)(2)(iv),"Intended decision-making role for which the intervention was designed to be used/for (e.g., informs, augments, replaces clinical management)",static_at_release,False,,,GM-CMP-03;GM-HF-02;GM-HF-03
+HTI:B3.i,45 CFR 170.315(b)(11)(iv)(B)(3)(i),"Description of tasks, situations, or populations where a user is cautioned against applying the intervention",static_at_release,False,,,GM-CMP-03;GM-HF-03
+HTI:B3.ii,45 CFR 170.315(b)(11)(iv)(B)(3)(ii),"Known risks, inappropriate settings, inappropriate uses, or known limitations",evidence_accruing,False,,,GM-GOV-05;GM-HF-01;GM-HF-03;GM-LSI-01;GM-SEC-01
+HTI:B4.i,45 CFR 170.315(b)(11)(iv)(B)(4)(i),Exclusion and inclusion criteria that influenced the training data set,static_at_release,False,,,GM-FUN-03;GM-HF-03
+HTI:B4.ii,45 CFR 170.315(b)(11)(iv)(B)(4)(ii),Use of variables in paragraphs (b)(11)(iv)(A)(5) through (13) of this section as input features,static_at_release,False,,,GM-FAIR-01;GM-HF-03
+HTI:B4.iii,45 CFR 170.315(b)(11)(iv)(B)(4)(iii),"Description of demographic representativeness according to variables in paragraphs (b)(11)(iv)(A)(5) through (13) of this section including, at a minimum, those used as input features in the intervention",static_at_release,False,,,GM-FAIR-01;GM-FUN-03;GM-HF-03
+HTI:B4.iv,45 CFR 170.315(b)(11)(iv)(B)(4)(iv),Description of relevance of training data to intended deployed setting,evidence_accruing,False,,,GM-FUN-01;GM-FUN-03;GM-HF-03
+HTI:B5.i,45 CFR 170.315(b)(11)(iv)(B)(5)(i),Description of the approach the intervention developer has taken to ensure that the intervention's output is fair,static_at_release,False,,,GM-HF-03
+HTI:B5.ii,45 CFR 170.315(b)(11)(iv)(B)(5)(ii),"Description of approaches to manage, reduce, or eliminate bias",static_at_release,False,,,GM-HF-03
+HTI:B6.i,45 CFR 170.315(b)(11)(iv)(B)(6)(i),"Description of the data source, clinical setting, or environment where an intervention's validity and fairness has been assessed, other than the source of training and testing data",evidence_accruing,True,,,GM-CMP-02;GM-GOV-03;GM-HF-03
+HTI:B6.ii,45 CFR 170.315(b)(11)(iv)(B)(6)(ii),Party that conducted the external testing,evidence_accruing,True,,,GM-CMP-02;GM-GOV-03;GM-HF-03
+HTI:B6.iii,45 CFR 170.315(b)(11)(iv)(B)(6)(iii),"Description of demographic representativeness of external data according to variables in paragraph (b)(11)(iv)(A)(5)-(13) including, at a minimum, those used as input features in the intervention",evidence_accruing,True,,,GM-CMP-02;GM-FAIR-01;GM-GOV-03;GM-HF-03
+HTI:B6.iv,45 CFR 170.315(b)(11)(iv)(B)(6)(iv),Description of external validation process,evidence_accruing,True,,,GM-CMP-02;GM-GOV-03;GM-HF-03
+HTI:B7.i,45 CFR 170.315(b)(11)(iv)(B)(7)(i),Validity of intervention in test data derived from the same source as the initial training data,static_at_release,False,,,GM-FUN-01;GM-HF-03
+HTI:B7.ii,45 CFR 170.315(b)(11)(iv)(B)(7)(ii),Fairness of intervention in test data derived from the same source as the initial training data,static_at_release,False,,,GM-FAIR-01;GM-HF-03
+HTI:B7.iii,45 CFR 170.315(b)(11)(iv)(B)(7)(iii),Validity of intervention in data external to or from a different source than the initial training data,evidence_accruing,True,,,GM-CMP-02;GM-FUN-01;GM-GOV-03;GM-HF-03
+HTI:B7.iv,45 CFR 170.315(b)(11)(iv)(B)(7)(iv),Fairness of intervention in data external to or from a different source than the initial training data,evidence_accruing,True,,,GM-CMP-02;GM-FAIR-01;GM-GOV-03;GM-HF-03
+HTI:B7.v,45 CFR 170.315(b)(11)(iv)(B)(7)(v),"References to evaluation of use of the intervention on outcomes, including, bibliographic citations or hyperlinks to evaluations of how well the intervention reduced morbidity, mortality, length of stay, or other outcomes",evidence_accruing,True,,,GM-CMP-02;GM-GOV-05;GM-HF-03;GM-LSI-02
+HTI:B8.i,45 CFR 170.315(b)(11)(iv)(B)(8)(i),Description of process and frequency by which the intervention's validity is monitored over time,process_description,False,,,GM-FUN-02;GM-GOV-01;GM-HF-03
+HTI:B8.ii,45 CFR 170.315(b)(11)(iv)(B)(8)(ii),Validity of intervention in local data,locally_measured,True,GM-FUN-02,,GM-CMP-02;GM-FUN-01;GM-FUN-04;GM-HF-03
+HTI:B8.iii,45 CFR 170.315(b)(11)(iv)(B)(8)(iii),Description of the process and frequency by which the intervention's fairness is monitored over time,process_description,False,,,GM-FAIR-02;GM-GOV-01;GM-HF-03
+HTI:B8.iv,45 CFR 170.315(b)(11)(iv)(B)(8)(iv),Fairness of intervention in local data,locally_measured,True,,,GM-CMP-02;GM-FAIR-02;GM-FUN-04;GM-HF-03
+HTI:B9.i,45 CFR 170.315(b)(11)(iv)(B)(9)(i),Description of process and frequency by which the intervention is updated,process_description,True,,,GM-CMP-02;GM-FUN-05;GM-GOV-03;GM-HF-03;GM-OPS-03
+HTI:B9.ii,45 CFR 170.315(b)(11)(iv)(B)(9)(ii),Description of frequency by which the intervention's performance is corrected when risks related to validity and fairness are identified,process_description,True,,,GM-CMP-02;GM-FUN-05;GM-FUN-06;GM-HF-03

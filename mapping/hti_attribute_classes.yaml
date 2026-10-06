@@ -1,0 +1,50 @@
+# GAP-M analytic classification of the 31 predictive-DSI source attributes (judgment call J6).
+#
+# This is GAP-M's classification, not the regulation's. 45 CFR 170.315(b)(11) does not sort the
+# attributes by how they change. Its only currency language is (v)(A)(1), which requires access to
+# "complete and up-to-date" descriptions of EVERY attribute for developer-supplied interventions,
+# and places that duty on the certified Health IT Module. Attributes (B)(8) and (B)(9) describe
+# processes "over time" and frequencies, but the text does not say who performs them.
+#
+# The class records GAP-M's expectation of what most often changes an attribute's value after
+# deployment. It does not change which controls are necessary (see mapping/link_audit.yaml):
+#   static_at_release    (16) changes only when the intervention itself is changed by its developer
+#   process_description   (4) describes a monitoring/update process; stays accurate only while that process runs as described
+#   evidence_accruing     (9) can change when new evidence appears (new external validations, newly known risks)
+#   locally_measured      (2) a value computed from the deploying organization's own data
+# The 15 attributes outside static_at_release are what earlier drafts called "dynamic"; that word is
+# not used in the source and is retired here.
+# may_indicate_not_available: the Health IT Module must indicate when this attribute's information
+# is not available (45 CFR 170.315(b)(11)(v)(A)(2)); 11 attributes.
+
+B1.i:   {class: static_at_release}
+B1.ii:  {class: static_at_release}
+B1.iii: {class: static_at_release}
+B1.iv:  {class: static_at_release}
+B2.i:   {class: static_at_release, note: Reference boundary for intended-use monitoring}
+B2.ii:  {class: static_at_release, note: Reference boundary for population monitoring}
+B2.iii: {class: static_at_release, note: Reference boundary for user monitoring}
+B2.iv:  {class: static_at_release, note: Reference boundary for decision-role monitoring}
+B3.i:   {class: static_at_release, note: Reference boundary for out-of-scope use monitoring}
+B3.ii:  {class: evidence_accruing, note: Known risks and limitations grow as monitoring finds them}
+B4.i:   {class: static_at_release}
+B4.ii:  {class: static_at_release}
+B4.iii: {class: static_at_release, note: Baseline for comparing the deployed population}
+B4.iv:  {class: evidence_accruing, note: Relevance to the deployed setting is tested by drift monitoring}
+B5.i:   {class: static_at_release}
+B5.ii:  {class: static_at_release}
+B6.i:   {class: evidence_accruing, may_indicate_not_available: true}
+B6.ii:  {class: evidence_accruing, may_indicate_not_available: true}
+B6.iii: {class: evidence_accruing, may_indicate_not_available: true}
+B6.iv:  {class: evidence_accruing, may_indicate_not_available: true}
+B7.i:   {class: static_at_release, note: Pre-deployment baseline for validity thresholds}
+B7.ii:  {class: static_at_release, note: Pre-deployment baseline for fairness thresholds}
+B7.iii: {class: evidence_accruing, may_indicate_not_available: true}
+B7.iv:  {class: evidence_accruing, may_indicate_not_available: true}
+B7.v:   {class: evidence_accruing, may_indicate_not_available: true}
+B8.i:   {class: process_description}
+B8.ii:  {class: locally_measured, may_indicate_not_available: true}
+B8.iii: {class: process_description}
+B8.iv:  {class: locally_measured, may_indicate_not_available: true}
+B9.i:   {class: process_description, may_indicate_not_available: true}
+B9.ii:  {class: process_description, may_indicate_not_available: true}

@@ -1,0 +1,608 @@
+# GAP-M v0.1.0 control set and crosswalk links — the single human-edited source of truth.
+# 04_build.py compiles this file into JSON, CSV, OSCAL and XLSX outputs and validates it.
+#
+# Link format: [target_element_id, property, rationale]
+#   Relationship type is always "supports" (NIST IR 8477 supportive relationship mapping):
+#   the GAP-M control (concept A) supports the source element (concept B).
+#   property (IR 8477): integral_to — B cannot be achieved without A
+#                       example_of  — A is one way of achieving B in whole or in part
+#                       precedes    — A must be achieved before B can be applied
+#   For an HTI-1 source attribute, "achieving B" means keeping that attribute's value accurate
+#   and current after deployment.
+#   For an AI 800-4 challenge, "achieving B" means the control addresses that gap or barrier
+#   in the deploying organization's own monitoring program.
+#
+# review_status applies to every link and control until the author rules on it (J2, J3).
+review_status: proposed
+
+families:
+  GOV: {name: Monitoring governance, a84_primary: XC}
+  FUN: {name: Functionality monitoring, a84_primary: FUN}
+  FAIR: {name: Fairness monitoring, a84_primary: FUN, note: "AI 800-4 has no fairness category; placed under Functionality with Large-Scale Impacts as secondary (J4)"}
+  OPS: {name: Operational monitoring, a84_primary: OPS}
+  HF: {name: Human factors monitoring, a84_primary: HF}
+  SEC: {name: Security monitoring, a84_primary: SEC}
+  CMP: {name: Compliance monitoring, a84_primary: CMP}
+  LSI: {name: Large-scale impacts monitoring, a84_primary: LSI}
+
+controls:
+
+# ------------------------------------------------------------------ GOV
+- id: GM-GOV-01
+  family: GOV
+  title: Monitoring plan and accountable owner
+  objective: Each deployed predictive AI system has an approved post-deployment monitoring plan that names an accountable owner and sets the measures, cadence, thresholds, escalation path, and remediation authority, with monitoring intensity tiered by risk.
+  activity: Approve the plan before go-live; review it at least annually and after every material model update, threshold breach, or incident.
+  evidence: Approved monitoring plan with version history; responsibility (RACI) matrix; review minutes.
+  cadence: Before go-live; annually; on material change.
+  owner_role: System owner, approved by the AI governance body or equivalent
+  links:
+  - [RMF:GOVERN-1.5, example_of, "The plan's review cycle and named roles feed the organization's periodic review of its risk management process."]
+  - [RMF:MANAGE-4.1, integral_to, "MANAGE 4.1 is the outcome that post-deployment monitoring plans are implemented; a plan covering the system is a component of that outcome."]
+  - [RMF:GOVERN-2.1, example_of, "The plan's RACI is one place monitoring roles and lines of communication are documented."]
+  - [RMF:GOVERN-1.3, example_of, "Tiering monitoring intensity by risk sets the level of risk management activity from risk tolerance."]
+  - [RMF:GOVERN-1.4, example_of, "A documented plan makes the monitoring process and its outcomes transparent and controlled."]
+  - [RMF:GOVERN-1.2, example_of, "Listing validity, fairness, security, and privacy measures in each monitoring plan is one practice through which trustworthy characteristics enter monitoring procedures."]
+  - [RMF:MEASURE-4.1, example_of, "The plan documents the measurement approaches chosen for the specific deployment context."]
+  - [HTI:B8.i, example_of, "Where the deploying organization runs validity monitoring, its plan is the process the attribute can describe."]
+  - [HTI:B8.iii, example_of, "Where the deploying organization runs fairness monitoring, its plan is the process the attribute can describe."]
+  - [A84:XC-TMT-B1, example_of, "A per-system plan tailors measures to the use case instead of assuming a generic method."]
+- id: GM-GOV-02
+  family: GOV
+  title: AI system and model inventory
+  objective: An inventory lists every deployed predictive AI system with its version, developer, task and output type, deployment sites, data inputs, monitoring plan, and a link to or copy of the current source-attribute record.
+  activity: Update the inventory at deployment, update, and retirement; reconcile it against EHR configuration at least quarterly.
+  evidence: Inventory export with change log; quarterly reconciliation record.
+  cadence: On change; quarterly reconciliation.
+  owner_role: AI governance office
+  links:
+  - [RMF:GOVERN-1.6, integral_to, "GOVERN 1.6 asks for mechanisms to inventory AI systems; recording deployed AI systems in an inventory is what such a mechanism does."]
+  - [RMF:MAP-2.1, example_of, "The inventory records the defined task and method of each deployed system, keeping that definition visible after deployment."]
+  - [CPG:2.A, example_of, "Recording each deployed AI intervention in the asset inventory is one way to bring AI components into the asset-inventory goal."]
+  - [HTI:B1.i, example_of, "The inventory record keeps the developer's name and contact information current."]
+  - [HTI:B1.iv, example_of, "The inventory record states the output type (prediction, classification, recommendation, and so on)."]
+  - [A84:XC-PC-B1, example_of, "Version tracking keeps the record current as models and vendors change across the AI stack."]
+- id: GM-GOV-03
+  family: GOV
+  title: Developer monitoring obligations in contracts
+  objective: Contracts with the intervention developer require notice, within contract-defined time frames, of model updates, changes to known risks, new validation results, security incidents, and vulnerabilities, and delivery of updated source attributes.
+  activity: Include notice clauses and time frames in contracts; track developer notices and confirm source attributes are refreshed after each notice.
+  evidence: Contract clauses; developer notice log; source-attribute refresh records.
+  cadence: At contracting and renewal; on each developer notice.
+  owner_role: Procurement with the system owner
+  links:
+  - [CPG:1.D, integral_to, "Contract terms requiring the developer to notify the organization of security incidents and vulnerabilities are this goal's recommended action."]
+  - [CPG:1.E, example_of, "When the developer hosts or operates the model, these clauses manage risk from a managed service provider."]
+  - [RMF:GOVERN-6.1, example_of, "Contract terms that oblige the developer to disclose changes put third-party AI risk policy into practice."]
+  - [RMF:GOVERN-6.2, example_of, "Contractual notice of developer incidents is an input to contingency processes for third-party AI failures."]
+  - [RMF:MANAGE-3.1, example_of, "Contractual notice of developer changes is one input to regular monitoring of third-party AI risk."]
+  - [RMF:MAP-4.2, example_of, "Contract obligations are one internal risk control for third-party AI components."]
+  - [HTI:B6.i, example_of, "New external validation settings are delivered under the contract's clause requiring notice of new validation results."]
+  - [HTI:B6.ii, example_of, "The party conducting new external testing is reported under the contract's clause requiring notice of new validation results."]
+  - [HTI:B6.iii, example_of, "Demographic representativeness of new external data is reported under the contract's clause requiring notice of new validation results."]
+  - [HTI:B6.iv, example_of, "Descriptions of new external validation processes are delivered under the contract's clause requiring notice of new validation results."]
+  - [HTI:B7.iii, example_of, "New external validity results are delivered under the contract's clause requiring notice of new validation results."]
+  - [HTI:B7.iv, example_of, "New external fairness results are delivered under the contract's clause requiring notice of new validation results."]
+  - [HTI:B9.i, example_of, "Developer notices of model updates show how often the intervention is actually updated."]
+  - [A84:XC-VT-G2, example_of, "Contractual notice builds a working information-sharing channel between developer and deployer."]
+- id: GM-GOV-04
+  family: GOV
+  title: AI incident response integration
+  objective: Incident response plans cover AI-specific incidents (performance collapse, harmful or biased outputs, misuse, compromise of model or data), with severity criteria, containment steps, internal and external communication, and reporting, and are exercised at least annually.
+  activity: Add AI scenarios to the incident response plan and run at least one AI scenario in the annual exercise.
+  evidence: Incident response plan with AI annex; exercise after-action report.
+  cadence: Annual exercise; plan update after each AI incident.
+  owner_role: Incident response lead with the system owner
+  links:
+  - [CPG:1.C, example_of, "Adding AI compromise scenarios to the IR plan is one way to cover organizationally specific threats."]
+  - [CPG:5.A, example_of, "The AI annex adds AI-specific stakeholders to the incident communications plan."]
+  - [CPG:5.B, example_of, "The AI annex makes explicit that confirmed cybersecurity incidents involving the AI system (for example, compromise of the model or its data) are reported under the general policy."]
+  - [CPG:6.A, example_of, "Updating the AI annex after each AI incident is one way to refine the incident response plan from lessons learned."]
+  - [RMF:MANAGE-4.3, example_of, "An AI annex to the IR plan is one documented process for responding to and recovering from AI incidents."]
+  - [RMF:MANAGE-2.3, example_of, "Responding to a newly found AI risk follows the plan's AI procedures."]
+  - [RMF:MANAGE-4.1, example_of, "Incident response and recovery are named parts of a post-deployment monitoring plan."]
+  - [RMF:GOVERN-4.3, example_of, "A planned AI incident pathway lets teams identify and handle incidents."]
+  - [A84:XC-TMT-G1, example_of, "AI 800-4 (section 3.1.1) reports missing guidance on what to do when an anomaly is detected; the annex supplies that pathway."]
+- id: GM-GOV-05
+  family: GOV
+  title: External sharing of monitoring findings
+  objective: Monitoring findings (incidents, drift, bias, security issues, outcome evaluations) are shared with the developer and, under a defined policy and subject to legal and privacy review, with peer deployers and sector bodies such as information sharing and analysis centers or patient safety organizations.
+  activity: Apply a sharing policy that sets what is shared, with whom, how fast, and with what de-identification.
+  evidence: Sharing policy; log of findings shared and recipients.
+  cadence: On each qualifying finding; policy reviewed annually.
+  owner_role: AI governance office
+  links:
+  - [RMF:GOVERN-4.2, example_of, "A findings-sharing policy is one way to communicate risks and impacts more broadly."]
+  - [RMF:GOVERN-4.3, example_of, "An external sharing policy is one practice that enables information sharing about AI incidents and testing."]
+  - [RMF:MANAGE-4.3, example_of, "Sharing findings is one way incidents and errors reach relevant AI actors."]
+  - [A84:XC-VT-G2, example_of, "Deployers sharing findings is one contribution to a more mature information-sharing ecosystem."]
+  - [A84:XC-IOC-B2, example_of, "A standing policy gives ecosystem-wide transparency a set place in operations."]
+  - [A84:LSI-G2, example_of, "Shared incident reports let large-scale patterns appear that a single deployer's log would miss."]
+  - [HTI:B3.ii, example_of, "Shared findings return newly found risks and limitations to the developer for the source-attribute record."]
+  - [HTI:B7.v, example_of, "Sharing local outcome evaluations adds to the evidence base the attribute references."]
+- id: GM-GOV-06
+  family: GOV
+  title: Monitoring resources and competence
+  objective: Monitoring has budgeted resources (outcome labels, compute, reviewer and clinician time, tooling), trained staff, and users trained on the intervention's intended use and limits.
+  activity: Set the monitoring budget in the plan; train monitoring staff and users before access and when the intervention changes.
+  evidence: Budget line; training records; staffing assignments.
+  cadence: Annual budget; training at onboarding and on change.
+  owner_role: System owner
+  links:
+  - [RMF:GOVERN-2.2, example_of, "System-specific training for monitoring staff and users is one form of AI risk management training that enables them to perform their duties."]
+  - [RMF:MAP-3.4, example_of, "System-specific training is one process for establishing operator and practitioner proficiency."]
+  - [RMF:MANAGE-2.1, example_of, "A monitoring budget is one way resources required to manage AI risk are taken into account."]
+  - [A84:XC-RR-B1, example_of, "A monitoring budget makes financial, compute, and human resource costs explicit."]
+  - [A84:XC-RR-B2, example_of, "Training and staffing plans address the shortage of qualified monitoring staff."]
+  - [A84:XC-PC-B2, example_of, "Planned staffing keeps human review capacity in step with rollouts."]
+  - [A84:XC-IOC-B3, example_of, "Budgeting for tooling and automation lowers the administrative burden of monitoring."]
+- id: GM-GOV-07
+  family: GOV
+  title: Independent assessment of monitoring
+  objective: An assessor independent of the team that built or operates the system periodically reviews monitoring design, metrics, thresholds, and results, and findings are tracked to closure.
+  activity: Schedule independent review by risk tier (for example, annually for high-risk systems); track findings in a risk register.
+  evidence: Independent review report; findings tracker.
+  cadence: By risk tier; at least every two years.
+  owner_role: Internal audit or external assessor
+  links:
+  - [RMF:MEASURE-1.3, example_of, "An assessor independent of both the build and operate teams is one way to involve experts who did not serve as front-line developers in regular assessments."]
+  - [RMF:MEASURE-2.13, example_of, "The review evaluates how effective the monitoring metrics and processes are."]
+  - [RMF:MEASURE-1.2, example_of, "The review regularly reassesses whether metrics are appropriate and controls effective."]
+  - [RMF:MEASURE-4.2, example_of, "The assessor's review is one source of expert input on whether the system performs as intended."]
+  - [A84:XC-TMT-B2, example_of, "The review examines measurement uncertainty and variability in monitoring results."]
+# ------------------------------------------------------------------ FUN
+- id: GM-FUN-01
+  family: FUN
+  title: Performance baseline and deviation thresholds
+  objective: Before go-live, the organization records the baseline the system will be monitored against (validity metrics with uncertainty from the developer's internal and external validation results and, where feasible, from a local silent trial) and sets deviation thresholds that trigger review, correction, or deactivation.
+  activity: Run a local silent (shadow) trial where feasible; record baseline metrics and confidence intervals; set thresholds in the monitoring plan.
+  evidence: Baseline report; threshold table in the monitoring plan.
+  cadence: Before go-live; after every model update.
+  owner_role: Clinical or business owner with the data science lead
+  links:
+  - [A84:FUN-G2, example_of, "Recording a local baseline with deviation thresholds is one response to the baseline-and-threshold gap."]
+  - [A84:FUN, example_of, "A baseline is one reference point for functionality monitoring."]
+  - [RMF:MEASURE-1.1, example_of, "Choosing baseline metrics, and recording risks left unmeasured, is part of selecting measurement approaches."]
+  - [RMF:MEASURE-2.3, example_of, "A local silent trial measures performance under conditions like the deployment setting."]
+  - [RMF:MEASURE-2.5, example_of, "The baseline shows the system is valid and reliable locally and records limits on generalizability."]
+  - [RMF:MEASURE-2.1, example_of, "The baseline report documents the test sets, metrics, and tools used."]
+  - [RMF:MAP-1.5, example_of, "Numeric deviation thresholds state the organization's risk tolerance for this system."]
+  - [RMF:MANAGE-1.1, example_of, "A local baseline informs the determination of whether deployment should proceed."]
+  - [HTI:B7.i, example_of, "The developer's same-source validity result is checked and recorded as part of the baseline."]
+  - [HTI:B7.iii, example_of, "The developer's external validity result is checked and recorded as part of the baseline."]
+  - [HTI:B4.iv, example_of, "The silent trial tests whether training data are relevant to the local deployed setting."]
+  - [HTI:B8.ii, example_of, "A baseline gives the local validity value a reference for interpretation."]
+- id: GM-FUN-02
+  family: FUN
+  title: Local validity monitoring
+  objective: The intervention's validity in local data (for example discrimination, calibration, and positive predictive value at the operating threshold) is measured with confidence intervals at the planned cadence and compared with the baseline and thresholds.
+  activity: Compute validity metrics on each monitoring window; flag threshold breaches to the owner.
+  evidence: Monitoring dashboard extracts; threshold breach log.
+  cadence: As set in the plan (for example monthly or quarterly), plus event-driven.
+  owner_role: Data science lead
+  links:
+  - [HTI:B8.ii, integral_to, "A populated local-validity value is a measurement of validity in local data, which is this control's core."]
+  - [HTI:B8.i, example_of, "Where the deploying organization runs it, local validity monitoring is the process the attribute can describe."]
+  - [A84:FUN-B1, example_of, "Measuring local validity over time is one way to detect performance degradation."]
+  - [A84:FUN, example_of, "Local validity monitoring is one form of functionality monitoring."]
+  - [RMF:MEASURE-2.4, example_of, "Measuring validity in production is one way to monitor the system's functionality."]
+  - [RMF:MEASURE-3.1, example_of, "Local validity results are one factor for tracking emergent risk in the deployed context."]
+  - [RMF:MEASURE-2.5, example_of, "Local validity results document how well the system generalizes beyond the conditions under which it was developed."]
+  - [RMF:MEASURE-4.2, example_of, "Local validity results are measurement results on whether the system performs consistently as intended in its deployment context."]
+  - [RMF:MANAGE-2.2, example_of, "Catching degradation early sustains the value of the deployed system."]
+- id: GM-FUN-03
+  family: FUN
+  title: Input data and population drift detection
+  objective: The distribution of input features, missingness, upstream data changes (for example code-set or EHR build changes), and the patient-population mix are monitored against the training-data description and the baseline, with alerts on meaningful shift.
+  activity: Run drift statistics on each monitoring window; review alerts with data owners; record upstream changes.
+  evidence: Drift report; upstream change log; alert review notes.
+  cadence: Weekly or monthly automated; on upstream change.
+  owner_role: Data engineering with the data science lead
+  links:
+  - [A84:FUN-B1, example_of, "Input drift detection is one way to detect drift before outcome labels arrive."]
+  - [HTI:B4.iv, example_of, "Drift monitoring gives local evidence on whether the training-data relevance statement holds."]
+  - [HTI:B4.iii, example_of, "The training data's demographic profile is the reference for population-mix monitoring."]
+  - [HTI:B4.i, example_of, "Inclusion and exclusion criteria define which local patients fall outside the training population."]
+  - [RMF:MEASURE-2.4, example_of, "Monitoring the behavior of system components in production includes its input data."]
+  - [RMF:MEASURE-2.5, example_of, "Drift alerts show when the system operates beyond the conditions it was developed under."]
+  - [RMF:MEASURE-3.1, example_of, "Drift alerts identify emergent risks before outcome labels arrive."]
+  - [A84:XC-PC-B1, example_of, "Upstream change logging catches shifts elsewhere in the stack that silently alter inputs."]
+- id: GM-FUN-04
+  family: FUN
+  title: Outcome label acquisition
+  objective: The organization defines how and when reference-standard outcomes are obtained for monitored cases (source, label definition, expected delay, adjudication sample) and uses label-efficient or proxy measures, with stated uncertainty, while labels are delayed.
+  activity: Write a label specification; adjudicate a sample of labels; report proxy measures with their limits until labels mature.
+  evidence: Label specification; adjudication agreement statistics; proxy-measure notes.
+  cadence: Defined before go-live; adjudication sample each monitoring cycle.
+  owner_role: Clinical owner with the data science lead
+  links:
+  - [A84:FUN-B2, example_of, "A label specification with adjudication is one response to missing ground truth."]
+  - [RMF:MEASURE-3.2, example_of, "Proxy measures with stated uncertainty are a risk-tracking approach for when metrics are not yet available."]
+  - [RMF:MAP-2.3, example_of, "Defining and adjudicating labels is construct validation for the monitored outcome."]
+  - [RMF:MEASURE-1.1, example_of, "The label specification records which risks are not yet measurable and why."]
+  - [HTI:B8.ii, example_of, "Local outcome labels come first for outcome-based validity measures such as discrimination and calibration; whether every local validity value is label-based is unresolved."]
+  - [HTI:B8.iv, example_of, "For label-dependent fairness measures such as subgroup calibration or error-rate parity, local outcome labels come first; label-free measures such as output-rate parity can be computed without them."]
+  - [A84:XC-TMT-B2, example_of, "Adjudication statistics quantify uncertainty in the monitoring results themselves."]
+- id: GM-FUN-05
+  family: FUN
+  title: Longitudinal record and version comparison
+  objective: Monitoring results are kept as a time series across model versions and configuration changes, and every update is compared against the current version on the same local data before it goes live where the organization controls update timing, and otherwise promptly after.
+  activity: Keep results in a versioned store; run a champion-challenger or before-and-after comparison for each update.
+  evidence: Longitudinal results store; version comparison reports.
+  cadence: Continuous retention; each update.
+  owner_role: Data science lead
+  links:
+  - [A84:FUN-G1, example_of, "Same-data comparison of model versions is one form of systematic model comparison."]
+  - [A84:FUN-B3, example_of, "A retained time series is one way to lower the overhead of longitudinal tracking."]
+  - [RMF:MANAGE-4.2, example_of, "Version comparison makes measurable improvement part of every update."]
+  - [RMF:MEASURE-4.3, integral_to, "Identifying a measurable improvement or decline requires performance from more than one point in time to be available for comparison."]
+  - [RMF:MEASURE-3.1, example_of, "The time series shows risks that emerge slowly over many windows."]
+  - [HTI:B9.i, example_of, "The comparison record shows the update process and frequency described in the attribute in practice."]
+  - [HTI:B9.ii, example_of, "The record shows how often performance was corrected after risks were found."]
+- id: GM-FUN-06
+  family: FUN
+  title: Correction and deactivation triggers
+  objective: Threshold breaches lead to pre-defined actions (review, recalibration or retraining request, restricted use, or deactivation) with a named authority, time limits, and user notification; reactivation requires a new baseline.
+  activity: Write a trigger-action table; record each breach, the action taken, and its timing.
+  evidence: Trigger-action table; breach and action log; deactivation and reactivation records.
+  cadence: On each breach.
+  owner_role: System owner with clinical leadership
+  links:
+  - [RMF:MANAGE-2.4, integral_to, "MANAGE 2.4 names mechanisms, with assigned responsibility, to supersede, disengage, or deactivate a system; that mechanism is this control's core."]
+  - [RMF:MANAGE-1.3, example_of, "A trigger-action table is a documented response plan for performance risks the organization rates high priority."]
+  - [RMF:MANAGE-1.2, example_of, "Tiered actions prioritize treatment by the size of the breach."]
+  - [RMF:GOVERN-1.7, example_of, "Deactivation procedures cover safe phase-out of an AI system."]
+  - [RMF:MEASURE-2.6, example_of, "Defined response times make the system fail safely when it underperforms."]
+  - [HTI:B9.ii, example_of, "Deployer triggers show how often performance is corrected locally, which the attribute can describe."]
+  - [A84:FUN-G2, example_of, "AI 800-4 reports practitioners' call for deviation thresholds 'to trigger corrective actions or reviews' (p. 18); this control ties threshold breaches to set actions."]
+# ------------------------------------------------------------------ FAIR
+- id: GM-FAIR-01
+  family: FAIR
+  title: Subgroup performance baseline
+  objective: Before go-live, validity by subgroup is recorded for the characteristics listed in 45 CFR 170.315(b)(11)(iv)(A)(5)-(13) (a list the regulation gives for evidence-based interventions, used here as a reference set) that are used as inputs or available locally, from developer and local silent-trial results, and subgroup disparity thresholds are set.
+  activity: Compute subgroup metrics in the silent trial; compare them with developer-reported fairness; set disparity thresholds in the plan.
+  evidence: Subgroup baseline report; disparity threshold table.
+  cadence: Before go-live; after every model update.
+  owner_role: Data science lead with the health equity lead
+  links:
+  - [RMF:MEASURE-2.11, example_of, "A local subgroup baseline is one documented fairness evaluation."]
+  - [RMF:MAP-2.3, example_of, "Subgroup analysis tests representativeness of the data for the local population."]
+  - [RMF:MEASURE-1.1, example_of, "Choosing subgroup metrics, and recording subgroups too small to measure, is part of selecting approaches."]
+  - [A84:FUN-G2, example_of, "Disparity thresholds are performance thresholds applied to subgroups."]
+  - [HTI:B7.ii, example_of, "The developer's same-source fairness result is checked and recorded as part of the baseline."]
+  - [HTI:B7.iv, example_of, "The developer's external fairness result is checked and recorded as part of the baseline."]
+  - [HTI:B4.ii, example_of, "The demographic variables used as input features indicate which subgroups to monitor."]
+  - [HTI:B4.iii, example_of, "Training-data representativeness shows which local subgroups the model saw little of."]
+  - [HTI:B6.iii, example_of, "External-data representativeness shows which subgroups have external evidence."]
+- id: GM-FAIR-02
+  family: FAIR
+  title: Local fairness monitoring
+  objective: Subgroup validity and disparity in local data are measured at the planned cadence, and disparities beyond thresholds are investigated.
+  activity: Compute subgroup metrics on each monitoring window; investigate and document breaches.
+  evidence: Subgroup monitoring report; investigation notes.
+  cadence: As set in the plan, aligned with GM-FUN-02.
+  owner_role: Data science lead with the health equity lead
+  links:
+  - [HTI:B8.iv, example_of, "Measuring subgroup performance and output disparities in local data is one way to produce the local fairness value."]
+  - [HTI:B8.iii, example_of, "Where the deploying organization runs it, local fairness monitoring is the process the attribute can describe."]
+  - [RMF:MEASURE-2.11, example_of, "Measuring subgroup performance in production is one ongoing fairness evaluation."]
+  - [RMF:MEASURE-2.4, example_of, "Subgroup performance is part of monitoring system behavior in production."]
+  - [RMF:MEASURE-3.1, example_of, "Disparities that grow after deployment are emergent risks this control tracks."]
+  - [A84:FUN-B1, example_of, "Degradation can be confined to subgroups and missed by overall metrics."]
+  - [A84:LSI, example_of, "Subgroup disparities are one downstream impact on groups and communities."]
+# ------------------------------------------------------------------ OPS
+- id: GM-OPS-01
+  family: OPS
+  title: Central, tamper-protected monitoring logs
+  objective: Inference events, inputs or their hashes (minimized for protected health information), outputs, model version, user actions, and monitoring results are logged to a central, access-controlled, tamper-evident store with risk-based retention, and an alert fires when logging stops.
+  activity: Route AI system logs to the central log platform; test the logging-failure alert.
+  evidence: Log pipeline configuration; retention setting; logging-failure alert test.
+  cadence: Continuous; alert test quarterly.
+  owner_role: Platform engineering with security operations
+  links:
+  - [CPG:3.Q, integral_to, "CPG 3.Q's action covers application and service logs on all assets where feasible; collecting the AI components' administrative and security logs centrally, with an alert if logging stops, is that action applied to the AI system."]
+  - [A84:OPS-B1, example_of, "A central log store is one answer to fragmented logging across distributed infrastructure."]
+  - [A84:OPS, example_of, "Complete logs are one basis for infrastructure-level monitoring."]
+  - [RMF:MEASURE-2.8, example_of, "Complete logs support examining transparency and accountability risks."]
+  - [RMF:MANAGE-4.1, example_of, "Logs provide the record that the plan's incident-response and change-management mechanisms rely on."]
+  - [RMF:MEASURE-2.4, example_of, "Central logs are one data source for production monitoring."]
+  - [A84:HF-G5, example_of, "Captured logs are one source of telemetry to put to use."]
+- id: GM-OPS-02
+  family: OPS
+  title: Service level and cost telemetry
+  objective: Availability, latency, error and timeout rates, fallback use, and direct and indirect costs (compute, licensing, labeling, reviewer and clinician time, energy) are tracked per intervention.
+  activity: Report service levels against targets; report cost per intervention each budget cycle.
+  evidence: Service-level report; cost report.
+  cadence: Continuous service levels; quarterly cost.
+  owner_role: Platform engineering with finance
+  links:
+  - [A84:OPS-G1, example_of, "Tracking reviewer time, labeling, and energy is one way to track indirect costs beyond compute."]
+  - [A84:OPS, example_of, "Service-level monitoring is one form of operational monitoring."]
+  - [RMF:MANAGE-2.1, example_of, "Cost data show the resources required to manage AI risk."]
+  - [RMF:MANAGE-2.2, example_of, "Service levels and cost data show whether the system's value is being sustained."]
+  - [RMF:MEASURE-2.6, example_of, "Error and timeout monitoring supports real-time monitoring and response times for failures."]
+  - [A84:XC-RR-B1, example_of, "Measured monitoring cost makes resource demands visible for budgeting."]
+- id: GM-OPS-03
+  family: OPS
+  title: Change and configuration control for AI components
+  objective: Model versions, thresholds, input mappings, and EHR build changes pass through change management with pre-change testing, a rollback plan, and an update to the monitoring baseline and the organization's source-attribute record.
+  activity: Require a change ticket for every AI configuration change; block closure until baseline and attributes are updated.
+  evidence: Change tickets; rollback plans; attribute update records.
+  cadence: On each change.
+  owner_role: Change advisory board with the system owner
+  links:
+  - [CPG:3.N, integral_to, "AI configuration changes go through the change management process this CPG goal requires."]
+  - [CPG:3.P, example_of, "Approval of new model versions extends the hardware and software approval process."]
+  - [RMF:MANAGE-4.1, example_of, "Change management is a named part of the post-deployment monitoring plan."]
+  - [HTI:B9.i, example_of, "The deployer's change process is one update process the attribute can describe."]
+  - [A84:XC-PC-B1, example_of, "Change control keeps monitoring in step with a fast-moving AI stack."]
+- id: GM-OPS-04
+  family: OPS
+  title: Fallback and recovery
+  objective: A documented fallback workflow runs when the intervention is unavailable or deactivated, and model artifacts and configurations are backed up and restorable to a known-good version.
+  activity: Document the fallback workflow; back up artifacts and configuration; test restore at least annually.
+  evidence: Fallback procedure; backup records; restore test report.
+  cadence: Annual restore test; procedure reviewed with each update.
+  owner_role: Platform engineering with the clinical owner
+  links:
+  - [CPG:3.O, example_of, "Backing up model artifacts and configuration applies the backup practice to the AI system."]
+  - [CPG:6.A, example_of, "A tested fallback workflow is part of recovery planning."]
+  - [RMF:MANAGE-2.1, example_of, "The fallback workflow is the viable non-AI alternative kept ready."]
+  - [RMF:MANAGE-2.4, example_of, "A fallback workflow lets the system be disengaged without interrupting the work it supported."]
+  - [RMF:MANAGE-2.3, example_of, "Restoring a known-good version is one recovery from a newly found risk."]
+  - [RMF:MEASURE-2.6, example_of, "A fallback lets the system fail safely."]
+  - [RMF:GOVERN-1.7, example_of, "The fallback workflow supports phasing out a system without increasing risk."]
+# ------------------------------------------------------------------ HF
+- id: GM-HF-01
+  family: HF
+  title: User feedback capture and adjudication
+  objective: Users can flag outputs in the workflow (wrong, unhelpful, harmful) with little effort; feedback is triaged, adjudicated, fed into metrics, and the outcome is reported back.
+  activity: Provide in-workflow feedback; triage weekly; include adjudicated feedback in monitoring reports.
+  evidence: Feedback log with adjudication outcomes; monitoring report section on feedback.
+  cadence: Continuous capture; weekly triage.
+  owner_role: Clinical informatics
+  links:
+  - [A84:HF-B1, example_of, "Low-effort in-workflow capture is one way to reduce the overhead of collecting user feedback."]
+  - [A84:HF, example_of, "User feedback is one measure of human-system interaction."]
+  - [RMF:MEASURE-3.3, integral_to, "User problem reports integrated into evaluation metrics are what this control produces."]
+  - [RMF:GOVERN-5.2, example_of, "Adjudicated end-user feedback is one stream a team can incorporate into design and implementation."]
+  - [RMF:MANAGE-4.1, example_of, "An in-workflow problem-reporting route is one mechanism for capturing and evaluating input from users."]
+  - [RMF:GOVERN-5.1, example_of, "In-workflow capture is one practice for collecting feedback from people outside the development team."]
+  - [RMF:MAP-5.2, example_of, "Feedback triage integrates reports of unanticipated impacts."]
+  - [HTI:B3.ii, example_of, "Adjudicated feedback surfaces new known limitations for the source-attribute record."]
+- id: GM-HF-02
+  family: HF
+  title: Interaction and override telemetry
+  objective: How users act on outputs is measured (alert or display rates, acceptance, override and dismissal with reasons, time to action, alert-fatigue indicators), aggregated by user role and site.
+  activity: Report interaction metrics each monitoring cycle; review shifts in reliance or override patterns.
+  evidence: Interaction telemetry report.
+  cadence: Each monitoring cycle.
+  owner_role: Clinical informatics with the data science lead
+  links:
+  - [A84:HF-G3, example_of, "Interaction telemetry is one way to understand user interaction and behavior."]
+  - [A84:HF-G5, example_of, "Interaction reporting is one way to use telemetry that would otherwise sit unused."]
+  - [A84:HF-G4, example_of, "Results by role, specialty, and site give some insight into the characteristics of system users."]
+  - [A84:HF-G2, example_of, "Override reasons give partial insight into user intent and perception."]
+  - [A84:HF-G1, example_of, "Trends in reliance and override reveal feedback loops such as automation bias or alert fatigue."]
+  - [RMF:MAP-3.5, example_of, "Override telemetry assesses whether human oversight works as defined."]
+  - [RMF:MEASURE-2.9, example_of, "Override reasons show whether outputs are being interpreted within context."]
+  - [RMF:MANAGE-4.1, example_of, "Override monitoring is one mechanism of an implemented monitoring plan."]
+  - [HTI:B2.iii, example_of, "Telemetry by role checks that actual users match intended users."]
+  - [HTI:B2.iv, example_of, "Acceptance and override rates show whether the output informs, augments, or in practice replaces decisions."]
+- id: GM-HF-03
+  family: HF
+  title: Source-attribute currency and user transparency
+  objective: "The plain-language source-attribute record available to users is reviewed on a schedule and whenever monitoring changes a value, and each attribute carries a last-reviewed date and an evidence pointer. Missing information is handled by attribute: for the 11 attributes listed in 45 CFR 170.315(b)(11)(v)(A)(2), information that is not available is shown as not available rather than left blank; for the other 20 attributes, (v)(A)(1) expects complete and up-to-date descriptions, so a missing or outdated value is recorded as a gap and raised with the developer, not marked not available."
+  activity: "Hold an attribute register with review dates; update it from monitoring outputs, developer notices, and change tickets; track gaps in the 20 attributes without a not-available allowance until the developer resolves them."
+  evidence: Attribute register with review dates and evidence links; user-facing attribute display.
+  cadence: At least annually per attribute; within 30 days of any change in a monitored value.
+  owner_role: Clinical informatics with the system owner
+  links:
+  - [RMF:MAP-2.2, example_of, "A current source-attribute record is one form of documentation of knowledge limits and appropriate use."]
+  - [RMF:MEASURE-2.9, example_of, "Current attributes help users interpret output within its context."]
+  - [RMF:MEASURE-2.8, example_of, "A dated, evidence-linked record makes transparency risks examinable."]
+  - [RMF:GOVERN-4.2, example_of, "The record communicates the system's risks and impacts to users."]
+  - [RMF:MANAGE-1.4, example_of, "Known risks and limitations in the record document residual risk for end users."]
+  - [A84:XC-VT-G1, example_of, "Current attributes give users and deployers more visibility into model properties."]
+  - [A84:HF, example_of, "Transparency to users is part of the human factors category definition."]
+  - [HTI:B1.i, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B1.ii, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B1.iii, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B1.iv, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B2.i, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B2.ii, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B2.iii, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B2.iv, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B3.i, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B3.ii, example_of, "Recording newly found risks and limitations is one way the deploying organization keeps this attribute current."]
+  - [HTI:B4.i, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B4.ii, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B4.iii, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B4.iv, example_of, "Recording local drift findings is one way to keep the relevance statement accurate."]
+  - [HTI:B5.i, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B5.ii, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B6.i, example_of, "Updating the record when a new external validation appears is one way to keep this attribute current."]
+  - [HTI:B6.ii, example_of, "Updating the record when a new external validation appears is one way to keep this attribute current."]
+  - [HTI:B6.iii, example_of, "Updating the record when a new external validation appears is one way to keep this attribute current."]
+  - [HTI:B6.iv, example_of, "Updating the record when a new external validation appears is one way to keep this attribute current."]
+  - [HTI:B7.i, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B7.ii, example_of, "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate."]
+  - [HTI:B7.iii, example_of, "Updating the record when new external validity results appear is one way to keep this attribute current."]
+  - [HTI:B7.iv, example_of, "Updating the record when new external fairness results appear is one way to keep this attribute current."]
+  - [HTI:B7.v, example_of, "Adding new outcome evaluations to the record is one way to keep this attribute current."]
+  - [HTI:B8.i, example_of, "Keeping the displayed process description in line with the process actually run is one way to keep this attribute accurate."]
+  - [HTI:B8.ii, example_of, "Recording each new local validity result is one way the value shown to users stays current."]
+  - [HTI:B8.iii, example_of, "Keeping the displayed process description in line with the process actually run is one way to keep this attribute accurate."]
+  - [HTI:B8.iv, example_of, "Recording each new local fairness result is one way the value shown to users stays current."]
+  - [HTI:B9.i, example_of, "Keeping the displayed update process in line with practice is one way to keep this attribute accurate."]
+  - [HTI:B9.ii, example_of, "Keeping the displayed correction frequency in line with practice is one way to keep this attribute accurate."]
+# ------------------------------------------------------------------ SEC
+- id: GM-SEC-01
+  family: SEC
+  title: Adversarial input, misuse, and anomalous behavior detection
+  objective: Anomalous or crafted inputs, out-of-distribution queries, unexpected output distributions, and behavior that differs between test and production conditions are detected and routed to security operations.
+  activity: Run input and output anomaly rules; compare production behavior with evaluation behavior; route alerts to the security operations queue.
+  evidence: Detection rules; alert log; triage records.
+  cadence: Continuous.
+  owner_role: Security operations with the data science lead
+  links:
+  - [A84:SEC-B1, example_of, "Comparing production with evaluation behavior is one check for deceptive behavior."]
+  - [A84:SEC, example_of, "Detecting attack and misuse attempts is one form of security monitoring."]
+  - [CPG:4.B, example_of, "AI-specific anomaly rules extend the organization's adverse-event criteria to the AI system."]
+  - [RMF:MEASURE-2.7, example_of, "Attack and misuse detection in production adds to the security and resilience evaluation."]
+  - [RMF:MEASURE-2.6, example_of, "Detecting inputs beyond the system's knowledge limits supports safe failure."]
+  - [HTI:B3.ii, example_of, "Confirmed misuse patterns become known risks in the source-attribute record."]
+- id: GM-SEC-02
+  family: SEC
+  title: Vulnerability management for AI components
+  objective: Vulnerabilities in model-serving software and libraries (including those on CISA's Known Exploited Vulnerabilities catalog), weaknesses in model artifacts, and AI-specific weaknesses are tracked and remediated by risk, and the developer is required to disclose them.
+  activity: Include AI components in vulnerability scanning and patching; track AI weaknesses in the vulnerability register.
+  evidence: Scan results; remediation records; vulnerability register entries.
+  cadence: Continuous scanning; remediation by severity.
+  owner_role: Security operations
+  links:
+  - [CPG:2.B, integral_to, "AI software components the organization operates are organizational assets, so they fall within the vulnerability management program this goal requires."]
+  - [CPG:1.D, example_of, "Developer vulnerability disclosure is part of supply chain reporting."]
+  - [RMF:MEASURE-2.7, example_of, "Vulnerability results are evidence for the security evaluation."]
+  - [RMF:MANAGE-3.1, example_of, "Tracking vulnerabilities in third-party AI software monitors third-party risk."]
+  - [RMF:GOVERN-6.1, example_of, "Vulnerability disclosure terms put third-party AI risk policy into practice."]
+  - [A84:SEC, example_of, "Vulnerability tracking measures where the system is exposed to attack."]
+  - [A84:XC-PC-B1, example_of, "Continuous scanning keeps up with changes across the AI software stack."]
+- id: GM-SEC-03
+  family: SEC
+  title: Access control over models, configuration, and monitoring data
+  objective: Only identified roles can change model configuration, thresholds, the organization's source-attribute record, or monitoring results; privileged access is separate and MFA-protected; access is reviewed and revoked promptly.
+  activity: Enforce role-based access; review access quarterly; monitor failed logins to AI administration endpoints.
+  evidence: Access control lists; access review records; login monitoring alerts.
+  cadence: Quarterly review; continuous login monitoring.
+  owner_role: Identity and access management
+  links:
+  - [CPG:3.H, integral_to, "Least privilege over AI configuration and monitoring data is this CPG goal applied to AI."]
+  - [CPG:3.F, example_of, "MFA protects AI administration access."]
+  - [CPG:3.G, example_of, "Administrators use separate privileged accounts for AI configuration."]
+  - [CPG:3.D, example_of, "Departing staff lose access to AI configuration and monitoring data."]
+  - [CPG:3.E, example_of, "Failed logins to AI administration endpoints are monitored."]
+  - [RMF:MEASURE-2.7, example_of, "Access control evidence supports the security evaluation."]
+  - [A84:SEC, example_of, "Unauthorized change to models or monitoring records is a misuse path within the scope of security monitoring."]
+- id: GM-SEC-04
+  family: SEC
+  title: Privacy-preserving handling of monitoring data
+  objective: Monitoring data are minimized, de-identified where feasible, encrypted in transit and at rest, and retention-limited, and the privacy impact of monitoring (including telemetry about users) is assessed.
+  activity: Assess privacy impact of the monitoring design; apply minimization and encryption; enforce retention limits.
+  evidence: Privacy impact assessment; data handling configuration; retention enforcement records.
+  cadence: Before go-live; on change to monitoring data.
+  owner_role: Privacy officer
+  links:
+  - [A84:XC-TMT-B3, example_of, "Privacy-preserving handling of monitoring data is one response to the concern that monitoring may infringe privacy."]
+  - [RMF:MEASURE-2.10, example_of, "Examining the privacy risk of the AI system includes the privacy risk of monitoring it."]
+  - [RMF:MAP-1.6, example_of, "Privacy requirements for monitoring data are elicited system requirements."]
+  - [CPG:3.K, example_of, "Monitoring data are protected with strong encryption."]
+# ------------------------------------------------------------------ CMP
+- id: GM-CMP-01
+  family: CMP
+  title: Requirements register for the deployed system
+  objective: A register lists the legal, regulatory, certification, and contractual obligations that apply to the deployed AI system and the monitoring evidence that meets each, and is reviewed when requirements change.
+  activity: Maintain the register; review it at least annually and on regulatory change; link each obligation to GAP-M evidence.
+  evidence: Requirements register with evidence links.
+  cadence: Annual; on regulatory change.
+  owner_role: Compliance officer
+  links:
+  - [RMF:GOVERN-1.1, integral_to, "GOVERN 1.1 requires AI legal and regulatory requirements to be documented; documenting them is this control's core."]
+  - [A84:CMP-B1, example_of, "A maintained requirements register is one tool for navigating a complex policy landscape."]
+  - [A84:CMP, example_of, "A requirements register lists the obligations compliance monitoring measures against."]
+  - [RMF:MAP-1.1, example_of, "The register documents context-specific laws for the deployment setting."]
+  - [CPG:1.A, example_of, "CPG 1.A asks that legal and regulatory cybersecurity requirements are implemented and managed."]
+  - [CPG:1.B, example_of, "Regulatory obligations feed the organization's governance policies."]
+- id: GM-CMP-02
+  family: CMP
+  title: Source-attribute completeness audit
+  objective: Each predictive-DSI source attribute is periodically audited to confirm it is populated, within its review interval, backed by evidence, or, where the regulation allows, explicitly shown as not available.
+  activity: Sample the attribute register; check population, review date, and evidence; log and fix discrepancies.
+  evidence: Audit worksheet; discrepancy log.
+  cadence: Annually, before accreditation reviews, and after developer certification updates.
+  owner_role: Compliance officer with clinical informatics
+  links:
+  - [HTI:B6.i, example_of, "The audit checks that missing external validation information is shown as not available, the indication 170.315(b)(11)(v)(A)(2) calls for."]
+  - [HTI:B6.ii, example_of, "The audit checks the not-available indication for this attribute."]
+  - [HTI:B6.iii, example_of, "The audit checks the not-available indication for this attribute."]
+  - [HTI:B6.iv, example_of, "The audit checks the not-available indication for this attribute."]
+  - [HTI:B7.iii, example_of, "The audit checks the not-available indication for this attribute."]
+  - [HTI:B7.iv, example_of, "The audit checks the not-available indication for this attribute."]
+  - [HTI:B7.v, example_of, "The audit checks the not-available indication for this attribute."]
+  - [HTI:B8.ii, example_of, "The audit checks the not-available indication for this attribute."]
+  - [HTI:B8.iv, example_of, "The audit checks the not-available indication for this attribute."]
+  - [HTI:B9.i, example_of, "The audit checks the not-available indication for this attribute."]
+  - [HTI:B9.ii, example_of, "The audit checks the not-available indication for this attribute."]
+  - [RMF:GOVERN-1.1, example_of, "Auditing attribute completeness documents how one regulatory requirement is being managed."]
+  - [A84:CMP, example_of, "The audit measures adherence to a specific regulatory requirement."]
+- id: GM-CMP-03
+  family: CMP
+  title: Out-of-scope and policy-violating use monitoring
+  objective: Use outside the intended use, population, users, or setting, use against cautioned uses (for example on excluded populations, or as a replacement for clinical judgment), and violations of terms of use are monitored, reported, and corrected.
+  activity: Run rules that flag use outside the documented boundaries; review flags each monitoring cycle.
+  evidence: Out-of-scope use rules; flag review log; corrective actions.
+  cadence: Each monitoring cycle.
+  owner_role: Clinical informatics with compliance
+  links:
+  - [A84:CMP-G1, example_of, "Flagging use against terms and cautioned uses is one way to track terms-of-service violations."]
+  - [A84:HF-G2, example_of, "Out-of-scope use patterns reveal how users actually intend to use the system."]
+  - [HTI:B2.i, example_of, "Use monitoring checks actual use against the stated intended use."]
+  - [HTI:B2.ii, example_of, "Use monitoring checks the patients the intervention runs on against the stated intended population."]
+  - [HTI:B2.iii, example_of, "Flags on unintended user roles check the intended-users attribute."]
+  - [HTI:B2.iv, example_of, "Flags on use beyond the intended decision role check that attribute."]
+  - [HTI:B3.i, example_of, "Use monitoring flags use against the stated cautioned uses."]
+  - [RMF:MAP-3.3, example_of, "Monitoring enforces the documented application scope after deployment."]
+  - [RMF:MAP-1.1, example_of, "Use monitoring checks deployment against the documented intended purposes."]
+  - [RMF:MAP-2.2, example_of, "Out-of-scope flags check that documented knowledge limits are respected."]
+  - [RMF:MEASURE-2.6, example_of, "Catching use beyond the system's limits supports safe operation."]
+# ------------------------------------------------------------------ LSI
+- id: GM-LSI-01
+  family: LSI
+  title: AI incident and near-miss log with impact fields
+  objective: AI-related incidents and near misses are logged with patient-, population-, and equity-impact fields (affected subgroup, severity, scale, reversibility) so diffuse and cumulative harms can be aggregated.
+  activity: Add AI impact fields to the safety event system; aggregate quarterly.
+  evidence: Incident and near-miss log; quarterly aggregate review.
+  cadence: Continuous logging; quarterly aggregation.
+  owner_role: Patient safety with the AI governance office
+  links:
+  - [A84:LSI-G2, example_of, "Impact fields are one way to capture large-scale impacts in incident logging."]
+  - [A84:LSI, example_of, "Aggregated impact data are one measure of wide downstream effects."]
+  - [RMF:MANAGE-4.3, integral_to, "Tracking incidents and errors requires that they be recorded; that record is this control's core."]
+  - [RMF:MEASURE-3.1, example_of, "Aggregated logs identify emergent risks."]
+  - [RMF:MAP-5.1, example_of, "Logged incidents inform the likelihood and magnitude of each impact."]
+  - [RMF:GOVERN-4.3, example_of, "A shared log supports identifying incidents across teams."]
+  - [HTI:B3.ii, example_of, "Confirmed incident patterns become known risks in the source-attribute record."]
+- id: GM-LSI-02
+  family: LSI
+  title: Outcome and benefit measurement
+  objective: The intended benefit (outcome, process, or experience measures) and unintended downstream effects are tracked at population level, with periodic review of whether benefits are realized and references to evaluations kept.
+  activity: Define benefit measures before go-live; review realized benefit and side effects at least annually.
+  evidence: Benefit measure definitions; annual benefit review; evaluation references.
+  cadence: Annual review.
+  owner_role: Clinical or business owner
+  links:
+  - [A84:LSI-G1, example_of, "Defining benefit measures is one response to the gap in metrics for beneficial impacts."]
+  - [A84:LSI, example_of, "Population-level benefit measures are one form of large-scale impact monitoring."]
+  - [HTI:B7.v, example_of, "A local outcome evaluation adds a reference the attribute can cite."]
+  - [RMF:MANAGE-1.1, example_of, "Measured benefit informs the determination of whether the system achieves its intended purposes."]
+  - [RMF:MAP-3.1, example_of, "Realized benefits update the potential benefits examined before deployment."]
+  - [RMF:MAP-1.4, example_of, "Benefit review re-evaluates the business value of an existing system."]
+  - [RMF:MAP-5.1, example_of, "Measured effects update the likelihood and magnitude of identified impacts."]
+  - [RMF:MANAGE-2.2, example_of, "Showing realized benefit is part of sustaining value."]
+  - [RMF:MEASURE-4.3, example_of, "Field data on outcomes document performance improvements or declines."]
+- id: GM-LSI-03
+  family: LSI
+  title: Affected-community engagement and appeals
+  objective: Patients and affected communities can report problems and appeal AI-influenced outcomes, are engaged periodically on impacts, and their input is integrated into monitoring metrics.
+  activity: Publish a reporting and appeal route; hold periodic engagement; include results in monitoring reports.
+  evidence: Appeal route; appeal log; engagement summaries.
+  cadence: Continuous route; engagement at least annually.
+  owner_role: Patient experience with the AI governance office
+  links:
+  - [RMF:MEASURE-3.3, integral_to, "An appeal route for impacted communities, integrated into metrics, is what this subcategory asks for."]
+  - [RMF:MAP-5.2, example_of, "Engagement with affected communities is one practice for regular engagement with relevant AI actors."]
+  - [RMF:GOVERN-5.1, example_of, "A patient and community reporting route is one way to collect feedback from people external to the team."]
+  - [RMF:MEASURE-1.3, example_of, "Affected communities are consulted in support of assessments."]
+  - [RMF:MANAGE-4.3, example_of, "Engagement is a channel for communicating incidents and errors to affected communities."]
+  - [RMF:MEASURE-4.3, example_of, "Community input identifies performance changes in context-relevant terms."]
+  - [A84:LSI, example_of, "Community reports surface downstream impacts not visible in system data."]

@@ -1,0 +1,141 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://w3id.org/gap-m/schema/0.1.0/gapm_dispositions.schema.json",
+ "title": "GAP-M element dispositions",
+ "description": "Every mappable source element and its disposition.",
+ "type": "array",
+ "minItems": 1,
+ "items": {
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+   "element_id",
+   "framework",
+   "level",
+   "parent_id",
+   "code",
+   "label",
+   "disposition",
+   "reason",
+   "n_controls",
+   "n_integral",
+   "strongest_property",
+   "controls",
+   "review_status",
+   "source_type"
+  ],
+  "properties": {
+   "element_id": {
+    "type": "string",
+    "pattern": "^(RMF|A84|HTI|CPG):[A-Za-z0-9.\\-]+$"
+   },
+   "framework": {
+    "enum": [
+     "AI RMF 1.0",
+     "NIST AI 800-4",
+     "ONC HTI-1 (b)(11)",
+     "CISA CPG 2.0"
+    ]
+   },
+   "level": {
+    "type": "string",
+    "minLength": 1
+   },
+   "parent_id": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "code": {
+    "type": "string",
+    "minLength": 1
+   },
+   "label": {
+    "type": "string",
+    "minLength": 1
+   },
+   "disposition": {
+    "enum": [
+     "mapped",
+     "prerequisite",
+     "out_of_scope",
+     "uncovered"
+    ]
+   },
+   "reason": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "n_controls": {
+    "type": "integer",
+    "minimum": 0
+   },
+   "n_integral": {
+    "type": "integer",
+    "minimum": 0
+   },
+   "strongest_property": {
+    "enum": [
+     "integral_to",
+     "example_of",
+     "precedes",
+     null
+    ]
+   },
+   "controls": {
+    "type": "string"
+   },
+   "review_status": {
+    "enum": [
+     "proposed",
+     "accepted",
+     "revised",
+     "rejected"
+    ]
+   },
+   "source_type": {
+    "enum": [
+     "guidance",
+     "monitoring_challenge",
+     "regulatory_disclosure_requirement",
+     "voluntary_practice"
+    ]
+   }
+  },
+  "allOf": [
+   {
+    "if": {
+     "properties": {
+      "disposition": {
+       "const": "mapped"
+      }
+     }
+    },
+    "then": {
+     "properties": {
+      "n_controls": {
+       "minimum": 1
+      },
+      "reason": {
+       "type": "null"
+      }
+     }
+    },
+    "else": {
+     "properties": {
+      "n_controls": {
+       "const": 0
+      },
+      "reason": {
+       "type": "string",
+       "minLength": 10
+      }
+     }
+    }
+   }
+  ]
+ }
+}

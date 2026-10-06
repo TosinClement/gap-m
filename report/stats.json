@@ -1,0 +1,881 @@
+{
+ "version": "0.1.0",
+ "build_date": "2026-10-05",
+ "release_date": "2026-10-05",
+ "doi": "10.5281/zenodo.23178136",
+ "n_controls": 32,
+ "n_families": 8,
+ "n_links": 283,
+ "n_elements_mappable": 175,
+ "src": {
+  "rmf_functions": 4,
+  "rmf_categories": 19,
+  "rmf_subcategories": 72,
+  "a84_categories": 6,
+  "a84_category_challenges": 19,
+  "a84_crosscutting_categories": 5,
+  "a84_crosscutting_items": 13,
+  "hti_groups": 9,
+  "hti_attributes": 31,
+  "cpg_functions": 6,
+  "cpg_goals": 34
+ },
+ "coverage": {
+  "rmf": {
+   "elements": 72,
+   "mapped": 61,
+   "mapped_pct": 84.7,
+   "prerequisite": 0,
+   "out_of_scope": 9,
+   "uncovered": 2,
+   "with_integral": 7,
+   "with_integral_pct": 9.7,
+   "links": 114
+  },
+  "a84": {
+   "elements": 38,
+   "mapped": 36,
+   "mapped_pct": 94.7,
+   "prerequisite": 0,
+   "out_of_scope": 1,
+   "uncovered": 1,
+   "with_integral": 0,
+   "with_integral_pct": 0.0,
+   "links": 58
+  },
+  "hti": {
+   "elements": 31,
+   "mapped": 31,
+   "mapped_pct": 100.0,
+   "prerequisite": 0,
+   "out_of_scope": 0,
+   "uncovered": 0,
+   "with_integral": 1,
+   "with_integral_pct": 3.2,
+   "links": 88
+  },
+  "cpg": {
+   "elements": 34,
+   "mapped": 21,
+   "mapped_pct": 61.8,
+   "prerequisite": 13,
+   "out_of_scope": 0,
+   "uncovered": 0,
+   "with_integral": 5,
+   "with_integral_pct": 14.7,
+   "links": 23
+  }
+ },
+ "mapped_total": 149,
+ "mapped_total_pct": 85.1,
+ "rmf_by_function": {
+  "GOVERN": {
+   "elements": 19,
+   "mapped": 15,
+   "with_integral": 2
+  },
+  "MAP": {
+   "elements": 18,
+   "mapped": 14,
+   "with_integral": 0
+  },
+  "MEASURE": {
+   "elements": 22,
+   "mapped": 20,
+   "with_integral": 2
+  },
+  "MANAGE": {
+   "elements": 13,
+   "mapped": 12,
+   "with_integral": 3
+  }
+ },
+ "cpg_by_function": {
+  "Govern": {
+   "elements": 5,
+   "mapped": 5,
+   "with_integral": 1
+  },
+  "Identify": {
+   "elements": 5,
+   "mapped": 2,
+   "with_integral": 1
+  },
+  "Protect": {
+   "elements": 19,
+   "mapped": 10,
+   "with_integral": 3
+  },
+  "Detect": {
+   "elements": 2,
+   "mapped": 1,
+   "with_integral": 0
+  },
+  "Respond": {
+   "elements": 2,
+   "mapped": 2,
+   "with_integral": 0
+  },
+  "Recover": {
+   "elements": 1,
+   "mapped": 1,
+   "with_integral": 0
+  }
+ },
+ "hti_by_group": {
+  "B1": {
+   "elements": 4,
+   "mapped": 4,
+   "with_integral": 0
+  },
+  "B2": {
+   "elements": 4,
+   "mapped": 4,
+   "with_integral": 0
+  },
+  "B3": {
+   "elements": 2,
+   "mapped": 2,
+   "with_integral": 0
+  },
+  "B4": {
+   "elements": 4,
+   "mapped": 4,
+   "with_integral": 0
+  },
+  "B5": {
+   "elements": 2,
+   "mapped": 2,
+   "with_integral": 0
+  },
+  "B6": {
+   "elements": 4,
+   "mapped": 4,
+   "with_integral": 0
+  },
+  "B7": {
+   "elements": 5,
+   "mapped": 5,
+   "with_integral": 0
+  },
+  "B8": {
+   "elements": 4,
+   "mapped": 4,
+   "with_integral": 1
+  },
+  "B9": {
+   "elements": 2,
+   "mapped": 2,
+   "with_integral": 0
+  }
+ },
+ "a84_by_category": {
+  "FUN": {
+   "elements": 6,
+   "mapped": 6,
+   "with_integral": 0
+  },
+  "OPS": {
+   "elements": 3,
+   "mapped": 3,
+   "with_integral": 0
+  },
+  "HF": {
+   "elements": 7,
+   "mapped": 7,
+   "with_integral": 0
+  },
+  "SEC": {
+   "elements": 2,
+   "mapped": 2,
+   "with_integral": 0
+  },
+  "CMP": {
+   "elements": 3,
+   "mapped": 3,
+   "with_integral": 0
+  },
+  "LSI": {
+   "elements": 4,
+   "mapped": 3,
+   "with_integral": 0
+  },
+  "XC": {
+   "elements": 13,
+   "mapped": 12,
+   "with_integral": 0
+  }
+ },
+ "property_counts": {
+  "integral_to": 14,
+  "example_of": 269,
+  "precedes": 0
+ },
+ "property_pct": {
+  "integral_to": 4.9,
+  "example_of": 95.1,
+  "precedes": 0.0
+ },
+ "links_per_control": {
+  "min": 4,
+  "median": 7.0,
+  "max": 38,
+  "max_control": "GM-HF-03"
+ },
+ "controls_per_mapped_element": {
+  "min": 1,
+  "median": 2,
+  "max": 6,
+  "max_element": "RMF:MANAGE-4.1"
+ },
+ "controls_by_family": {
+  "GOV": 7,
+  "FUN": 6,
+  "FAIR": 2,
+  "OPS": 4,
+  "HF": 3,
+  "SEC": 4,
+  "CMP": 3,
+  "LSI": 3
+ },
+ "controls_touching_all_four": 4,
+ "controls_touching_three_plus": 27,
+ "hti_classes": {
+  "static_at_release": 16,
+  "process_description": 4,
+  "evidence_accruing": 9,
+  "locally_measured": 2
+ },
+ "hti_by_class": {
+  "static_at_release": {
+   "attributes": 16,
+   "with_integral": 0,
+   "with_precedes": 0,
+   "example_only": 16,
+   "na_flag": 0,
+   "ids_with_integral": []
+  },
+  "process_description": {
+   "attributes": 4,
+   "with_integral": 0,
+   "with_precedes": 0,
+   "example_only": 4,
+   "na_flag": 2,
+   "ids_with_integral": []
+  },
+  "evidence_accruing": {
+   "attributes": 9,
+   "with_integral": 0,
+   "with_precedes": 0,
+   "example_only": 9,
+   "na_flag": 7,
+   "ids_with_integral": []
+  },
+  "locally_measured": {
+   "attributes": 2,
+   "with_integral": 1,
+   "with_precedes": 0,
+   "example_only": 1,
+   "na_flag": 2,
+   "ids_with_integral": [
+    "HTI:B8.ii"
+   ]
+  }
+ },
+ "hti_na_flag": 11,
+ "hti_with_integral": 1,
+ "hti_with_integral_ids": [
+  "HTI:B8.ii"
+ ],
+ "hti_with_precedes": 0,
+ "necessity_links": [
+  {
+   "link_id": "GM-GOV-01>RMF:MANAGE-4.1",
+   "property": "integral_to",
+   "target_code": "MANAGE 4.1",
+   "target_framework": "AI RMF 1.0",
+   "control_id": "GM-GOV-01"
+  },
+  {
+   "link_id": "GM-GOV-02>RMF:GOVERN-1.6",
+   "property": "integral_to",
+   "target_code": "GOVERN 1.6",
+   "target_framework": "AI RMF 1.0",
+   "control_id": "GM-GOV-02"
+  },
+  {
+   "link_id": "GM-GOV-03>CPG:1.D",
+   "property": "integral_to",
+   "target_code": "1.D",
+   "target_framework": "CISA CPG 2.0",
+   "control_id": "GM-GOV-03"
+  },
+  {
+   "link_id": "GM-FUN-02>HTI:B8.ii",
+   "property": "integral_to",
+   "target_code": "(B)(8)(ii)",
+   "target_framework": "ONC HTI-1 (b)(11)",
+   "control_id": "GM-FUN-02"
+  },
+  {
+   "link_id": "GM-FUN-05>RMF:MEASURE-4.3",
+   "property": "integral_to",
+   "target_code": "MEASURE 4.3",
+   "target_framework": "AI RMF 1.0",
+   "control_id": "GM-FUN-05"
+  },
+  {
+   "link_id": "GM-FUN-06>RMF:MANAGE-2.4",
+   "property": "integral_to",
+   "target_code": "MANAGE 2.4",
+   "target_framework": "AI RMF 1.0",
+   "control_id": "GM-FUN-06"
+  },
+  {
+   "link_id": "GM-OPS-01>CPG:3.Q",
+   "property": "integral_to",
+   "target_code": "3.Q",
+   "target_framework": "CISA CPG 2.0",
+   "control_id": "GM-OPS-01"
+  },
+  {
+   "link_id": "GM-OPS-03>CPG:3.N",
+   "property": "integral_to",
+   "target_code": "3.N",
+   "target_framework": "CISA CPG 2.0",
+   "control_id": "GM-OPS-03"
+  },
+  {
+   "link_id": "GM-HF-01>RMF:MEASURE-3.3",
+   "property": "integral_to",
+   "target_code": "MEASURE 3.3",
+   "target_framework": "AI RMF 1.0",
+   "control_id": "GM-HF-01"
+  },
+  {
+   "link_id": "GM-SEC-02>CPG:2.B",
+   "property": "integral_to",
+   "target_code": "2.B",
+   "target_framework": "CISA CPG 2.0",
+   "control_id": "GM-SEC-02"
+  },
+  {
+   "link_id": "GM-SEC-03>CPG:3.H",
+   "property": "integral_to",
+   "target_code": "3.H",
+   "target_framework": "CISA CPG 2.0",
+   "control_id": "GM-SEC-03"
+  },
+  {
+   "link_id": "GM-CMP-01>RMF:GOVERN-1.1",
+   "property": "integral_to",
+   "target_code": "GOVERN 1.1",
+   "target_framework": "AI RMF 1.0",
+   "control_id": "GM-CMP-01"
+  },
+  {
+   "link_id": "GM-LSI-01>RMF:MANAGE-4.3",
+   "property": "integral_to",
+   "target_code": "MANAGE 4.3",
+   "target_framework": "AI RMF 1.0",
+   "control_id": "GM-LSI-01"
+  },
+  {
+   "link_id": "GM-LSI-03>RMF:MEASURE-3.3",
+   "property": "integral_to",
+   "target_code": "MEASURE 3.3",
+   "target_framework": "AI RMF 1.0",
+   "control_id": "GM-LSI-03"
+  }
+ ],
+ "pass2": {
+  "changed": [
+   {
+    "link_id": "GM-GOV-02>CPG:2.A",
+    "pass1_verdict": "supported",
+    "pass1_property": "integral_to",
+    "verdict": "revised",
+    "property": "example_of"
+   },
+   {
+    "link_id": "GM-GOV-06>RMF:GOVERN-2.2",
+    "pass1_verdict": "supported",
+    "pass1_property": "integral_to",
+    "verdict": "revised",
+    "property": "example_of"
+   },
+   {
+    "link_id": "GM-GOV-07>RMF:MEASURE-1.3",
+    "pass1_verdict": "supported",
+    "pass1_property": "integral_to",
+    "verdict": "revised",
+    "property": "example_of"
+   },
+   {
+    "link_id": "GM-FUN-04>HTI:B8.ii",
+    "pass1_verdict": "supported",
+    "pass1_property": "precedes",
+    "verdict": "unresolved",
+    "property": "example_of"
+   },
+   {
+    "link_id": "GM-FUN-04>HTI:B8.iv",
+    "pass1_verdict": "supported",
+    "pass1_property": "precedes",
+    "verdict": "revised",
+    "property": "example_of"
+   },
+   {
+    "link_id": "GM-FAIR-02>HTI:B8.iv",
+    "pass1_verdict": "supported",
+    "pass1_property": "integral_to",
+    "verdict": "unresolved",
+    "property": "example_of"
+   },
+   {
+    "link_id": "GM-HF-01>RMF:MANAGE-4.1",
+    "pass1_verdict": "supported",
+    "pass1_property": "integral_to",
+    "verdict": "revised",
+    "property": "example_of"
+   }
+  ],
+  "rechecked": 21,
+  "cores_narrowed": [
+   "GM-FAIR-02",
+   "GM-FUN-05",
+   "GM-FUN-06",
+   "GM-GOV-01",
+   "GM-GOV-03",
+   "GM-HF-01",
+   "GM-LSI-01",
+   "GM-OPS-01",
+   "GM-SEC-02"
+  ],
+  "conditional_relevance_supported": 9,
+  "conditional_relevance_unsupported": 0
+ },
+ "hti_example_only": 30,
+ "hti_not_static": 15,
+ "audit": {
+  "audited": 107,
+  "audited_integral": 100,
+  "audited_precedes": 7,
+  "supported": 14,
+  "revised": 84,
+  "unresolved": 9,
+  "by_original": {
+   "integral_to": {
+    "supported": 14,
+    "revised": 78,
+    "unresolved": 8
+   },
+   "precedes": {
+    "supported": 0,
+    "revised": 6,
+    "unresolved": 1
+   }
+  },
+  "by_source_type": {
+   "guidance": {
+    "supported": 8,
+    "revised": 21,
+    "unresolved": 3
+   },
+   "monitoring_challenge": {
+    "supported": 0,
+    "revised": 31,
+    "unresolved": 0
+   },
+   "regulatory_disclosure_requirement": {
+    "supported": 1,
+    "revised": 26,
+    "unresolved": 4
+   },
+   "voluntary_practice": {
+    "supported": 5,
+    "revised": 6,
+    "unresolved": 2
+   }
+  },
+  "unresolved_ids": [
+   "GM-GOV-04>CPG:1.C",
+   "GM-FUN-02>RMF:MEASURE-2.4",
+   "GM-FUN-04>HTI:B8.ii",
+   "GM-FUN-06>RMF:MANAGE-1.3",
+   "GM-FAIR-02>HTI:B8.iv",
+   "GM-FAIR-02>RMF:MEASURE-2.11",
+   "GM-OPS-04>CPG:3.O",
+   "GM-HF-03>HTI:B8.ii",
+   "GM-HF-03>HTI:B8.iv"
+  ],
+  "supported_ids": [
+   "GM-GOV-01>RMF:MANAGE-4.1",
+   "GM-GOV-02>RMF:GOVERN-1.6",
+   "GM-GOV-03>CPG:1.D",
+   "GM-FUN-02>HTI:B8.ii",
+   "GM-FUN-05>RMF:MEASURE-4.3",
+   "GM-FUN-06>RMF:MANAGE-2.4",
+   "GM-OPS-01>CPG:3.Q",
+   "GM-OPS-03>CPG:3.N",
+   "GM-HF-01>RMF:MEASURE-3.3",
+   "GM-SEC-02>CPG:2.B",
+   "GM-SEC-03>CPG:3.H",
+   "GM-CMP-01>RMF:GOVERN-1.1",
+   "GM-LSI-01>RMF:MANAGE-4.3",
+   "GM-LSI-03>RMF:MEASURE-3.3"
+  ]
+ },
+ "author_review": "complete",
+ "author_review_progress": {
+  "controls_total": 32,
+  "controls_reviewed": 32,
+  "controls_accepted_as_written": 18,
+  "controls_accepted_with_edits": 14,
+  "census_integral_to": 14,
+  "census_conditional": 9,
+  "sample_seed": 20261005,
+  "sample_population": 262,
+  "sample_size": 66,
+  "sample_fraction": 0.25,
+  "targeted_checks": 11,
+  "earlier_removals_ruled": 32,
+  "earlier_rewordings_ruled": 9,
+  "links_in_review_set": 100,
+  "links_reviewed": 100,
+  "links_accepted": 87,
+  "links_revised": 11,
+  "links_removed": 2,
+  "links_current_reviewed": 98,
+  "links_current_unreviewed": 185,
+  "consistency_edited_unreviewed": 16,
+  "spot_checks": {
+   "ai_rmf": "All four match",
+   "ai_800_4": "All counts match",
+   "hti_1": "All match; no newer amendment",
+   "cpg_2_0": "All match"
+  },
+  "downgraded_current": 82,
+  "downgraded_reviewed": 27
+ },
+ "author_review_scope_text": "Author review: complete. The author individually reviewed all 32 practice definitions, every integral_to link (14), every conditional link (9), a seeded random sample of 66 of the 262 other example_of links (25%, seed 20261005), plus 11 links in targeted checks; ruled on all 32 removals from the earlier AI-assisted review; and spot-checked source text in 4 of the 4 sources. 185 of the 283 current links have not been individually reviewed by the author. Details and the remaining checklist items are in docs/AUTHOR_REVIEW.md.",
+ "ledger": {
+  "integral_to": {
+   "original": 100,
+   "still_integral_to": 14,
+   "to_example_of_revised": 77,
+   "to_example_of_conditional_unresolved": 8,
+   "removed_by_example_review": 1,
+   "removed_by_author_review": 0
+  },
+  "precedes": {
+   "original": 7,
+   "still_precedes": 0,
+   "to_example_of_revised": 5,
+   "to_example_of_conditional_unresolved": 1,
+   "removed_by_example_review": 0,
+   "removed_by_author_review": 1
+  },
+  "example_of": {
+   "original": 210,
+   "kept": 170,
+   "kept_rationale_revised": 8,
+   "removed": 31,
+   "removed_by_author_review": 1
+  },
+  "original_total": 317,
+  "removed_total": 34,
+  "removed_by_example_review_total": 32,
+  "removed_by_author_review_total": 2,
+  "current_total": 283,
+  "current_by_property": {
+   "integral_to": 14,
+   "example_of": 269,
+   "precedes": 0
+  },
+  "conditional_links": 9
+ },
+ "example_review": {
+  "reviewed": 210,
+  "kept": 170,
+  "revised": 9,
+  "removed": 31,
+  "later_removed_by_author": 1,
+  "audited_removed": 1,
+  "removed_by_test": {
+   "T1": 13,
+   "T2": 7,
+   "T3": 12
+  },
+  "newly_unmapped": [
+   "RMF:GOVERN-2.3",
+   "RMF:GOVERN-3.2",
+   "RMF:MAP-3.2",
+   "RMF:MAP-4.1",
+   "RMF:MEASURE-2.12",
+   "A84:LSI-B1",
+   "A84:XC-IOC-B1",
+   "CPG:2.C",
+   "CPG:2.D",
+   "CPG:3.J",
+   "CPG:3.S",
+   "CPG:4.A"
+  ]
+ },
+ "n_uncovered": 3,
+ "weak_elements": [
+  "RMF:GOVERN-1.2",
+  "RMF:GOVERN-1.3",
+  "RMF:GOVERN-1.4",
+  "RMF:GOVERN-1.5",
+  "RMF:GOVERN-1.7",
+  "RMF:GOVERN-2.1",
+  "RMF:GOVERN-2.2",
+  "RMF:GOVERN-4.2",
+  "RMF:GOVERN-4.3",
+  "RMF:GOVERN-5.1",
+  "RMF:GOVERN-5.2",
+  "RMF:GOVERN-6.1",
+  "RMF:GOVERN-6.2",
+  "RMF:MAP-1.1",
+  "RMF:MAP-1.4",
+  "RMF:MAP-1.5",
+  "RMF:MAP-1.6",
+  "RMF:MAP-2.1",
+  "RMF:MAP-2.2",
+  "RMF:MAP-2.3",
+  "RMF:MAP-3.1",
+  "RMF:MAP-3.3",
+  "RMF:MAP-3.4",
+  "RMF:MAP-3.5",
+  "RMF:MAP-4.2",
+  "RMF:MAP-5.1",
+  "RMF:MAP-5.2",
+  "RMF:MEASURE-1.1",
+  "RMF:MEASURE-1.2",
+  "RMF:MEASURE-1.3",
+  "RMF:MEASURE-2.1",
+  "RMF:MEASURE-2.3",
+  "RMF:MEASURE-2.4",
+  "RMF:MEASURE-2.5",
+  "RMF:MEASURE-2.6",
+  "RMF:MEASURE-2.7",
+  "RMF:MEASURE-2.8",
+  "RMF:MEASURE-2.9",
+  "RMF:MEASURE-2.10",
+  "RMF:MEASURE-2.11",
+  "RMF:MEASURE-2.13",
+  "RMF:MEASURE-3.1",
+  "RMF:MEASURE-3.2",
+  "RMF:MEASURE-4.1",
+  "RMF:MEASURE-4.2",
+  "RMF:MANAGE-1.1",
+  "RMF:MANAGE-1.2",
+  "RMF:MANAGE-1.3",
+  "RMF:MANAGE-1.4",
+  "RMF:MANAGE-2.1",
+  "RMF:MANAGE-2.2",
+  "RMF:MANAGE-2.3",
+  "RMF:MANAGE-3.1",
+  "RMF:MANAGE-4.2",
+  "A84:FUN",
+  "A84:OPS",
+  "A84:HF",
+  "A84:SEC",
+  "A84:CMP",
+  "A84:LSI",
+  "A84:FUN-G1",
+  "A84:FUN-G2",
+  "A84:FUN-B1",
+  "A84:FUN-B2",
+  "A84:FUN-B3",
+  "A84:OPS-G1",
+  "A84:OPS-B1",
+  "A84:HF-G1",
+  "A84:HF-G2",
+  "A84:HF-G3",
+  "A84:HF-G4",
+  "A84:HF-G5",
+  "A84:HF-B1",
+  "A84:SEC-B1",
+  "A84:CMP-G1",
+  "A84:CMP-B1",
+  "A84:LSI-G1",
+  "A84:LSI-G2",
+  "A84:XC-TMT-G1",
+  "A84:XC-TMT-B1",
+  "A84:XC-TMT-B2",
+  "A84:XC-TMT-B3",
+  "A84:XC-VT-G1",
+  "A84:XC-VT-G2",
+  "A84:XC-PC-B1",
+  "A84:XC-PC-B2",
+  "A84:XC-IOC-B2",
+  "A84:XC-IOC-B3",
+  "A84:XC-RR-B1",
+  "A84:XC-RR-B2",
+  "HTI:B1.i",
+  "HTI:B1.ii",
+  "HTI:B1.iii",
+  "HTI:B1.iv",
+  "HTI:B2.i",
+  "HTI:B2.ii",
+  "HTI:B2.iii",
+  "HTI:B2.iv",
+  "HTI:B3.i",
+  "HTI:B3.ii",
+  "HTI:B4.i",
+  "HTI:B4.ii",
+  "HTI:B4.iii",
+  "HTI:B4.iv",
+  "HTI:B5.i",
+  "HTI:B5.ii",
+  "HTI:B6.i",
+  "HTI:B6.ii",
+  "HTI:B6.iii",
+  "HTI:B6.iv",
+  "HTI:B7.i",
+  "HTI:B7.ii",
+  "HTI:B7.iii",
+  "HTI:B7.iv",
+  "HTI:B7.v",
+  "HTI:B8.i",
+  "HTI:B8.iii",
+  "HTI:B8.iv",
+  "HTI:B9.i",
+  "HTI:B9.ii",
+  "CPG:1.A",
+  "CPG:1.B",
+  "CPG:1.C",
+  "CPG:1.E",
+  "CPG:2.A",
+  "CPG:3.D",
+  "CPG:3.E",
+  "CPG:3.F",
+  "CPG:3.G",
+  "CPG:3.K",
+  "CPG:3.O",
+  "CPG:3.P",
+  "CPG:4.B",
+  "CPG:5.A",
+  "CPG:5.B",
+  "CPG:6.A"
+ ],
+ "n_weak_elements": 136,
+ "unmapped": [
+  {
+   "element_id": "RMF:GOVERN-2.3",
+   "disposition": "out_of_scope"
+  },
+  {
+   "element_id": "RMF:GOVERN-3.1",
+   "disposition": "out_of_scope"
+  },
+  {
+   "element_id": "RMF:GOVERN-3.2",
+   "disposition": "out_of_scope"
+  },
+  {
+   "element_id": "RMF:GOVERN-4.1",
+   "disposition": "out_of_scope"
+  },
+  {
+   "element_id": "RMF:MAP-1.2",
+   "disposition": "out_of_scope"
+  },
+  {
+   "element_id": "RMF:MAP-1.3",
+   "disposition": "out_of_scope"
+  },
+  {
+   "element_id": "RMF:MAP-3.2",
+   "disposition": "uncovered"
+  },
+  {
+   "element_id": "RMF:MAP-4.1",
+   "disposition": "out_of_scope"
+  },
+  {
+   "element_id": "RMF:MEASURE-2.2",
+   "disposition": "out_of_scope"
+  },
+  {
+   "element_id": "RMF:MEASURE-2.12",
+   "disposition": "uncovered"
+  },
+  {
+   "element_id": "RMF:MANAGE-3.2",
+   "disposition": "out_of_scope"
+  },
+  {
+   "element_id": "A84:LSI-B1",
+   "disposition": "out_of_scope"
+  },
+  {
+   "element_id": "A84:XC-IOC-B1",
+   "disposition": "uncovered"
+  },
+  {
+   "element_id": "CPG:2.C",
+   "disposition": "prerequisite"
+  },
+  {
+   "element_id": "CPG:2.D",
+   "disposition": "prerequisite"
+  },
+  {
+   "element_id": "CPG:2.E",
+   "disposition": "prerequisite"
+  },
+  {
+   "element_id": "CPG:3.A",
+   "disposition": "prerequisite"
+  },
+  {
+   "element_id": "CPG:3.B",
+   "disposition": "prerequisite"
+  },
+  {
+   "element_id": "CPG:3.C",
+   "disposition": "prerequisite"
+  },
+  {
+   "element_id": "CPG:3.I",
+   "disposition": "prerequisite"
+  },
+  {
+   "element_id": "CPG:3.J",
+   "disposition": "prerequisite"
+  },
+  {
+   "element_id": "CPG:3.L",
+   "disposition": "prerequisite"
+  },
+  {
+   "element_id": "CPG:3.M",
+   "disposition": "prerequisite"
+  },
+  {
+   "element_id": "CPG:3.R",
+   "disposition": "prerequisite"
+  },
+  {
+   "element_id": "CPG:3.S",
+   "disposition": "prerequisite"
+  },
+  {
+   "element_id": "CPG:4.A",
+   "disposition": "prerequisite"
+  }
+ ],
+ "cpg_hash_match": true,
+ "a84_strings_verified": 55,
+ "rmf_dehyphenations": 53,
+ "hti_section_last_amended": "2025-10-01",
+ "negative_tests_passed": 5,
+ "negative_tests_total": 5,
+ "statement_check": {
+  "checked": 12,
+  "mismatched": []
+ }
+}

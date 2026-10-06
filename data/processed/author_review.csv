@@ -1,0 +1,318 @@
+item_type,item_id,review_set,author_response,result,edit_applied,date
+control,GM-GOV-01,all,Accept with suggested edit,,owner_role: 'approved by the AI governance body' -> 'approved by the AI governance body or equivalent',2026-10-05
+control,GM-GOV-02,all,Accept with suggested edit,,objective: 'current source-attribute record' -> 'a link to or copy of the current source-attribute record',2026-10-05
+control,GM-GOV-03,all,Accept with suggested edit,,"objective: 'require timely notice of' -> 'require notice, within contract-defined time frames, of'",2026-10-05
+control,GM-GOV-04,all,Accept as written,,,2026-10-05
+control,GM-GOV-05,all,Accept with suggested edit,,objective: added 'and subject to legal and privacy review' to the sharing condition,2026-10-05
+control,GM-GOV-06,all,Accept as written,,,2026-10-05
+control,GM-GOV-07,all,Accept as written,,,2026-10-05
+control,GM-FUN-01,all,Accept with suggested edits,,objective: 'developer same-source and external results' -> 'the developer's internal and external validation results'; silent trial 'where feasible' in objective and activity,2026-10-05
+control,GM-FUN-02,all,Accept as written,,,2026-10-05
+control,GM-FUN-03,all,Accept as written,,,2026-10-05
+control,GM-FUN-04,all,Accept with suggested edit,,'ground-truth' -> 'reference-standard' in objective and core (link_audit.yaml cores),2026-10-05
+control,GM-FUN-05,all,Accept with suggested edit,,"objective: pre-go-live comparison 'where the organization controls update timing, and otherwise promptly after'",2026-10-05
+control,GM-FUN-06,all,Accept as written,,,2026-10-05
+control,GM-FAIR-01,all,Accept with suggested edit,,objective: noted that the (A)(5)-(13) list is given for evidence-based interventions and is used as a reference set,2026-10-05
+control,GM-FAIR-02,all,Accept as written,,,2026-10-05
+control,GM-OPS-01,all,Accept with both edits,,"objective: store is 'access-controlled, tamper-evident'; inputs 'minimized for protected health information'",2026-10-05
+control,GM-OPS-02,all,Accept as written,,,2026-10-05
+control,GM-OPS-03,all,Accept with suggested edit,,objective: 'source attributes' -> 'the organization's source-attribute record',2026-10-05
+control,GM-OPS-04,all,Accept as written,,,2026-10-05
+control,GM-HF-01,all,Accept as written,,,2026-10-05
+control,GM-HF-02,all,Accept with suggested edit,,objective: 'by user role and site' -> 'aggregated by user role and site',2026-10-05
+control,GM-HF-03,all,Accept as written,,,2026-10-05
+control,GM-SEC-01,all,Accept as written,,,2026-10-05
+control,GM-SEC-02,all,Accept with suggested edit,,objective: KEV catalog parenthesis now attached to model-serving software and libraries; 'weaknesses in model artifacts' listed separately,2026-10-05
+control,GM-SEC-03,all,Accept with suggested edit,,objective: 'source attributes' -> 'the organization's source-attribute record',2026-10-05
+control,GM-SEC-04,all,Accept as written,,,2026-10-05
+control,GM-CMP-01,all,Accept as written,,,2026-10-05
+control,GM-CMP-02,all,Accept with suggested edit,,"cadence: 'before certification or accreditation events' -> 'before accreditation reviews, and after developer certification updates'",2026-10-05
+control,GM-CMP-03,all,Accept as written,,,2026-10-05
+control,GM-LSI-01,all,Accept as written,,,2026-10-05
+control,GM-LSI-02,all,Accept as written,,,2026-10-05
+control,GM-LSI-03,all,Accept as written,,,2026-10-05
+link,GM-CMP-01>A84:CMP,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-01>A84:CMP-B1,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-01>CPG:1.A,random sample,Accept,accepted,,2026-10-05
+link,GM-CMP-01>CPG:1.B,random sample,Accept,accepted,,2026-10-05
+link,GM-CMP-01>RMF:GOVERN-1.1,integral_to (all),Accept,accepted,,2026-10-05
+link,GM-CMP-01>RMF:MAP-1.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-02>A84:CMP,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-02>HTI:B6.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-02>HTI:B6.ii,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-02>HTI:B6.iii,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-02>HTI:B6.iv,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-02>HTI:B7.iii,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-02>HTI:B7.iv,random sample,Accept,accepted,,2026-10-05
+link,GM-CMP-02>HTI:B7.v,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-02>HTI:B8.ii,random sample,Accept,accepted,,2026-10-05
+link,GM-CMP-02>HTI:B8.iv,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-02>HTI:B9.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-02>HTI:B9.ii,random sample,Accept,accepted,,2026-10-05
+link,GM-CMP-02>RMF:GOVERN-1.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-03>A84:CMP-G1,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-03>A84:HF-G2,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-03>HTI:B2.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-03>HTI:B2.ii,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-03>HTI:B2.iii,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-03>HTI:B2.iv,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-03>HTI:B3.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-03>RMF:MAP-1.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-03>RMF:MAP-2.2,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-03>RMF:MAP-3.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-CMP-03>RMF:MEASURE-2.6,random sample,Accept,accepted,,2026-10-05
+link,GM-FAIR-01>A84:FUN-G2,not sampled,not_reviewed,not_reviewed,,
+link,GM-FAIR-01>HTI:B4.ii,not sampled,not_reviewed,not_reviewed,,
+link,GM-FAIR-01>HTI:B4.iii,not sampled,not_reviewed,not_reviewed,,
+link,GM-FAIR-01>HTI:B6.iii,not sampled,not_reviewed,not_reviewed,,
+link,GM-FAIR-01>HTI:B7.ii,not sampled,not_reviewed,not_reviewed,,
+link,GM-FAIR-01>HTI:B7.iv,random sample,Accept,accepted,,2026-10-05
+link,GM-FAIR-01>RMF:MAP-2.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-FAIR-01>RMF:MEASURE-1.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-FAIR-01>RMF:MEASURE-2.11,not sampled,not_reviewed,not_reviewed,,
+link,GM-FAIR-02>A84:FUN-B1,random sample,Accept,accepted,,2026-10-05
+link,GM-FAIR-02>A84:LSI,not sampled,not_reviewed,not_reviewed,,
+link,GM-FAIR-02>HTI:B8.iii,random sample,Accept,accepted,,2026-10-05
+link,GM-FAIR-02>HTI:B8.iv,conditional (all),Accept; correct (A)(5)-(13) phrase,accepted,"audit basis: (A)(5)-(13) described as a list for evidence-based interventions that points toward, but does not establish, a group reading",2026-10-05
+link,GM-FAIR-02>RMF:MEASURE-2.11,conditional (all),Accept; correct (A)(5)-(13) phrase,accepted,audit basis: same (A)(5)-(13) correction as GM-FAIR-02>HTI:B8.iv,2026-10-05
+link,GM-FAIR-02>RMF:MEASURE-2.4,not sampled,not_reviewed,not_reviewed,,
+link,GM-FAIR-02>RMF:MEASURE-3.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-01>A84:FUN,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-01>A84:FUN-G2,random sample,Accept,accepted,,2026-10-05
+link,GM-FUN-01>HTI:B4.iv,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-01>HTI:B7.i,random sample,Accept,accepted,,2026-10-05
+link,GM-FUN-01>HTI:B7.iii,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-01>HTI:B8.ii,random sample,Accept,accepted,,2026-10-05
+link,GM-FUN-01>RMF:MANAGE-1.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-01>RMF:MAP-1.5,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-01>RMF:MEASURE-1.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-01>RMF:MEASURE-2.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-01>RMF:MEASURE-2.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-01>RMF:MEASURE-2.5,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-02>A84:FUN,random sample,Accept,accepted,,2026-10-05
+link,GM-FUN-02>A84:FUN-B1,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-02>HTI:B8.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-02>HTI:B8.ii,integral_to (all),Accept,accepted,,2026-10-05
+link,GM-FUN-02>RMF:MANAGE-2.2,random sample,Accept,accepted,,2026-10-05
+link,GM-FUN-02>RMF:MEASURE-2.4,conditional (all),Accept as conditional,accepted,,2026-10-05
+link,GM-FUN-02>RMF:MEASURE-2.5,random sample,Accept; reword rationale,revised,rationale: 'Ongoing local results show the system stays valid and reliable after deployment.' -> 'Local validity results document how well the system generalizes beyond the conditions under which it was developed.',2026-10-05
+link,GM-FUN-02>RMF:MEASURE-3.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-02>RMF:MEASURE-4.2,targeted check,Accept new rationale,accepted,,2026-10-05
+link,GM-FUN-03>A84:FUN-B1,random sample,Accept,accepted,,2026-10-05
+link,GM-FUN-03>A84:XC-PC-B1,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-03>HTI:B4.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-03>HTI:B4.iii,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-03>HTI:B4.iv,random sample,Accept,accepted,,2026-10-05
+link,GM-FUN-03>RMF:MEASURE-2.4,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-03>RMF:MEASURE-2.5,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-03>RMF:MEASURE-3.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-04>A84:FUN-B2,random sample,Accept,accepted,,2026-10-05
+link,GM-FUN-04>A84:XC-TMT-B2,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-04>HTI:B8.ii,conditional (all),Accept as conditional,accepted,,2026-10-05
+link,GM-FUN-04>HTI:B8.iv,random sample,Accept,accepted,,2026-10-05
+link,GM-FUN-04>RMF:MAP-2.3,random sample,Accept,accepted,,2026-10-05
+link,GM-FUN-04>RMF:MEASURE-1.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-04>RMF:MEASURE-3.2,random sample,Accept,accepted,,2026-10-05
+link,GM-FUN-05>A84:FUN-B3,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-05>A84:FUN-G1,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-05>HTI:B9.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-05>HTI:B9.ii,random sample,Accept,accepted,,2026-10-05
+link,GM-FUN-05>RMF:MANAGE-4.2,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-05>RMF:MEASURE-3.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-05>RMF:MEASURE-4.3,integral_to (all),Accept,accepted,,2026-10-05
+link,GM-FUN-06>A84:FUN-G2,random sample,Accept; reword rationale,revised,rationale now attributes the threshold point to practitioners and quotes AI 800-4 p. 18: 'to trigger corrective actions or reviews',2026-10-05
+link,GM-FUN-06>HTI:B9.ii,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-06>RMF:GOVERN-1.7,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-06>RMF:MANAGE-1.2,not sampled,not_reviewed,not_reviewed,,
+link,GM-FUN-06>RMF:MANAGE-1.3,conditional (all),Accept; align condition with core,accepted,"audit basis and condition now refer to the documented deactivation mechanism (the control's core), not the trigger-action table",2026-10-05
+link,GM-FUN-06>RMF:MANAGE-2.4,integral_to (all),Accept,accepted,,2026-10-05
+link,GM-FUN-06>RMF:MEASURE-2.6,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-01>A84:XC-TMT-B1,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-01>HTI:B8.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-01>HTI:B8.iii,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-01>RMF:GOVERN-1.2,targeted check,Accept new rationale,accepted,,2026-10-05
+link,GM-GOV-01>RMF:GOVERN-1.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-01>RMF:GOVERN-1.4,random sample,Accept,accepted,,2026-10-05
+link,GM-GOV-01>RMF:GOVERN-1.5,random sample,Accept,accepted,,2026-10-05
+link,GM-GOV-01>RMF:GOVERN-2.1,random sample,Accept,accepted,,2026-10-05
+link,GM-GOV-01>RMF:MANAGE-4.1,integral_to (all),Accept; tidy audit basis,accepted,audit basis: 'a written plan' -> 'a plan for the system' (link rationale unchanged),2026-10-05
+link,GM-GOV-01>RMF:MEASURE-4.1,targeted check,Accept new rationale,accepted,,2026-10-05
+link,GM-GOV-02>A84:XC-PC-B1,random sample,Accept,accepted,,2026-10-05
+link,GM-GOV-02>CPG:2.A,random sample,Accept,accepted,,2026-10-05
+link,GM-GOV-02>HTI:B1.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-02>HTI:B1.iv,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-02>RMF:GOVERN-1.6,integral_to (all),Accept; fix rationale,revised,rationale replaced: 'GOVERN 1.6 asks for mechanisms to inventory AI systems; recording deployed AI systems in an inventory is what such a mechanism does.',2026-10-05
+link,GM-GOV-02>RMF:MAP-2.1,targeted check,Accept new rationale,accepted,,2026-10-05
+link,GM-GOV-03>A84:XC-VT-G2,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-03>CPG:1.D,integral_to (all),Accept,accepted,,2026-10-05
+link,GM-GOV-03>CPG:1.E,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-03>HTI:B6.i,random sample,Accept all three; reword,revised,rationale: 'the notice clause' -> 'the contract's clause requiring notice of new validation results',2026-10-05
+link,GM-GOV-03>HTI:B6.ii,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-03>HTI:B6.iii,random sample,Accept all three; reword,revised,rationale: 'the notice clause' -> 'the contract's clause requiring notice of new validation results',2026-10-05
+link,GM-GOV-03>HTI:B6.iv,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-03>HTI:B7.iii,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-03>HTI:B7.iv,random sample,Accept all three; reword,revised,rationale: 'the notice clause' -> 'the contract's clause requiring notice of new validation results',2026-10-05
+link,GM-GOV-03>HTI:B9.i,targeted check,Accept new rationale,accepted,,2026-10-05
+link,GM-GOV-03>RMF:GOVERN-6.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-03>RMF:GOVERN-6.2,targeted check,Accept new rationale,accepted,,2026-10-05
+link,GM-GOV-03>RMF:MANAGE-3.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-03>RMF:MANAGE-3.2,random sample,Remove,rejected,"link removed (recorded in example_review.yaml with scope: author_review, test T2)",2026-10-05
+link,GM-GOV-03>RMF:MAP-4.2,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-04>A84:XC-TMT-G1,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-04>CPG:1.C,conditional (all),Accept as conditional,accepted,,2026-10-05
+link,GM-GOV-04>CPG:5.A,targeted check,Accept,accepted,,2026-10-05
+link,GM-GOV-04>CPG:5.B,targeted check,Accept; reword to cyber scope,revised,rationale limited to confirmed cybersecurity incidents involving the AI system,2026-10-05
+link,GM-GOV-04>CPG:6.A,targeted check,Accept; replace rationale,revised,rationale replaced: 'Updating the AI annex after each AI incident is one way to refine the incident response plan from lessons learned.',2026-10-05
+link,GM-GOV-04>RMF:GOVERN-4.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-04>RMF:MANAGE-2.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-04>RMF:MANAGE-4.1,random sample,Accept,accepted,,2026-10-05
+link,GM-GOV-04>RMF:MANAGE-4.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-05>A84:LSI-G2,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-05>A84:XC-IOC-B2,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-05>A84:XC-VT-G2,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-05>HTI:B3.ii,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-05>HTI:B7.v,random sample,Accept,accepted,,2026-10-05
+link,GM-GOV-05>RMF:GOVERN-4.2,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-05>RMF:GOVERN-4.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-05>RMF:MANAGE-4.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-06>A84:XC-IOC-B3,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-06>A84:XC-PC-B2,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-06>A84:XC-RR-B1,random sample,Accept,accepted,,2026-10-05
+link,GM-GOV-06>A84:XC-RR-B2,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-06>RMF:GOVERN-2.2,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-06>RMF:MANAGE-2.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-06>RMF:MAP-3.4,random sample,Accept,accepted,,2026-10-05
+link,GM-GOV-07>A84:XC-TMT-B2,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-07>RMF:MEASURE-1.2,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-07>RMF:MEASURE-1.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-GOV-07>RMF:MEASURE-2.13,random sample,Accept,accepted,,2026-10-05
+link,GM-GOV-07>RMF:MEASURE-4.2,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-01>A84:HF,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-01>A84:HF-B1,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-01>HTI:B3.ii,random sample,Accept,accepted,,2026-10-05
+link,GM-HF-01>RMF:GOVERN-5.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-01>RMF:GOVERN-5.2,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-01>RMF:MANAGE-4.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-01>RMF:MAP-5.2,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-01>RMF:MEASURE-3.3,integral_to (all),Accept,accepted,,2026-10-05
+link,GM-HF-02>A84:HF-G1,random sample,Accept,accepted,,2026-10-05
+link,GM-HF-02>A84:HF-G2,random sample,Accept,accepted,,2026-10-05
+link,GM-HF-02>A84:HF-G3,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-02>A84:HF-G4,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-02>A84:HF-G5,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-02>HTI:B2.iii,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-02>HTI:B2.iv,random sample,Accept,accepted,,2026-10-05
+link,GM-HF-02>RMF:MANAGE-4.1,random sample,Accept,accepted,,2026-10-05
+link,GM-HF-02>RMF:MAP-3.5,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-02>RMF:MEASURE-2.9,random sample,Accept,accepted,,2026-10-05
+link,GM-HF-03>A84:HF,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>A84:XC-VT-G1,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B1.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B1.ii,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B1.iii,random sample,Accept all three; reword,revised,"rationale: 'the static attribute' -> 'this attribute, which GAP-M classes as set at release'",2026-10-05
+link,GM-HF-03>HTI:B1.iv,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B2.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B2.ii,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B2.iii,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B2.iv,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B3.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B3.ii,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B4.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B4.ii,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B4.iii,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B4.iv,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B5.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B5.ii,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B6.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B6.ii,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B6.iii,random sample,Accept,accepted,,2026-10-05
+link,GM-HF-03>HTI:B6.iv,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B7.i,random sample,Accept all three; reword,revised,"rationale: 'the static attribute' -> 'this attribute, which GAP-M classes as set at release'",2026-10-05
+link,GM-HF-03>HTI:B7.ii,random sample,Accept all three; reword,revised,"rationale: 'the static attribute' -> 'this attribute, which GAP-M classes as set at release'",2026-10-05
+link,GM-HF-03>HTI:B7.iii,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B7.iv,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B7.v,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B8.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B8.ii,conditional (all),Accept; soften relevance wording,accepted,relevance basis: 'is how' -> 'is one way',2026-10-05
+link,GM-HF-03>HTI:B8.iii,random sample,Accept,accepted,,2026-10-05
+link,GM-HF-03>HTI:B8.iv,conditional (all),Accept; soften relevance wording,accepted,relevance basis: 'is how' -> 'is one way',2026-10-05
+link,GM-HF-03>HTI:B9.i,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>HTI:B9.ii,random sample,Accept,accepted,,2026-10-05
+link,GM-HF-03>RMF:GOVERN-4.2,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>RMF:MANAGE-1.4,not sampled,not_reviewed,not_reviewed,,
+link,GM-HF-03>RMF:MAP-2.2,random sample,Accept,accepted,,2026-10-05
+link,GM-HF-03>RMF:MEASURE-2.8,random sample,Accept,accepted,,2026-10-05
+link,GM-HF-03>RMF:MEASURE-2.9,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-01>A84:LSI,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-01>A84:LSI-G2,random sample,Accept,accepted,,2026-10-05
+link,GM-LSI-01>HTI:B3.ii,random sample,Accept,accepted,,2026-10-05
+link,GM-LSI-01>RMF:GOVERN-4.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-01>RMF:MANAGE-4.3,integral_to (all),Accept,accepted,,2026-10-05
+link,GM-LSI-01>RMF:MAP-5.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-01>RMF:MEASURE-3.1,random sample,Accept,accepted,,2026-10-05
+link,GM-LSI-02>A84:LSI,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-02>A84:LSI-G1,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-02>HTI:B7.v,random sample,Accept,accepted,,2026-10-05
+link,GM-LSI-02>RMF:MANAGE-1.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-02>RMF:MANAGE-2.2,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-02>RMF:MAP-1.4,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-02>RMF:MAP-3.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-02>RMF:MAP-5.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-02>RMF:MEASURE-4.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-03>A84:LSI,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-03>RMF:GOVERN-5.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-03>RMF:MANAGE-4.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-03>RMF:MAP-5.2,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-03>RMF:MEASURE-1.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-LSI-03>RMF:MEASURE-3.3,integral_to (all),Accept,accepted,,2026-10-05
+link,GM-LSI-03>RMF:MEASURE-4.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-OPS-01>A84:FUN-B3,random sample,Remove,rejected,"link removed (recorded in example_review.yaml with scope: author_review, test T1)",2026-10-05
+link,GM-OPS-01>A84:HF-G5,not sampled,not_reviewed,not_reviewed,,
+link,GM-OPS-01>A84:OPS,random sample,Accept,accepted,,2026-10-05
+link,GM-OPS-01>A84:OPS-B1,not sampled,not_reviewed,not_reviewed,,
+link,GM-OPS-01>CPG:3.Q,integral_to (all),Accept; narrow core,accepted,GM-OPS-01 core narrowed to logs of AI components 'that the organization operates' (vendor-hosted components fall outside CPG 3.Q's organizational-asset scope),2026-10-05
+link,GM-OPS-01>RMF:MANAGE-4.1,targeted check,Accept new rationale,accepted,,2026-10-05
+link,GM-OPS-01>RMF:MEASURE-2.4,random sample,Accept,accepted,,2026-10-05
+link,GM-OPS-01>RMF:MEASURE-2.8,not sampled,not_reviewed,not_reviewed,,
+link,GM-OPS-02>A84:OPS,not sampled,not_reviewed,not_reviewed,,
+link,GM-OPS-02>A84:OPS-G1,not sampled,not_reviewed,not_reviewed,,
+link,GM-OPS-02>A84:XC-RR-B1,random sample,Accept,accepted,,2026-10-05
+link,GM-OPS-02>RMF:MANAGE-2.1,random sample,Accept,accepted,,2026-10-05
+link,GM-OPS-02>RMF:MANAGE-2.2,not sampled,not_reviewed,not_reviewed,,
+link,GM-OPS-02>RMF:MEASURE-2.6,not sampled,not_reviewed,not_reviewed,,
+link,GM-OPS-03>A84:XC-PC-B1,not sampled,not_reviewed,not_reviewed,,
+link,GM-OPS-03>CPG:3.N,integral_to (all),Accept; narrow core,accepted,GM-OPS-03 core narrowed to 'Changes the organization makes to AI models and configuration pass through change control.',2026-10-05
+link,GM-OPS-03>CPG:3.P,not sampled,not_reviewed,not_reviewed,,
+link,GM-OPS-03>HTI:B9.i,random sample,Accept,accepted,,2026-10-05
+link,GM-OPS-03>RMF:MANAGE-4.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-OPS-04>CPG:3.O,conditional (all),Accept as conditional,accepted,,2026-10-05
+link,GM-OPS-04>CPG:6.A,not sampled,not_reviewed,not_reviewed,,
+link,GM-OPS-04>RMF:GOVERN-1.7,not sampled,not_reviewed,not_reviewed,,
+link,GM-OPS-04>RMF:MANAGE-2.1,random sample,Accept,accepted,,2026-10-05
+link,GM-OPS-04>RMF:MANAGE-2.3,not sampled,not_reviewed,not_reviewed,,
+link,GM-OPS-04>RMF:MANAGE-2.4,targeted check,Accept new rationale,accepted,,2026-10-05
+link,GM-OPS-04>RMF:MEASURE-2.6,random sample,Accept,accepted,,2026-10-05
+link,GM-SEC-01>A84:SEC,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-01>A84:SEC-B1,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-01>CPG:4.B,random sample,Accept,accepted,,2026-10-05
+link,GM-SEC-01>HTI:B3.ii,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-01>RMF:MEASURE-2.6,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-01>RMF:MEASURE-2.7,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-02>A84:SEC,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-02>A84:XC-PC-B1,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-02>CPG:1.D,random sample,Accept,accepted,,2026-10-05
+link,GM-SEC-02>CPG:2.B,integral_to (all),Accept,accepted,,2026-10-05
+link,GM-SEC-02>RMF:GOVERN-6.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-02>RMF:MANAGE-3.1,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-02>RMF:MEASURE-2.7,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-03>A84:SEC,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-03>CPG:3.D,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-03>CPG:3.E,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-03>CPG:3.F,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-03>CPG:3.G,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-03>CPG:3.H,integral_to (all),Accept,accepted,,2026-10-05
+link,GM-SEC-03>RMF:MEASURE-2.7,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-04>A84:XC-TMT-B3,random sample,Accept,accepted,,2026-10-05
+link,GM-SEC-04>CPG:3.K,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-04>RMF:MAP-1.6,not sampled,not_reviewed,not_reviewed,,
+link,GM-SEC-04>RMF:MEASURE-2.10,not sampled,not_reviewed,not_reviewed,,

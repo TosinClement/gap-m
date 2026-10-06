@@ -1,0 +1,90 @@
+# NIST AI 800-4 (March 2026) elements used by GAP-M.
+# Transcribed from Tables 1, 2 and 3 of the PDF. 02_registries.py checks that every
+# `text` (and `question`, `definition`) string occurs verbatim in the PDF text after
+# whitespace normalisation, and fails if any does not.
+# Page numbers are the printed page numbers of the report.
+
+categories:
+  - id: FUN
+    name: Functionality Monitoring
+    question: Does the system continue to work as intended?
+    definition: Measuring system functions, capabilities, and features, for example to ensure the system continues to work as intended
+    page: 6
+  - id: OPS
+    name: Operational Monitoring
+    question: Does the system maintain consistent service across its infrastructure?
+    definition: Measuring system infrastructure components, for example to ensure the system maintains consistent levels of service
+    page: 6
+  - id: HF
+    name: Human Factors Monitoring
+    question: Is the system transparent to humans and high quality?
+    definition: Measuring human-system interactions, for example to ensure the system produces high-quality outputs and is transparent
+    page: 6
+  - id: SEC
+    name: Security Monitoring
+    question: Is the system secure against attacks and misuse?
+    definition: Measuring where the system is potentially vulnerable to adversarial attacks and misuse
+    page: 6
+  - id: CMP
+    name: Compliance Monitoring
+    question: Does the system adhere to relevant regulations and directives?
+    definition: Measuring system components for adherence to relevant laws, regulations, standards, controls, and guidelines
+    page: 6
+  - id: LSI
+    name: Large-Scale Impacts Monitoring
+    question: Does the system promote human flourishing?
+    definition: Measuring system properties that have wide downstream impacts, for example to ensure the system promotes human flourishing
+    page: 6
+
+# Table 3: category-specific gaps and barriers (page 17)
+challenges:
+  - {id: FUN-G1, category: FUN, kind: gap,     text: Lack of systematic model comparison, page: 17}
+  - {id: FUN-G2, category: FUN, kind: gap,     text: Establishing performance baselines and thresholds, page: 17}
+  - {id: FUN-B1, category: FUN, kind: barrier, text: Detecting performance degradation and drift, page: 17}
+  - {id: FUN-B2, category: FUN, kind: barrier, text: Missing high-quality ground truth datasets, page: 17}
+  - {id: FUN-B3, category: FUN, kind: barrier, text: Overhead of longitudinal tracking, page: 17}
+  - {id: OPS-G1, category: OPS, kind: gap,     text: Tracking indirect costs beyond compute, page: 17}
+  - {id: OPS-B1, category: OPS, kind: barrier, text: Fragmented logging across distributed infrastructure, page: 17}
+  - {id: HF-G1,  category: HF,  kind: gap,     text: Insufficient research on human-AI feedback loops, page: 17}
+  - {id: HF-G2,  category: HF,  kind: gap,     text: Limited understanding of user intent or perception through usage monitoring, page: 17}
+  - {id: HF-G3,  category: HF,  kind: gap,     text: Limited understanding of user interaction and behavior, page: 17}
+  - {id: HF-G4,  category: HF,  kind: gap,     text: Lack of insight into characteristics of system users, page: 17}
+  - {id: HF-G5,  category: HF,  kind: gap,     text: Underutilization of telemetry data, page: 17}
+  - {id: HF-B1,  category: HF,  kind: barrier, text: Overhead of collecting and gauging user feedback, page: 17}
+  - {id: SEC-B1, category: SEC, kind: barrier, text: Detecting deceptive behavior, page: 17}
+  - {id: CMP-G1, category: CMP, kind: gap,     text: Minimal tracking of terms of service violations, page: 17}
+  - {id: CMP-B1, category: CMP, kind: barrier, text: Navigating the complexity of the policy landscape, page: 17}
+  - {id: LSI-G1, category: LSI, kind: gap,     text: Defining metrics for beneficial impacts to humans, page: 17}
+  - {id: LSI-G2, category: LSI, kind: gap,     text: Capturing large-scale impacts within incident logging, page: 17}
+  - {id: LSI-B1, category: LSI, kind: barrier, text: Capturing downstream effects of open-weight models, page: 17}
+
+# Table 2: cross-cutting challenge categories and their gaps and barriers (page 9)
+cross_cutting:
+  - id: XC-TMT
+    name: Trusted Methods and Tools
+    items:
+      - {id: XC-TMT-G1, kind: gap,     text: Lack of trusted guidelines or standards for methods and tools}
+      - {id: XC-TMT-B1, kind: barrier, text: Monitoring is use-case-specific}
+      - {id: XC-TMT-B2, kind: barrier, text: Uncertainty and variability in results from models}
+      - {id: XC-TMT-B3, kind: barrier, text: Monitoring may infringe security and privacy}
+  - id: XC-VT
+    name: Visibility and Transparency
+    items:
+      - {id: XC-VT-G1, kind: gap, text: Lack of direct visibility into model properties}
+      - {id: XC-VT-G2, kind: gap, text: Immature information sharing ecosystem}
+  - id: XC-PC
+    name: Pace of Change
+    items:
+      - {id: XC-PC-B1, kind: barrier, text: Rapidly shifting landscape across the AI stack}
+      - {id: XC-PC-B2, kind: barrier, text: Scaling human-driven monitoring alongside rapid rollouts}
+  - id: XC-IOC
+    name: Incentives and Organizational Culture
+    items:
+      - {id: XC-IOC-B1, kind: barrier, text: Balancing competitive pressures with necessary oversight}
+      - {id: XC-IOC-B2, kind: barrier, text: Lower prioritization for ecosystem-wide transparency}
+      - {id: XC-IOC-B3, kind: barrier, text: Administrative burden}
+  - id: XC-RR
+    name: Resource Requirements
+    items:
+      - {id: XC-RR-B1, kind: barrier, text: Financial costs and compute/human resources}
+      - {id: XC-RR-B2, kind: barrier, text: Hiring and training qualified AI experts}

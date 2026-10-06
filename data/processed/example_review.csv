@@ -1,0 +1,214 @@
+link_id,decision,test,basis,new_rationale,scope
+GM-GOV-01>RMF:GOVERN-2.3,remove,T3,"GOVERN 2.3 is about executive leadership taking responsibility for AI risk decisions. GM-GOV-01 has the plan approved by 'the AI governance body', not by executive leadership; the rationale's 'executive approval' is not in the control.",,example_of_review
+GM-GOV-01>A84:XC-IOC-B1,remove,T1,The barrier concerns organizational incentives (competitive pressure versus oversight). A per-system plan does not address incentives; the rationale is speculative.,,example_of_review
+GM-GOV-01>CPG:1.A,remove,T3,CPG 1.A concerns cybersecurity program roles. GM-GOV-01's RACI covers AI monitoring roles; security monitoring responsibilities are not in the control text.,,example_of_review
+GM-GOV-01>CPG:1.B,remove,T1,"CPG 1.B concerns the cybersecurity risk management strategy and policies. Sharing an annual review cadence is a coincidence of schedule, not substantive support.",,example_of_review
+GM-GOV-02>HTI:B1.ii,remove,T3,"The inventory's listed fields (version, developer, task and output type, sites, inputs, plan, attribute record) do not include funding source.",,example_of_review
+GM-GOV-02>HTI:B1.iii,remove,T3,"The inventory records output type, not a description of the value the intervention produces; the attribute is better supported by GM-HF-03.",,example_of_review
+GM-GOV-02>A84:XC-VT-G1,remove,T1,"The gap is lack of visibility into model properties (internals, behavior). A version-level inventory records which system is deployed, not its properties.",,example_of_review
+GM-GOV-03>RMF:MAP-4.1,remove,T1,"MAP 4.1 concerns mapping technology and legal risks of components, including intellectual-property infringement. GM-GOV-03 is about notice clauses, not legal risk mapping.",,example_of_review
+GM-GOV-03>HTI:B1.i,remove,T1,Duplicates GM-GOV-02 and GM-HF-03; a notice clause does not maintain the developer-contact attribute in any way they do not.,,example_of_review
+GM-GOV-03>HTI:B5.i,remove,T3,"GM-GOV-03's notice obligations list model updates, known-risk changes, validation results, security incidents, and vulnerabilities. Changes to the developer's fairness approach are not among them.",,example_of_review
+GM-GOV-03>HTI:B5.ii,remove,T3,As for (B)(5)(i): bias-management approaches are not among the control's notice obligations.,,example_of_review
+GM-GOV-03>HTI:B7.v,remove,T3,Outcome evaluations are not 'validation results' as listed in the control; the rationale extends the clause beyond its text.,,example_of_review
+GM-GOV-03>HTI:B9.ii,remove,T1,Correction frequency is not something a notice clause produces or checks; the link is too indirect to be substantive.,,example_of_review
+GM-GOV-03>A84:XC-IOC-B2,remove,T2,The barrier concerns ecosystem-wide transparency. A bilateral contract between one deployer and one developer does not bear on it.,,example_of_review
+GM-GOV-04>RMF:GOVERN-6.2,remove,T3,The control text does not mention third-party AI failures or contingency processes for them; the rationale adds content the control does not have.,,example_of_review
+GM-GOV-05>A84:LSI-B1,remove,T1,"The barrier concerns downstream effects of open-weight model releases, a developer and ecosystem issue. GAP-M addresses deployers of predictive interventions; the link is not substantive.",,example_of_review
+GM-GOV-05>CPG:5.B,remove,T2,CPG 5.B concerns reporting confirmed cybersecurity incidents. Cyber incidents involving AI are already covered through GM-GOV-04; extending 5.B to non-cyber AI findings misreads its scope.,,example_of_review
+GM-GOV-06>CPG:3.J,remove,T3,CPG 3.J is cybersecurity awareness training. GM-GOV-06 trains users on the intervention's intended use and limits; 'misuse and security awareness' is not in the control.,,example_of_review
+GM-GOV-07>A84:XC-TMT-G1,remove,T1,An internal independent review does not bear on the field-level absence of trusted standards; the rationale ('makes up in part') is speculative.,,example_of_review
+GM-FUN-03>RMF:MAP-2.3,remove,T2,MAP 2.3 is a design-time outcome (TEVV considerations identified and documented). Post-deployment drift detection does not identify or document those considerations.,,example_of_review
+GM-OPS-02>RMF:MEASURE-2.12,remove,T1,MEASURE 2.12 concerns assessing the environmental impact and sustainability of AI model training and management. GM-OPS-02 tracks energy cost but does not assess environmental impact. (Reason corrected by the author on 2026-10-05; the earlier wording relied on an unsourced claim that inference energy is marginal.),,example_of_review
+GM-OPS-02>RMF:MAP-3.2,remove,T2,"MAP 3.2 concerns costs that result from AI errors and trustworthiness failures. GM-OPS-02 tracks operating and monitoring costs, which are a different cost.",,example_of_review
+GM-OPS-03>RMF:MANAGE-4.2,remove,T1,MANAGE 4.2 concerns measurable continual-improvement activities and engagement. Change control prevents unauthorized change; it does not produce improvement.,,example_of_review
+GM-HF-01>A84:HF-G1,remove,T2,"The gap is insufficient research on human-AI feedback loops. An operational feedback form is not research, and the rationale overstates what it studies.",,example_of_review
+GM-HF-01>A84:XC-IOC-B3,remove,T1,The barrier is the administrative burden of monitoring on organizations. A low-effort feedback button does not bear on it.,,example_of_review
+GM-HF-02>RMF:GOVERN-3.2,remove,T2,GOVERN 3.2 concerns policies that define roles for human-AI configurations. Telemetry by role does not define or differentiate roles.,,example_of_review
+GM-SEC-01>CPG:4.A,remove,T3,CPG 4.A is malicious code detection. GM-SEC-01 detects anomalous inputs and outputs; scanning model files is not in the control.,,example_of_review
+GM-SEC-02>CPG:2.D,remove,T3,"CPG 2.D is a public vulnerability disclosure route for outside reporters. GM-SEC-02 requires developer disclosure, which is CPG 1.D; the control does not operate a public route.",,example_of_review
+GM-SEC-02>CPG:3.S,remove,T3,The control does not mention internet-facing assets; whether model endpoints face the internet is deployment-specific.,,example_of_review
+GM-CMP-01>A84:XC-TMT-G1,remove,T1,"The rationale describes the GAP-M crosswalk itself, not the control. A requirements register does not address the lack of trusted monitoring standards.",,example_of_review
+GM-CMP-03>RMF:MANAGE-2.4,remove,T2,"MANAGE 2.4 concerns systems whose performance or outcomes are inconsistent with intended use. Out-of-scope use is a use pattern, not system performance or outcome.",,example_of_review
+GM-GOV-07>CPG:2.C,remove,T1,The necessity audit already found that CPG 2.C is third-party validation of cybersecurity defenses and that a review of AI monitoring design is not that activity. The remaining example_of rationale (scheduling alongside) is not substantive support.,,audited
+GM-GOV-03>RMF:MANAGE-3.2,remove,T2,"Removed by the author in the guided review (2026-10-05). MANAGE 3.2 concerns pre-trained models that an organization uses for development; a deploying organization using a vendor's finished intervention is not using a pre-trained model for development, so the link misread the source.",,author_review
+GM-OPS-01>A84:FUN-B3,remove,T1,Removed by the author in the guided review (2026-10-05). The barrier is the overhead of longitudinal tracking; central logging is an input to tracking but does not reduce its overhead. FUN-B3 remains covered by GM-FUN-05.,,author_review
+GM-GOV-01>RMF:GOVERN-1.2,revise,T2,"GOVERN 1.2 concerns organizational policies; a per-system plan is a procedure, not policy.","Listing validity, fairness, security, and privacy measures in each monitoring plan is one practice through which trustworthy characteristics enter monitoring procedures.",example_of_review
+GM-GOV-01>RMF:MEASURE-4.1,revise,T3,The old rationale said the plan records who was consulted; the control does not require consultation.,The plan documents the measurement approaches chosen for the specific deployment context.,example_of_review
+GM-GOV-02>RMF:MAP-2.1,revise,T2,MAP 2.1 is about defining tasks and methods (design time); the inventory records them.,"The inventory records the defined task and method of each deployed system, keeping that definition visible after deployment.",example_of_review
+GM-GOV-03>RMF:GOVERN-6.2,revise,T3,'Remedy clauses' are not in the control.,Contractual notice of developer incidents is an input to contingency processes for third-party AI failures.,example_of_review
+GM-GOV-03>RMF:MANAGE-3.2,revise,T3,'Brings them into routine monitoring' overstated what a notice does.,Notice of changes to the underlying model gives the deployer's routine monitoring a trigger to re-check it.,example_of_review
+GM-GOV-03>HTI:B9.i,revise,T3,The control is a notice clause; the update process itself is not a contract term in the control.,Developer notices of model updates show how often the intervention is actually updated.,example_of_review
+GM-FUN-02>RMF:MEASURE-4.2,revise,T3,Review by domain experts is not in the control.,Local validity results are measurement results on whether the system performs consistently as intended in its deployment context.,example_of_review
+GM-OPS-01>RMF:MANAGE-4.1,revise,T2,MANAGE 4.1 lists specific mechanisms; logging is not one of them.,Logs provide the record that the plan's incident-response and change-management mechanisms rely on.,example_of_review
+GM-OPS-04>RMF:MANAGE-2.4,revise,T3,'Deactivation is only safe if a fallback exists' asserted necessity in an example_of rationale.,A fallback workflow lets the system be disengaged without interrupting the work it supported.,example_of_review
+GM-GOV-01>RMF:GOVERN-1.3,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-01>RMF:GOVERN-1.4,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-01>A84:XC-TMT-B1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-02>HTI:B1.i,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-02>HTI:B1.iv,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-02>A84:XC-PC-B1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-03>CPG:1.E,keep,,Applies only where the developer hosts or operates the model (conditional on deployment).,,example_of_review
+GM-GOV-03>RMF:GOVERN-6.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-03>RMF:MAP-4.2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-03>HTI:B6.i,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-03>HTI:B6.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-03>HTI:B6.iii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-03>HTI:B6.iv,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-03>HTI:B7.iii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-03>HTI:B7.iv,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-03>A84:XC-VT-G2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-04>RMF:MANAGE-2.3,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-04>RMF:MANAGE-4.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-04>RMF:GOVERN-4.3,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-04>A84:XC-TMT-G1,keep,,Grounded in AI 800-4 section 3.1.1 text on missing guidance for 'what the plan is for when an anomaly is detected'.,,example_of_review
+GM-GOV-05>RMF:MANAGE-4.3,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-05>A84:XC-IOC-B2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-05>A84:LSI-G2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-05>HTI:B3.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-05>HTI:B7.v,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-06>A84:XC-RR-B2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-06>A84:XC-PC-B2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-06>A84:XC-IOC-B3,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-07>RMF:MEASURE-2.13,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-07>RMF:MEASURE-1.2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-07>RMF:MEASURE-4.2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-GOV-07>A84:XC-TMT-B2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-01>RMF:MEASURE-2.5,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-01>RMF:MEASURE-2.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-01>RMF:MAP-1.5,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-01>HTI:B7.i,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-01>HTI:B7.iii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-01>HTI:B4.iv,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-02>RMF:MEASURE-2.5,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-02>RMF:MANAGE-2.2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-03>HTI:B4.iii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-03>HTI:B4.i,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-03>RMF:MEASURE-2.4,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-03>RMF:MEASURE-2.5,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-03>RMF:MEASURE-3.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-03>A84:XC-PC-B1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-04>RMF:MEASURE-3.2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-04>RMF:MAP-2.3,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-04>RMF:MEASURE-1.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-04>A84:XC-TMT-B2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-05>RMF:MANAGE-4.2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-05>RMF:MEASURE-3.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-05>HTI:B9.i,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-05>HTI:B9.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-06>RMF:MANAGE-1.2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-06>RMF:GOVERN-1.7,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-06>RMF:MEASURE-2.6,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FUN-06>A84:FUN-G2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FAIR-01>RMF:MAP-2.3,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FAIR-01>RMF:MEASURE-1.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FAIR-01>A84:FUN-G2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FAIR-01>HTI:B7.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FAIR-01>HTI:B7.iv,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FAIR-01>HTI:B4.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FAIR-01>HTI:B4.iii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FAIR-01>HTI:B6.iii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FAIR-02>RMF:MEASURE-2.4,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FAIR-02>RMF:MEASURE-3.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FAIR-02>A84:FUN-B1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-FAIR-02>A84:LSI,keep,,Depends on judgment call J4 (fairness placed under Functionality with Large-Scale Impacts secondary).,,example_of_review
+GM-OPS-01>RMF:MEASURE-2.8,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-OPS-02>RMF:MANAGE-2.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-OPS-02>RMF:MANAGE-2.2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-OPS-02>RMF:MEASURE-2.6,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-OPS-02>A84:XC-RR-B1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-OPS-03>CPG:3.P,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-OPS-03>RMF:MANAGE-4.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-OPS-03>A84:XC-PC-B1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-OPS-04>CPG:6.A,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-OPS-04>RMF:MANAGE-2.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-OPS-04>RMF:MANAGE-2.3,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-OPS-04>RMF:MEASURE-2.6,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-OPS-04>RMF:GOVERN-1.7,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-01>RMF:GOVERN-5.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-01>RMF:MAP-5.2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-01>HTI:B3.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-02>A84:HF-G2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-02>A84:HF-G1,keep,,"Kept, unlike GM-HF-01's link to the same gap: reliance and override trends observed over time are direct evidence about a human-AI feedback loop, not a stand-in for research.",,example_of_review
+GM-HF-02>RMF:MAP-3.5,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-02>RMF:MEASURE-2.9,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-02>RMF:MANAGE-4.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-02>HTI:B2.iii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-02>HTI:B2.iv,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>RMF:MEASURE-2.9,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>RMF:MEASURE-2.8,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>RMF:GOVERN-4.2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>RMF:MANAGE-1.4,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>A84:XC-VT-G1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>A84:HF,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B1.i,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B1.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B1.iii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B1.iv,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B2.i,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B2.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B2.iii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B2.iv,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B3.i,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B4.i,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B4.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B4.iii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B5.i,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B5.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B7.i,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-HF-03>HTI:B7.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-01>RMF:MEASURE-2.7,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-01>RMF:MEASURE-2.6,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-01>HTI:B3.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-02>CPG:1.D,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-02>RMF:MEASURE-2.7,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-02>RMF:MANAGE-3.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-02>RMF:GOVERN-6.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-02>A84:SEC,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-02>A84:XC-PC-B1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-03>CPG:3.F,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-03>CPG:3.G,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-03>CPG:3.D,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-03>CPG:3.E,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-03>RMF:MEASURE-2.7,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-03>A84:SEC,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-04>RMF:MEASURE-2.10,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-04>RMF:MAP-1.6,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-SEC-04>CPG:3.K,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-01>RMF:MAP-1.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-01>CPG:1.A,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-01>CPG:1.B,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-02>HTI:B6.i,keep,,"The not-available indication is an obligation of the Health IT Module ((v)(A)(2)); the deployer's audit checks the module's behaviour, it does not meet the obligation.",,example_of_review
+GM-CMP-02>HTI:B6.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-02>HTI:B6.iii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-02>HTI:B6.iv,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-02>HTI:B7.iii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-02>HTI:B7.iv,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-02>HTI:B7.v,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-02>HTI:B8.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-02>HTI:B8.iv,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-02>HTI:B9.i,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-02>HTI:B9.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-02>RMF:GOVERN-1.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-02>A84:CMP,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-03>A84:HF-G2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-03>HTI:B2.iii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-03>HTI:B2.iv,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-03>RMF:MAP-3.3,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-03>RMF:MAP-1.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-03>RMF:MAP-2.2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-CMP-03>RMF:MEASURE-2.6,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-LSI-01>RMF:MEASURE-3.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-LSI-01>RMF:MAP-5.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-LSI-01>RMF:GOVERN-4.3,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-LSI-01>HTI:B3.ii,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-LSI-02>RMF:MANAGE-1.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-LSI-02>RMF:MAP-3.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-LSI-02>RMF:MAP-1.4,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-LSI-02>RMF:MAP-5.1,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-LSI-02>RMF:MANAGE-2.2,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-LSI-02>RMF:MEASURE-4.3,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-LSI-03>RMF:MEASURE-1.3,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-LSI-03>RMF:MANAGE-4.3,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-LSI-03>RMF:MEASURE-4.3,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review
+GM-LSI-03>A84:LSI,keep,,"Passes T1–T3: the control's stated activity bears on the element as written, and the rationale matches the source text and the control text.",,example_of_review

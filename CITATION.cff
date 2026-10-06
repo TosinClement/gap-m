@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use GAP-M, please cite it as below."
+type: dataset
+title: "GAP-M: Governance-Aligned Post-deployment Monitoring"
+version: "0.1.0"
+date-released: "2026-10-05"
+doi: "10.5281/zenodo.23178136"
+license: CC-BY-4.0
+repository-code: "https://github.com/TosinClement/gap-m"
+abstract: >-
+  A machine-readable crosswalk linking 32 suggested post-deployment monitoring practices to
+  NIST AI RMF 1.0 subcategories (voluntary guidance), the monitoring categories and challenges of
+  NIST AI 800-4 (a challenges report), the 31 predictive decision support intervention source
+  attributes of 45 CFR 170.315(b)(11)(iv)(B) (a disclosure requirement for certified health IT), and CISA
+  Cybersecurity Performance Goals 2.0 (voluntary practices), with 283 links typed using NIST IR 8477
+  supportive relationships. Mapping coverage does not demonstrate compliance or monitoring effectiveness.
+keywords:
+  - AI governance
+  - post-deployment monitoring
+  - NIST AI RMF
+  - NIST AI 800-4
+  - HTI-1
+  - decision support interventions
+  - CISA CPG
+  - crosswalk
+  - OSCAL
+authors:
+  - family-names: "Clement"
+    given-names: "Tosin"
+    orcid: "https://orcid.org/0009-0001-2055-5113"
+    email: "clementtosin92@gmail.com"
+    affiliation: "Independent Researcher"

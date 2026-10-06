@@ -1,0 +1,1039 @@
+status: Author review complete (2026-10-05) within the scope recorded here and in the author's release statement. Only the author's actual responses are recorded; items without a response were not individually
+  reviewed and remain proposed.
+started: '2026-10-05'
+sampling:
+  method: Python random.Random(seed).sample over the sorted list of non-conditional example_of link IDs; selected IDs sorted for presentation
+  python: drawn on Python 3.13 (Linux); the same selection reproduced on Python 3.10 (macOS)
+  seed: 20261005
+  population_size: 262
+  population_sha256: e73ab392f7e758cf1b409fcd2b5115235165b25434d6aeeee2d48590acf7a0b1
+  fraction: 0.25
+  rounding: up
+  sample_size: 66
+  selected:
+  - GM-CMP-01>CPG:1.A
+  - GM-CMP-01>CPG:1.B
+  - GM-CMP-02>HTI:B7.iv
+  - GM-CMP-02>HTI:B8.ii
+  - GM-CMP-02>HTI:B9.ii
+  - GM-CMP-03>RMF:MEASURE-2.6
+  - GM-FAIR-01>HTI:B7.iv
+  - GM-FAIR-02>A84:FUN-B1
+  - GM-FAIR-02>HTI:B8.iii
+  - GM-FUN-01>A84:FUN-G2
+  - GM-FUN-01>HTI:B7.i
+  - GM-FUN-01>HTI:B8.ii
+  - GM-FUN-02>A84:FUN
+  - GM-FUN-02>RMF:MANAGE-2.2
+  - GM-FUN-02>RMF:MEASURE-2.5
+  - GM-FUN-03>A84:FUN-B1
+  - GM-FUN-03>HTI:B4.iv
+  - GM-FUN-04>A84:FUN-B2
+  - GM-FUN-04>HTI:B8.iv
+  - GM-FUN-04>RMF:MAP-2.3
+  - GM-FUN-04>RMF:MEASURE-3.2
+  - GM-FUN-05>HTI:B9.ii
+  - GM-FUN-06>A84:FUN-G2
+  - GM-GOV-01>RMF:GOVERN-1.4
+  - GM-GOV-01>RMF:GOVERN-1.5
+  - GM-GOV-01>RMF:GOVERN-2.1
+  - GM-GOV-02>A84:XC-PC-B1
+  - GM-GOV-02>CPG:2.A
+  - GM-GOV-03>HTI:B6.i
+  - GM-GOV-03>HTI:B6.iii
+  - GM-GOV-03>HTI:B7.iv
+  - GM-GOV-03>RMF:MANAGE-3.2
+  - GM-GOV-04>RMF:MANAGE-4.1
+  - GM-GOV-05>HTI:B7.v
+  - GM-GOV-06>A84:XC-RR-B1
+  - GM-GOV-06>RMF:MAP-3.4
+  - GM-GOV-07>RMF:MEASURE-2.13
+  - GM-HF-01>HTI:B3.ii
+  - GM-HF-02>A84:HF-G1
+  - GM-HF-02>A84:HF-G2
+  - GM-HF-02>HTI:B2.iv
+  - GM-HF-02>RMF:MANAGE-4.1
+  - GM-HF-02>RMF:MEASURE-2.9
+  - GM-HF-03>HTI:B1.iii
+  - GM-HF-03>HTI:B6.iii
+  - GM-HF-03>HTI:B7.i
+  - GM-HF-03>HTI:B7.ii
+  - GM-HF-03>HTI:B8.iii
+  - GM-HF-03>HTI:B9.ii
+  - GM-HF-03>RMF:MAP-2.2
+  - GM-HF-03>RMF:MEASURE-2.8
+  - GM-LSI-01>A84:LSI-G2
+  - GM-LSI-01>HTI:B3.ii
+  - GM-LSI-01>RMF:MEASURE-3.1
+  - GM-LSI-02>HTI:B7.v
+  - GM-OPS-01>A84:FUN-B3
+  - GM-OPS-01>A84:OPS
+  - GM-OPS-01>RMF:MEASURE-2.4
+  - GM-OPS-02>A84:XC-RR-B1
+  - GM-OPS-02>RMF:MANAGE-2.1
+  - GM-OPS-03>HTI:B9.i
+  - GM-OPS-04>RMF:MANAGE-2.1
+  - GM-OPS-04>RMF:MEASURE-2.6
+  - GM-SEC-01>CPG:4.B
+  - GM-SEC-02>CPG:1.D
+  - GM-SEC-04>A84:XC-TMT-B3
+  selected_sha256: a477ca843e2747e80421ef187258aff49ae73f341013c57f1b7f64807b1422cb
+  seed_note: Seed fixed as the review date before the draw; the draw was run once and not repeated.
+census:
+  integral_to:
+  - GM-CMP-01>RMF:GOVERN-1.1
+  - GM-FUN-02>HTI:B8.ii
+  - GM-FUN-05>RMF:MEASURE-4.3
+  - GM-FUN-06>RMF:MANAGE-2.4
+  - GM-GOV-01>RMF:MANAGE-4.1
+  - GM-GOV-02>RMF:GOVERN-1.6
+  - GM-GOV-03>CPG:1.D
+  - GM-HF-01>RMF:MEASURE-3.3
+  - GM-LSI-01>RMF:MANAGE-4.3
+  - GM-LSI-03>RMF:MEASURE-3.3
+  - GM-OPS-01>CPG:3.Q
+  - GM-OPS-03>CPG:3.N
+  - GM-SEC-02>CPG:2.B
+  - GM-SEC-03>CPG:3.H
+  conditional:
+  - GM-FAIR-02>HTI:B8.iv
+  - GM-FAIR-02>RMF:MEASURE-2.11
+  - GM-FUN-02>RMF:MEASURE-2.4
+  - GM-FUN-04>HTI:B8.ii
+  - GM-FUN-06>RMF:MANAGE-1.3
+  - GM-GOV-04>CPG:1.C
+  - GM-HF-03>HTI:B8.ii
+  - GM-HF-03>HTI:B8.iv
+  - GM-OPS-04>CPG:3.O
+controls:
+  GM-GOV-01:
+    response: Accept with suggested edit
+    date: '2026-10-05'
+    edit_applied: 'owner_role: ''approved by the AI governance body'' -> ''approved by the AI governance body or equivalent'''
+  GM-GOV-02:
+    response: Accept with suggested edit
+    date: '2026-10-05'
+    edit_applied: 'objective: ''current source-attribute record'' -> ''a link to or copy of the current source-attribute record'''
+  GM-GOV-03:
+    response: Accept with suggested edit
+    date: '2026-10-05'
+    edit_applied: 'objective: ''require timely notice of'' -> ''require notice, within contract-defined time frames, of'''
+  GM-GOV-04:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-GOV-05:
+    response: Accept with suggested edit
+    date: '2026-10-05'
+    edit_applied: 'objective: added ''and subject to legal and privacy review'' to the sharing condition'
+  GM-GOV-06:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-GOV-07:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-FUN-01:
+    response: Accept with suggested edits
+    date: '2026-10-05'
+    edit_applied: 'objective: ''developer same-source and external results'' -> ''the developer''s internal and external validation results''; silent trial ''where feasible'' in objective and activity'
+  GM-FUN-02:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-FUN-03:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-FUN-04:
+    response: Accept with suggested edit
+    date: '2026-10-05'
+    edit_applied: '''ground-truth'' -> ''reference-standard'' in objective and core (link_audit.yaml cores)'
+  GM-FUN-05:
+    response: Accept with suggested edit
+    date: '2026-10-05'
+    edit_applied: 'objective: pre-go-live comparison ''where the organization controls update timing, and otherwise promptly after'''
+  GM-FUN-06:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-FAIR-01:
+    response: Accept with suggested edit
+    date: '2026-10-05'
+    edit_applied: 'objective: noted that the (A)(5)-(13) list is given for evidence-based interventions and is used as a reference set'
+  GM-FAIR-02:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-OPS-01:
+    response: Accept with both edits
+    date: '2026-10-05'
+    edit_applied: 'objective: store is ''access-controlled, tamper-evident''; inputs ''minimized for protected health information'''
+  GM-OPS-02:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-OPS-03:
+    response: Accept with suggested edit
+    date: '2026-10-05'
+    edit_applied: 'objective: ''source attributes'' -> ''the organization''s source-attribute record'''
+  GM-OPS-04:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-HF-01:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-HF-02:
+    response: Accept with suggested edit
+    date: '2026-10-05'
+    edit_applied: 'objective: ''by user role and site'' -> ''aggregated by user role and site'''
+  GM-HF-03:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-SEC-01:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-SEC-02:
+    response: Accept with suggested edit
+    date: '2026-10-05'
+    edit_applied: 'objective: KEV catalog parenthesis now attached to model-serving software and libraries; ''weaknesses in model artifacts'' listed separately'
+  GM-SEC-03:
+    response: Accept with suggested edit
+    date: '2026-10-05'
+    edit_applied: 'objective: ''source attributes'' -> ''the organization''s source-attribute record'''
+  GM-SEC-04:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-CMP-01:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-CMP-02:
+    response: Accept with suggested edit
+    date: '2026-10-05'
+    edit_applied: 'cadence: ''before certification or accreditation events'' -> ''before accreditation reviews, and after developer certification updates'''
+  GM-CMP-03:
+    response: Accept as written
+    date: '2026-10-05'
+  GM-LSI-01:
+    response: Accept as written
+    date: '2026-10-05'
+    note: 'Answered as one question covering all three LSI practices: ''Accept all three as written''.'
+  GM-LSI-02:
+    response: Accept as written
+    date: '2026-10-05'
+    note: 'Answered as one question covering all three LSI practices: ''Accept all three as written''.'
+  GM-LSI-03:
+    response: Accept as written
+    date: '2026-10-05'
+    note: 'Answered as one question covering all three LSI practices: ''Accept all three as written''.'
+links:
+  GM-GOV-01>RMF:MANAGE-4.1:
+    response: Accept; tidy audit basis
+    status: accepted
+    date: '2026-10-05'
+    edit_applied: 'audit basis: ''a written plan'' -> ''a plan for the system'' (link rationale unchanged)'
+  GM-GOV-02>RMF:GOVERN-1.6:
+    response: Accept; fix rationale
+    status: revised
+    date: '2026-10-05'
+    edit_applied: 'rationale replaced: ''GOVERN 1.6 asks for mechanisms to inventory AI systems; recording deployed AI systems in an inventory is what such a mechanism does.'''
+  GM-GOV-03>CPG:1.D:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-FUN-02>HTI:B8.ii:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-FUN-05>RMF:MEASURE-4.3:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-FUN-06>RMF:MANAGE-2.4:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-OPS-01>CPG:3.Q:
+    response: Accept; narrow core
+    status: accepted
+    date: '2026-10-05'
+    edit_applied: GM-OPS-01 core narrowed to logs of AI components 'that the organization operates' (vendor-hosted components fall outside CPG 3.Q's organizational-asset scope)
+  GM-OPS-03>CPG:3.N:
+    response: Accept; narrow core
+    status: accepted
+    date: '2026-10-05'
+    edit_applied: GM-OPS-03 core narrowed to 'Changes the organization makes to AI models and configuration pass through change control.'
+  GM-HF-01>RMF:MEASURE-3.3:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-SEC-02>CPG:2.B:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-SEC-03>CPG:3.H:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-CMP-01>RMF:GOVERN-1.1:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-LSI-01>RMF:MANAGE-4.3:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-LSI-03>RMF:MEASURE-3.3:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-FUN-04>HTI:B8.ii:
+    response: Accept as conditional
+    status: accepted
+    date: '2026-10-05'
+    note: Individually reviewed and accepted as a conditional example_of mapping; necessity remains unresolved (Decision 1).
+  GM-GOV-04>CPG:1.C:
+    response: Accept as conditional
+    status: accepted
+    date: '2026-10-05'
+    note: Individually reviewed and accepted as a conditional example_of mapping; necessity remains unresolved (Decision 1).
+  GM-FUN-02>RMF:MEASURE-2.4:
+    response: Accept as conditional
+    status: accepted
+    date: '2026-10-05'
+    note: Individually reviewed and accepted as a conditional example_of mapping; necessity remains unresolved (Decision 1).
+  GM-FUN-06>RMF:MANAGE-1.3:
+    response: Accept; align condition with core
+    status: accepted
+    date: '2026-10-05'
+    edit_applied: audit basis and condition now refer to the documented deactivation mechanism (the control's core), not the trigger-action table
+    note: Individually reviewed and accepted as a conditional example_of mapping; necessity remains unresolved (Decision 1).
+  GM-FAIR-02>HTI:B8.iv:
+    response: Accept; correct (A)(5)-(13) phrase
+    status: accepted
+    date: '2026-10-05'
+    edit_applied: 'audit basis: (A)(5)-(13) described as a list for evidence-based interventions that points toward, but does not establish, a group reading'
+    note: Individually reviewed and accepted as a conditional example_of mapping; necessity remains unresolved (Decision 1).
+  GM-FAIR-02>RMF:MEASURE-2.11:
+    response: Accept; correct (A)(5)-(13) phrase
+    status: accepted
+    date: '2026-10-05'
+    edit_applied: 'audit basis: same (A)(5)-(13) correction as GM-FAIR-02>HTI:B8.iv'
+    note: Individually reviewed and accepted as a conditional example_of mapping; necessity remains unresolved (Decision 1).
+  GM-OPS-04>CPG:3.O:
+    response: Accept as conditional
+    status: accepted
+    date: '2026-10-05'
+    note: Individually reviewed and accepted as a conditional example_of mapping; necessity remains unresolved (Decision 1).
+  GM-HF-03>HTI:B8.ii:
+    response: Accept; soften relevance wording
+    status: accepted
+    date: '2026-10-05'
+    edit_applied: 'relevance basis: ''is how'' -> ''is one way'''
+    note: Individually reviewed and accepted as a conditional example_of mapping; necessity remains unresolved (Decision 1).
+  GM-HF-03>HTI:B8.iv:
+    response: Accept; soften relevance wording
+    status: accepted
+    date: '2026-10-05'
+    edit_applied: 'relevance basis: ''is how'' -> ''is one way'''
+    note: Individually reviewed and accepted as a conditional example_of mapping; necessity remains unresolved (Decision 1).
+  GM-CMP-01>CPG:1.A:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-CMP-01>CPG:1.B:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-CMP-02>HTI:B7.iv:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering S3-S5: ''Accept all three''.'
+  GM-CMP-02>HTI:B8.ii:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering S3-S5: ''Accept all three''.'
+  GM-CMP-02>HTI:B9.ii:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering S3-S5: ''Accept all three''.'
+  GM-CMP-03>RMF:MEASURE-2.6:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-FAIR-01>HTI:B7.iv:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-FAIR-02>A84:FUN-B1:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+  GM-FAIR-02>HTI:B8.iii:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch B''s table: ''Accept all 10''.'
+  GM-FUN-01>A84:FUN-G2:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch B''s table: ''Accept all 10''.'
+  GM-FUN-01>HTI:B7.i:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch B''s table: ''Accept all 10''.'
+  GM-FUN-01>HTI:B8.ii:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch B''s table: ''Accept all 10''.'
+  GM-FUN-02>A84:FUN:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch B''s table: ''Accept all 10''.'
+  GM-FUN-02>RMF:MANAGE-2.2:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch B''s table: ''Accept all 10''.'
+  GM-FUN-03>A84:FUN-B1:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch B''s table: ''Accept all 10''.'
+  GM-FUN-03>HTI:B4.iv:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch B''s table: ''Accept all 10''.'
+  GM-FUN-04>A84:FUN-B2:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch B''s table: ''Accept all 10''.'
+  GM-FUN-04>HTI:B8.iv:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch B''s table: ''Accept all 10''.'
+  GM-FUN-02>RMF:MEASURE-2.5:
+    response: Accept; reword rationale
+    status: revised
+    date: '2026-10-05'
+    edit_applied: 'rationale: ''Ongoing local results show the system stays valid and reliable after deployment.'' -> ''Local validity results document how well the system generalizes beyond the conditions
+      under which it was developed.'''
+  GM-FUN-04>RMF:MAP-2.3:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 8 links in batch C''s table: ''Accept all 8''.'
+  GM-FUN-04>RMF:MEASURE-3.2:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 8 links in batch C''s table: ''Accept all 8''.'
+  GM-FUN-05>HTI:B9.ii:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 8 links in batch C''s table: ''Accept all 8''.'
+  GM-GOV-01>RMF:GOVERN-1.4:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 8 links in batch C''s table: ''Accept all 8''.'
+  GM-GOV-01>RMF:GOVERN-1.5:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 8 links in batch C''s table: ''Accept all 8''.'
+  GM-GOV-01>RMF:GOVERN-2.1:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 8 links in batch C''s table: ''Accept all 8''.'
+  GM-GOV-02>A84:XC-PC-B1:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 8 links in batch C''s table: ''Accept all 8''.'
+  GM-GOV-02>CPG:2.A:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 8 links in batch C''s table: ''Accept all 8''.'
+  GM-FUN-06>A84:FUN-G2:
+    response: Accept; reword rationale
+    status: revised
+    date: '2026-10-05'
+    edit_applied: 'rationale now attributes the threshold point to practitioners and quotes AI 800-4 p. 18: ''to trigger corrective actions or reviews'''
+  GM-GOV-03>HTI:B6.i:
+    response: Accept all three; reword
+    status: revised
+    date: '2026-10-05'
+    edit_applied: 'rationale: ''the notice clause'' -> ''the contract''s clause requiring notice of new validation results'''
+    note: Answered as one question covering S29-S31.
+  GM-GOV-03>HTI:B6.iii:
+    response: Accept all three; reword
+    status: revised
+    date: '2026-10-05'
+    edit_applied: 'rationale: ''the notice clause'' -> ''the contract''s clause requiring notice of new validation results'''
+    note: Answered as one question covering S29-S31.
+  GM-GOV-03>HTI:B7.iv:
+    response: Accept all three; reword
+    status: revised
+    date: '2026-10-05'
+    edit_applied: 'rationale: ''the notice clause'' -> ''the contract''s clause requiring notice of new validation results'''
+    note: Answered as one question covering S29-S31.
+  GM-GOV-03>RMF:MANAGE-3.2:
+    response: Remove
+    status: rejected
+    date: '2026-10-05'
+    edit_applied: 'link removed (recorded in example_review.yaml with scope: author_review, test T2)'
+  GM-GOV-04>RMF:MANAGE-4.1:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering batch D (S33-S43): ''Accept all 11''.'
+  GM-GOV-05>HTI:B7.v:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering batch D (S33-S43): ''Accept all 11''.'
+  GM-GOV-06>A84:XC-RR-B1:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering batch D (S33-S43): ''Accept all 11''.'
+  GM-GOV-06>RMF:MAP-3.4:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering batch D (S33-S43): ''Accept all 11''.'
+  GM-GOV-07>RMF:MEASURE-2.13:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering batch D (S33-S43): ''Accept all 11''.'
+  GM-HF-01>HTI:B3.ii:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering batch D (S33-S43): ''Accept all 11''.'
+  GM-HF-02>A84:HF-G1:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering batch D (S33-S43): ''Accept all 11''.'
+  GM-HF-02>A84:HF-G2:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering batch D (S33-S43): ''Accept all 11''.'
+  GM-HF-02>HTI:B2.iv:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering batch D (S33-S43): ''Accept all 11''.'
+  GM-HF-02>RMF:MANAGE-4.1:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering batch D (S33-S43): ''Accept all 11''.'
+  GM-HF-02>RMF:MEASURE-2.9:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering batch D (S33-S43): ''Accept all 11''.'
+  GM-HF-03>HTI:B1.iii:
+    response: Accept all three; reword
+    status: revised
+    date: '2026-10-05'
+    edit_applied: 'rationale: ''the static attribute'' -> ''this attribute, which GAP-M classes as set at release'''
+    note: Answered as one question covering S44, S46, S47.
+  GM-HF-03>HTI:B7.i:
+    response: Accept all three; reword
+    status: revised
+    date: '2026-10-05'
+    edit_applied: 'rationale: ''the static attribute'' -> ''this attribute, which GAP-M classes as set at release'''
+    note: Answered as one question covering S44, S46, S47.
+  GM-HF-03>HTI:B7.ii:
+    response: Accept all three; reword
+    status: revised
+    date: '2026-10-05'
+    edit_applied: 'rationale: ''the static attribute'' -> ''this attribute, which GAP-M classes as set at release'''
+    note: Answered as one question covering S44, S46, S47.
+  GM-HF-03>HTI:B6.iii:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 9 links in batch E''s table: ''Accept all 9''.'
+  GM-HF-03>HTI:B8.iii:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 9 links in batch E''s table: ''Accept all 9''.'
+  GM-HF-03>HTI:B9.ii:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 9 links in batch E''s table: ''Accept all 9''.'
+  GM-HF-03>RMF:MAP-2.2:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 9 links in batch E''s table: ''Accept all 9''.'
+  GM-HF-03>RMF:MEASURE-2.8:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 9 links in batch E''s table: ''Accept all 9''.'
+  GM-LSI-01>A84:LSI-G2:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 9 links in batch E''s table: ''Accept all 9''.'
+  GM-LSI-01>HTI:B3.ii:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 9 links in batch E''s table: ''Accept all 9''.'
+  GM-LSI-01>RMF:MEASURE-3.1:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 9 links in batch E''s table: ''Accept all 9''.'
+  GM-LSI-02>HTI:B7.v:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 9 links in batch E''s table: ''Accept all 9''.'
+  GM-OPS-01>A84:FUN-B3:
+    response: Remove
+    status: rejected
+    date: '2026-10-05'
+    edit_applied: 'link removed (recorded in example_review.yaml with scope: author_review, test T1)'
+  GM-OPS-01>A84:OPS:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch F''s table: ''Accept all 10''.'
+  GM-OPS-01>RMF:MEASURE-2.4:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch F''s table: ''Accept all 10''.'
+  GM-OPS-02>A84:XC-RR-B1:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch F''s table: ''Accept all 10''.'
+  GM-OPS-02>RMF:MANAGE-2.1:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch F''s table: ''Accept all 10''.'
+  GM-OPS-03>HTI:B9.i:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch F''s table: ''Accept all 10''.'
+  GM-OPS-04>RMF:MANAGE-2.1:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch F''s table: ''Accept all 10''.'
+  GM-OPS-04>RMF:MEASURE-2.6:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch F''s table: ''Accept all 10''.'
+  GM-SEC-01>CPG:4.B:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch F''s table: ''Accept all 10''.'
+  GM-SEC-02>CPG:1.D:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch F''s table: ''Accept all 10''.'
+  GM-SEC-04>A84:XC-TMT-B3:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: 'Answered as one question covering the 10 links in batch F''s table: ''Accept all 10''.'
+  GM-GOV-01>RMF:GOVERN-1.2:
+    response: Accept new rationale
+    status: accepted
+    date: '2026-10-05'
+    note: Reviewed in the targeted check of rationales reworded by the earlier AI-assisted review.
+  GM-GOV-01>RMF:MEASURE-4.1:
+    response: Accept new rationale
+    status: accepted
+    date: '2026-10-05'
+    note: Reviewed in the targeted check of rationales reworded by the earlier AI-assisted review.
+  GM-GOV-02>RMF:MAP-2.1:
+    response: Accept new rationale
+    status: accepted
+    date: '2026-10-05'
+    note: Reviewed in the targeted check of rationales reworded by the earlier AI-assisted review.
+  GM-GOV-03>RMF:GOVERN-6.2:
+    response: Accept new rationale
+    status: accepted
+    date: '2026-10-05'
+    note: Reviewed in the targeted check of rationales reworded by the earlier AI-assisted review.
+  GM-GOV-03>HTI:B9.i:
+    response: Accept new rationale
+    status: accepted
+    date: '2026-10-05'
+    note: Reviewed in the targeted check of rationales reworded by the earlier AI-assisted review.
+  GM-FUN-02>RMF:MEASURE-4.2:
+    response: Accept new rationale
+    status: accepted
+    date: '2026-10-05'
+    note: Reviewed in the targeted check of rationales reworded by the earlier AI-assisted review.
+  GM-OPS-01>RMF:MANAGE-4.1:
+    response: Accept new rationale
+    status: accepted
+    date: '2026-10-05'
+    note: Reviewed in the targeted check of rationales reworded by the earlier AI-assisted review.
+  GM-OPS-04>RMF:MANAGE-2.4:
+    response: Accept new rationale
+    status: accepted
+    date: '2026-10-05'
+    note: Reviewed in the targeted check of rationales reworded by the earlier AI-assisted review.
+  GM-GOV-04>CPG:5.A:
+    response: Accept
+    status: accepted
+    date: '2026-10-05'
+    note: Targeted check of unsampled CPG downgraded links.
+  GM-GOV-04>CPG:5.B:
+    response: Accept; reword to cyber scope
+    status: revised
+    date: '2026-10-05'
+    edit_applied: rationale limited to confirmed cybersecurity incidents involving the AI system
+    note: Targeted check of unsampled CPG downgraded links.
+  GM-GOV-04>CPG:6.A:
+    response: Accept; replace rationale
+    status: revised
+    date: '2026-10-05'
+    edit_applied: 'rationale replaced: ''Updating the AI annex after each AI incident is one way to refine the incident response plan from lessons learned.'''
+    note: Targeted check of unsampled CPG downgraded links.
+spot_checks:
+  ai_rmf:
+    items: GOVERN 1.4, MAP 1.1, MEASURE 2.4, MANAGE 4.1 against NIST AI 100-1
+    response: All four match
+    date: '2026-10-05'
+  ai_800_4:
+    items: 'Table 1: 6 categories; Table 2: 13 cross-cutting (3 gaps, 10 barriers); Table 3: 19 category items (11 gaps, 8 barriers)'
+    response: All counts match
+    date: '2026-10-05'
+  hti_1:
+    items: 31 attributes in 170.315(b)(11)(iv)(B); (B)(4)(iv), (B)(7)(v), (B)(8)(ii) text; eCFR Timeline shows no amendment after 2025-10-01
+    response: All match; no newer amendment
+    date: '2026-10-05'
+  cpg_2_0:
+    items: 34 goals; outcome text of 1.D, 3.Q, 4.B on the CISA page
+    response: All match
+    date: '2026-10-05'
+dispositions:
+  RMF:MANAGE-3.2:
+    response: Out of scope
+    date: '2026-10-05'
+    note: Disposition chosen by the author after removing GM-GOV-03>RMF:MANAGE-3.2 (S32).
+consistency_edits:
+- links:
+  - GM-GOV-03>HTI:B6.ii
+  - GM-GOV-03>HTI:B6.iv
+  - GM-GOV-03>HTI:B7.iii
+  edit: rationale 'the notice clause' -> 'the contract's clause requiring notice of new validation results'
+  authorized: Author approved applying the S29-S31 wording fix for consistency (2026-10-05). These links were not individually reviewed and remain unreviewed.
+  date: '2026-10-05'
+- links:
+  - GM-HF-03>HTI:B1.i
+  - GM-HF-03>HTI:B1.ii
+  - GM-HF-03>HTI:B1.iv
+  - GM-HF-03>HTI:B2.i
+  - GM-HF-03>HTI:B2.ii
+  - GM-HF-03>HTI:B2.iii
+  - GM-HF-03>HTI:B2.iv
+  - GM-HF-03>HTI:B3.i
+  - GM-HF-03>HTI:B4.i
+  - GM-HF-03>HTI:B4.ii
+  - GM-HF-03>HTI:B4.iii
+  - GM-HF-03>HTI:B5.i
+  - GM-HF-03>HTI:B5.ii
+  edit: rationale 'the static attribute' -> 'this attribute, which GAP-M classes as set at release'
+  authorized: Author approved applying the S44/S46/S47 wording fix for consistency (2026-10-05). These links were not individually reviewed and remain unreviewed.
+  date: '2026-10-05'
+checklist_open:
+- item: 'Re-read licensing: all four sources are U.S. government works; nothing restricts redistribution of the quoted text'
+  status: done
+  response: 'Checked against 17 U.S.C. 105(a), NIST Technical Series copyright statement, CISA linking policy, and eCFR status page; author approved: NIST worldwide license and credit line added to LICENSE;
+    eCFR non-official status disclosed; Internet Archive snapshot excluded from the release (parsed records committed and hash-verified), 2026-10-05'
+- item: Check every removal from the AI-assisted example_of review (docs/MAPPING_REVIEW.md 5.1; 32 links) and every reworded rationale (5.2; 9 links, 1 of which you later removed)
+  status: done
+  response: All 32 removals ruled on (all confirmed; R21's reason corrected) and all 9 rewordings ruled on (8 accepted; 1 superseded by the author's S32 removal), 2026-10-05
+- item: Spot-check revised (downgraded) necessity links (docs/MAPPING_REVIEW.md section 8). 25 of the 84 fell in your random sample and were reviewed there; decide whether that suffices
+  status: done
+  response: Author counted the 24 sampled downgraded links as the spot-check and reviewed the 3 unsampled CPG downgraded links in a targeted check (1 accepted, 2 reworded), 2026-10-05
+- item: Confirm NIST IR 8477 supportive relationships (supports + integral_to / example_of / precedes) are right for this use case
+  status: done
+  response: Checked against NIST IR 8477 section 4.2 (pp. 11-15); usage consistent; author approved three wording fixes (MAPPING_USE_CASE set-theory wording and precedes row; LIMITATIONS item 3 quote),
+    2026-10-05
+- item: Revise README, LIMITATIONS, and the technical report in your own voice
+  status: done
+  response: Author kept third-person voice, approved edits E1-E4, made no further wording changes, and confirmed review completion (2026-10-05)
+- item: 'Write ai_statement_final in RELEASE.yaml in your own words, within the scope recorded here; then set author_review: complete'
+  status: done
+  response: Statement approved and saved; author confirmed review completion and author_review was set to complete (2026-10-05)
+earlier_review_changes:
+  GM-GOV-01>RMF:GOVERN-2.3:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering R1-R14: ''Confirm all 14 removals''.'
+  GM-GOV-01>A84:XC-IOC-B1:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering R1-R14: ''Confirm all 14 removals''.'
+  GM-GOV-01>CPG:1.A:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering R1-R14: ''Confirm all 14 removals''.'
+  GM-GOV-01>CPG:1.B:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering R1-R14: ''Confirm all 14 removals''.'
+  GM-GOV-02>HTI:B1.ii:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering R1-R14: ''Confirm all 14 removals''.'
+  GM-GOV-02>HTI:B1.iii:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering R1-R14: ''Confirm all 14 removals''.'
+  GM-GOV-02>A84:XC-VT-G1:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering R1-R14: ''Confirm all 14 removals''.'
+  GM-GOV-03>RMF:MAP-4.1:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering R1-R14: ''Confirm all 14 removals''.'
+  GM-GOV-03>HTI:B1.i:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering R1-R14: ''Confirm all 14 removals''.'
+  GM-GOV-03>HTI:B5.i:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering R1-R14: ''Confirm all 14 removals''.'
+  GM-GOV-03>HTI:B5.ii:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering R1-R14: ''Confirm all 14 removals''.'
+  GM-GOV-03>HTI:B7.v:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering R1-R14: ''Confirm all 14 removals''.'
+  GM-GOV-03>HTI:B9.ii:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering R1-R14: ''Confirm all 14 removals''.'
+  GM-GOV-03>A84:XC-IOC-B2:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering R1-R14: ''Confirm all 14 removals''.'
+  GM-FUN-03>RMF:MAP-2.3:
+    kind: removal
+    response: Confirm R20; keep S20
+    date: '2026-10-05'
+    note: Author judged GM-FUN-04's label specification to be documented construct validation (S20 kept) and drift statistics not (R20 removal confirmed).
+  GM-OPS-02>RMF:MEASURE-2.12:
+    kind: removal
+    response: Confirm; correct the reason
+    date: '2026-10-05'
+    edit_applied: 'removal basis corrected: dropped the unsourced ''inference energy is marginal'' claim; basis now says the control tracks energy cost but does not assess environmental impact'
+  GM-HF-01>A84:HF-G1:
+    kind: removal
+    response: Confirm R24; keep S39
+    date: '2026-10-05'
+    note: Author distinguished override/reliance telemetry (S39, kept) from a feedback form (R24, removal confirmed).
+  GM-GOV-04>RMF:GOVERN-6.2:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-GOV-05>A84:LSI-B1:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-GOV-05>CPG:5.B:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-GOV-06>CPG:3.J:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-GOV-07>A84:XC-TMT-G1:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-OPS-02>RMF:MAP-3.2:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-OPS-03>RMF:MANAGE-4.2:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-HF-01>A84:XC-IOC-B3:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-HF-02>RMF:GOVERN-3.2:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-SEC-01>CPG:4.A:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-SEC-02>CPG:2.D:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-SEC-02>CPG:3.S:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-CMP-01>A84:XC-TMT-G1:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-CMP-03>RMF:MANAGE-2.4:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-GOV-07>CPG:2.C:
+    kind: removal
+    response: Confirm removal
+    date: '2026-10-05'
+    note: 'Answered as one question covering 15 removals in batch 2''s table: ''Confirm all 15''.'
+  GM-GOV-01>RMF:GOVERN-1.2:
+    kind: rewording
+    response: Accept new rationale
+    date: '2026-10-05'
+    note: 'Answered as one question covering W1-W4 and W6-W9: ''Accept all 8''.'
+  GM-GOV-01>RMF:MEASURE-4.1:
+    kind: rewording
+    response: Accept new rationale
+    date: '2026-10-05'
+    note: 'Answered as one question covering W1-W4 and W6-W9: ''Accept all 8''.'
+  GM-GOV-02>RMF:MAP-2.1:
+    kind: rewording
+    response: Accept new rationale
+    date: '2026-10-05'
+    note: 'Answered as one question covering W1-W4 and W6-W9: ''Accept all 8''.'
+  GM-GOV-03>RMF:GOVERN-6.2:
+    kind: rewording
+    response: Accept new rationale
+    date: '2026-10-05'
+    note: 'Answered as one question covering W1-W4 and W6-W9: ''Accept all 8''.'
+  GM-GOV-03>RMF:MANAGE-3.2:
+    kind: rewording
+    response: (no response needed)
+    date: '2026-10-05'
+    note: 'Superseded: the author removed this link as S32 earlier on 2026-10-05.'
+  GM-GOV-03>HTI:B9.i:
+    kind: rewording
+    response: Accept new rationale
+    date: '2026-10-05'
+    note: 'Answered as one question covering W1-W4 and W6-W9: ''Accept all 8''.'
+  GM-FUN-02>RMF:MEASURE-4.2:
+    kind: rewording
+    response: Accept new rationale
+    date: '2026-10-05'
+    note: 'Answered as one question covering W1-W4 and W6-W9: ''Accept all 8''.'
+  GM-OPS-01>RMF:MANAGE-4.1:
+    kind: rewording
+    response: Accept new rationale
+    date: '2026-10-05'
+    note: 'Answered as one question covering W1-W4 and W6-W9: ''Accept all 8''.'
+  GM-OPS-04>RMF:MANAGE-2.4:
+    kind: rewording
+    response: Accept new rationale
+    date: '2026-10-05'
+    note: 'Answered as one question covering W1-W4 and W6-W9: ''Accept all 8''.'
+targeted:
+  earlier_rewordings:
+  - GM-GOV-01>RMF:GOVERN-1.2
+  - GM-GOV-01>RMF:MEASURE-4.1
+  - GM-GOV-02>RMF:MAP-2.1
+  - GM-GOV-03>RMF:GOVERN-6.2
+  - GM-GOV-03>HTI:B9.i
+  - GM-FUN-02>RMF:MEASURE-4.2
+  - GM-OPS-01>RMF:MANAGE-4.1
+  - GM-OPS-04>RMF:MANAGE-2.4
+  cpg_downgraded_unsampled:
+  - GM-GOV-04>CPG:5.A
+  - GM-GOV-04>CPG:5.B
+  - GM-GOV-04>CPG:6.A
+decisions_review:
+  downgraded_coverage:
+    response: Count the 24 + check the 3 CPG links
+    date: '2026-10-05'
+  licensing:
+    response: Add NIST abroad license + credit line to LICENSE; Disclose eCFR is not the official CFR; Exclude the Wayback HTML from release
+    date: '2026-10-05'
+  ir_8477_wording:
+    response: Apply all three
+    date: '2026-10-05'
+  voice:
+    response: Keep third person
+    date: '2026-10-05'
+  document_edits:
+    response: 'E1 Limitations item 4, E2 New item: downgraded links, E3 Limitations item 17, E4 README ledger note'
+    own_edits: No, not now
+    date: '2026-10-05'
+release_statement:
+  response: Save it as shown
+  date: '2026-10-05'
+  note: Drafted paragraph by paragraph; the author confirmed claims A1-A4, B1-B6, C1-C4, D1-D4, E1-E5 and chose first person. Saved to RELEASE.yaml as ai_statement_final; author_review remains pending.
+completion:
+  response: I consider my author review complete within the scope documented in my approved release statement.
+  date: '2026-10-05'
+  time_ct: '21:45'
+provenance_refetch:
+  date: '2026-10-05'
+  by: build tooling on the author's Mac
+  result: NIST.AI.100-1.pdf, NIST.AI.800-4.pdf, eCFR XML (2026-10-01) and eCFR versions JSON re-fetched; all SHA-256 match PROVENANCE.txt; latest amendment of 45 CFR 170.315 is 2025-10-01. CPG records matched
+    the live page by hash on 2026-10-05.

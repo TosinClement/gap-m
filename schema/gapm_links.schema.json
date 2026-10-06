@@ -1,0 +1,290 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://w3id.org/gap-m/schema/0.1.0/gapm_links.schema.json",
+ "title": "GAP-M crosswalk links",
+ "description": "One object per control-to-source-element link (NIST IR 8477 supportive relationship).",
+ "type": "array",
+ "minItems": 1,
+ "items": {
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+   "link_id",
+   "control_id",
+   "target_id",
+   "target_framework",
+   "target_level",
+   "target_code",
+   "target_label",
+   "relationship",
+   "property",
+   "rationale",
+   "review_status",
+   "mapping_style",
+   "target_source_type",
+   "audit_verdict",
+   "audit_original_property",
+   "audit_basis",
+   "audit_condition",
+   "conditional",
+   "example_review",
+   "example_review_note",
+   "audit_relevance",
+   "audit_relevance_basis",
+   "audit_pass1_property",
+   "author_response",
+   "author_review_scope"
+  ],
+  "properties": {
+   "link_id": {
+    "type": "string",
+    "pattern": "^GM-[A-Z]+-\\d{2}>(RMF|A84|HTI|CPG):"
+   },
+   "control_id": {
+    "type": "string",
+    "pattern": "^GM-(GOV|FUN|FAIR|OPS|HF|SEC|CMP|LSI)-\\d{2}$"
+   },
+   "target_id": {
+    "type": "string",
+    "pattern": "^(RMF|A84|HTI|CPG):[A-Za-z0-9.\\-]+$"
+   },
+   "target_framework": {
+    "enum": [
+     "AI RMF 1.0",
+     "NIST AI 800-4",
+     "ONC HTI-1 (b)(11)",
+     "CISA CPG 2.0"
+    ]
+   },
+   "target_level": {
+    "type": "string",
+    "minLength": 1
+   },
+   "target_code": {
+    "type": "string",
+    "minLength": 1
+   },
+   "target_label": {
+    "type": "string",
+    "minLength": 1
+   },
+   "relationship": {
+    "const": "supports"
+   },
+   "property": {
+    "enum": [
+     "integral_to",
+     "example_of",
+     "precedes"
+    ]
+   },
+   "rationale": {
+    "type": "string",
+    "minLength": 10,
+    "pattern": "\\.$"
+   },
+   "review_status": {
+    "enum": [
+     "proposed",
+     "accepted",
+     "revised",
+     "rejected"
+    ]
+   },
+   "mapping_style": {
+    "type": "string",
+    "minLength": 1
+   },
+   "target_source_type": {
+    "enum": [
+     "guidance",
+     "monitoring_challenge",
+     "regulatory_disclosure_requirement",
+     "voluntary_practice"
+    ]
+   },
+   "audit_verdict": {
+    "enum": [
+     "supported",
+     "revised",
+     "unresolved",
+     "not_audited"
+    ]
+   },
+   "audit_original_property": {
+    "enum": [
+     "integral_to",
+     "example_of",
+     "precedes"
+    ]
+   },
+   "audit_basis": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "audit_condition": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "conditional": {
+    "type": "boolean"
+   },
+   "example_review": {
+    "enum": [
+     "keep",
+     "revise",
+     "not_applicable"
+    ]
+   },
+   "example_review_note": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "audit_relevance": {
+    "enum": [
+     "supported",
+     "unsupported",
+     null
+    ]
+   },
+   "audit_relevance_basis": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "audit_pass1_property": {
+    "enum": [
+     "integral_to",
+     "example_of",
+     "precedes",
+     null
+    ]
+   },
+   "author_response": {
+    "type": "string",
+    "description": "The author's recorded response from the guided review, verbatim, or 'not_reviewed'."
+   },
+   "author_review_scope": {
+    "enum": [
+     "census_integral_to",
+     "census_conditional",
+     "random_sample",
+     "targeted_check",
+     "not_sampled"
+    ],
+    "description": "Whether the link was in the author's individual review set (all integral_to, all conditional, the seeded 25% sample, or a targeted check) or not."
+   }
+  },
+  "allOf": [
+   {
+    "if": {
+     "properties": {
+      "property": {
+       "enum": [
+        "integral_to",
+        "precedes"
+       ]
+      }
+     }
+    },
+    "then": {
+     "properties": {
+      "audit_verdict": {
+       "const": "supported"
+      }
+     }
+    }
+   },
+   {
+    "if": {
+     "properties": {
+      "audit_verdict": {
+       "const": "not_audited"
+      }
+     }
+    },
+    "then": {
+     "properties": {
+      "audit_basis": {
+       "type": "null"
+      }
+     }
+    },
+    "else": {
+     "properties": {
+      "audit_basis": {
+       "type": "string",
+       "minLength": 10
+      }
+     }
+    }
+   },
+   {
+    "if": {
+     "properties": {
+      "audit_verdict": {
+       "const": "unresolved"
+      }
+     }
+    },
+    "then": {
+     "properties": {
+      "audit_condition": {
+       "type": "string",
+       "minLength": 10
+      },
+      "property": {
+       "const": "example_of"
+      }
+     }
+    }
+   },
+   {
+    "if": {
+     "properties": {
+      "conditional": {
+       "const": true
+      }
+     }
+    },
+    "then": {
+     "properties": {
+      "audit_verdict": {
+       "const": "unresolved"
+      },
+      "property": {
+       "const": "example_of"
+      }
+     }
+    }
+   },
+   {
+    "if": {
+     "properties": {
+      "conditional": {
+       "const": true
+      }
+     }
+    },
+    "then": {
+     "properties": {
+      "audit_relevance": {
+       "const": "supported"
+      },
+      "audit_relevance_basis": {
+       "type": "string",
+       "minLength": 20
+      }
+     }
+    }
+   }
+  ]
+ }
+}

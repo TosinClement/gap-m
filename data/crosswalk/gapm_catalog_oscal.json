@@ -1,0 +1,4342 @@
+{
+ "catalog": {
+  "uuid": "7c926eed-111a-5b78-a37f-1a27193b5b04",
+  "metadata": {
+   "title": "GAP-M: Governance-Aligned Post-deployment Monitoring",
+   "last-modified": "2026-10-05T00:00:00Z",
+   "version": "0.1.0",
+   "oscal-version": "1.1.3",
+   "props": [
+    {
+     "name": "marking",
+     "value": "FINAL"
+    }
+   ],
+   "roles": [
+    {
+     "id": "creator",
+     "title": "Author"
+    }
+   ],
+   "parties": [
+    {
+     "uuid": "33f2867f-1cdc-5671-b161-ce563f41a159",
+     "type": "person",
+     "name": "Tosin Clement",
+     "external-ids": [
+      {
+       "scheme": "http://orcid.org/",
+       "id": "0009-0001-2055-5113"
+      }
+     ],
+     "email-addresses": [
+      "clementtosin92@gmail.com"
+     ]
+    }
+   ],
+   "responsible-parties": [
+    {
+     "role-id": "creator",
+     "party-uuids": [
+      "33f2867f-1cdc-5671-b161-ce563f41a159"
+     ]
+    }
+   ],
+   "remarks": "Mapping coverage does not demonstrate compliance or effectiveness. GAP-M controls are original to this work. Each 'supports' prop names a source element (NIST AI RMF 1.0, NIST AI 800-4, 45 CFR 170.315(b)(11)(iv)(B), CISA CPG 2.0); prop class gives the NIST IR 8477 relationship property; remarks give the rationale. Not a NIST, ONC, or CISA product."
+  },
+  "groups": [
+   {
+    "id": "gov",
+    "class": "family",
+    "title": "Monitoring governance",
+    "controls": [
+     {
+      "id": "gm-gov-01",
+      "class": "gap-m-control",
+      "title": "Monitoring plan and accountable owner",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-GOV-01"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "XC"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "revised"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-1.5",
+        "class": "example_of",
+        "remarks": "The plan's review cycle and named roles feed the organization's periodic review of its risk management process. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-4.1",
+        "class": "integral_to",
+        "remarks": "MANAGE 4.1 is the outcome that post-deployment monitoring plans are implemented; a plan covering the system is a component of that outcome. Pre-review audit: supported."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-2.1",
+        "class": "example_of",
+        "remarks": "The plan's RACI is one place monitoring roles and lines of communication are documented. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-1.3",
+        "class": "example_of",
+        "remarks": "Tiering monitoring intensity by risk sets the level of risk management activity from risk tolerance. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-1.4",
+        "class": "example_of",
+        "remarks": "A documented plan makes the monitoring process and its outcomes transparent and controlled. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-1.2",
+        "class": "example_of",
+        "remarks": "Listing validity, fairness, security, and privacy measures in each monitoring plan is one practice through which trustworthy characteristics enter monitoring procedures. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-4.1",
+        "class": "example_of",
+        "remarks": "The plan documents the measurement approaches chosen for the specific deployment context. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.i",
+        "class": "example_of",
+        "remarks": "Where the deploying organization runs validity monitoring, its plan is the process the attribute can describe. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.iii",
+        "class": "example_of",
+        "remarks": "Where the deploying organization runs fairness monitoring, its plan is the process the attribute can describe. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-TMT-B1",
+        "class": "example_of",
+        "remarks": "A per-system plan tailors measures to the use case instead of assuming a generic method. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-gov-01_smt",
+        "name": "statement",
+        "prose": "Each deployed predictive AI system has an approved post-deployment monitoring plan that names an accountable owner and sets the measures, cadence, thresholds, escalation path, and remediation authority, with monitoring intensity tiered by risk."
+       },
+       {
+        "id": "gm-gov-01_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Approve the plan before go-live; review it at least annually and after every material model update, threshold breach, or incident."
+       },
+       {
+        "id": "gm-gov-01_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Approved monitoring plan with version history; responsibility (RACI) matrix; review minutes."
+       },
+       {
+        "id": "gm-gov-01_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Before go-live; annually; on material change."
+       },
+       {
+        "id": "gm-gov-01_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "System owner, approved by the AI governance body or equivalent"
+       }
+      ]
+     },
+     {
+      "id": "gm-gov-02",
+      "class": "gap-m-control",
+      "title": "AI system and model inventory",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-GOV-02"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "XC"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "revised"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-1.6",
+        "class": "integral_to",
+        "remarks": "GOVERN 1.6 asks for mechanisms to inventory AI systems; recording deployed AI systems in an inventory is what such a mechanism does. Pre-review audit: supported."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-2.1",
+        "class": "example_of",
+        "remarks": "The inventory records the defined task and method of each deployed system, keeping that definition visible after deployment. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:2.A",
+        "class": "example_of",
+        "remarks": "Recording each deployed AI intervention in the asset inventory is one way to bring AI components into the asset-inventory goal. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B1.i",
+        "class": "example_of",
+        "remarks": "The inventory record keeps the developer's name and contact information current. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B1.iv",
+        "class": "example_of",
+        "remarks": "The inventory record states the output type (prediction, classification, recommendation, and so on). Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-PC-B1",
+        "class": "example_of",
+        "remarks": "Version tracking keeps the record current as models and vendors change across the AI stack. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#59533ae0-05d2-57ae-b2e6-0132eae331a3",
+        "rel": "reference",
+        "text": "CISA CPG 2.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-gov-02_smt",
+        "name": "statement",
+        "prose": "An inventory lists every deployed predictive AI system with its version, developer, task and output type, deployment sites, data inputs, monitoring plan, and a link to or copy of the current source-attribute record."
+       },
+       {
+        "id": "gm-gov-02_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Update the inventory at deployment, update, and retirement; reconcile it against EHR configuration at least quarterly."
+       },
+       {
+        "id": "gm-gov-02_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Inventory export with change log; quarterly reconciliation record."
+       },
+       {
+        "id": "gm-gov-02_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "On change; quarterly reconciliation."
+       },
+       {
+        "id": "gm-gov-02_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "AI governance office"
+       }
+      ]
+     },
+     {
+      "id": "gm-gov-03",
+      "class": "gap-m-control",
+      "title": "Developer monitoring obligations in contracts",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-GOV-03"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "XC"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "revised"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:1.D",
+        "class": "integral_to",
+        "remarks": "Contract terms requiring the developer to notify the organization of security incidents and vulnerabilities are this goal's recommended action. Pre-review audit: supported."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:1.E",
+        "class": "example_of",
+        "remarks": "When the developer hosts or operates the model, these clauses manage risk from a managed service provider. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-6.1",
+        "class": "example_of",
+        "remarks": "Contract terms that oblige the developer to disclose changes put third-party AI risk policy into practice. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-6.2",
+        "class": "example_of",
+        "remarks": "Contractual notice of developer incidents is an input to contingency processes for third-party AI failures. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-3.1",
+        "class": "example_of",
+        "remarks": "Contractual notice of developer changes is one input to regular monitoring of third-party AI risk. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-4.2",
+        "class": "example_of",
+        "remarks": "Contract obligations are one internal risk control for third-party AI components. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B6.i",
+        "class": "example_of",
+        "remarks": "New external validation settings are delivered under the contract's clause requiring notice of new validation results. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B6.ii",
+        "class": "example_of",
+        "remarks": "The party conducting new external testing is reported under the contract's clause requiring notice of new validation results. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B6.iii",
+        "class": "example_of",
+        "remarks": "Demographic representativeness of new external data is reported under the contract's clause requiring notice of new validation results. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B6.iv",
+        "class": "example_of",
+        "remarks": "Descriptions of new external validation processes are delivered under the contract's clause requiring notice of new validation results. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.iii",
+        "class": "example_of",
+        "remarks": "New external validity results are delivered under the contract's clause requiring notice of new validation results. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.iv",
+        "class": "example_of",
+        "remarks": "New external fairness results are delivered under the contract's clause requiring notice of new validation results. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B9.i",
+        "class": "example_of",
+        "remarks": "Developer notices of model updates show how often the intervention is actually updated. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-VT-G2",
+        "class": "example_of",
+        "remarks": "Contractual notice builds a working information-sharing channel between developer and deployer. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#59533ae0-05d2-57ae-b2e6-0132eae331a3",
+        "rel": "reference",
+        "text": "CISA CPG 2.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-gov-03_smt",
+        "name": "statement",
+        "prose": "Contracts with the intervention developer require notice, within contract-defined time frames, of model updates, changes to known risks, new validation results, security incidents, and vulnerabilities, and delivery of updated source attributes."
+       },
+       {
+        "id": "gm-gov-03_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Include notice clauses and time frames in contracts; track developer notices and confirm source attributes are refreshed after each notice."
+       },
+       {
+        "id": "gm-gov-03_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Contract clauses; developer notice log; source-attribute refresh records."
+       },
+       {
+        "id": "gm-gov-03_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "At contracting and renewal; on each developer notice."
+       },
+       {
+        "id": "gm-gov-03_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Procurement with the system owner"
+       }
+      ]
+     },
+     {
+      "id": "gm-gov-04",
+      "class": "gap-m-control",
+      "title": "AI incident response integration",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-GOV-04"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "XC"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:1.C",
+        "class": "example_of",
+        "remarks": "Adding AI compromise scenarios to the IR plan is one way to cover organizationally specific threats. Pre-review audit: unresolved."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:5.A",
+        "class": "example_of",
+        "remarks": "The AI annex adds AI-specific stakeholders to the incident communications plan. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:5.B",
+        "class": "example_of",
+        "remarks": "The AI annex makes explicit that confirmed cybersecurity incidents involving the AI system (for example, compromise of the model or its data) are reported under the general policy. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:6.A",
+        "class": "example_of",
+        "remarks": "Updating the AI annex after each AI incident is one way to refine the incident response plan from lessons learned. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-4.3",
+        "class": "example_of",
+        "remarks": "An AI annex to the IR plan is one documented process for responding to and recovering from AI incidents. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-2.3",
+        "class": "example_of",
+        "remarks": "Responding to a newly found AI risk follows the plan's AI procedures. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-4.1",
+        "class": "example_of",
+        "remarks": "Incident response and recovery are named parts of a post-deployment monitoring plan. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-4.3",
+        "class": "example_of",
+        "remarks": "A planned AI incident pathway lets teams identify and handle incidents. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-TMT-G1",
+        "class": "example_of",
+        "remarks": "AI 800-4 (section 3.1.1) reports missing guidance on what to do when an anomaly is detected; the annex supplies that pathway. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#59533ae0-05d2-57ae-b2e6-0132eae331a3",
+        "rel": "reference",
+        "text": "CISA CPG 2.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-gov-04_smt",
+        "name": "statement",
+        "prose": "Incident response plans cover AI-specific incidents (performance collapse, harmful or biased outputs, misuse, compromise of model or data), with severity criteria, containment steps, internal and external communication, and reporting, and are exercised at least annually."
+       },
+       {
+        "id": "gm-gov-04_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Add AI scenarios to the incident response plan and run at least one AI scenario in the annual exercise."
+       },
+       {
+        "id": "gm-gov-04_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Incident response plan with AI annex; exercise after-action report."
+       },
+       {
+        "id": "gm-gov-04_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Annual exercise; plan update after each AI incident."
+       },
+       {
+        "id": "gm-gov-04_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Incident response lead with the system owner"
+       }
+      ]
+     },
+     {
+      "id": "gm-gov-05",
+      "class": "gap-m-control",
+      "title": "External sharing of monitoring findings",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-GOV-05"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "XC"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "revised"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-4.2",
+        "class": "example_of",
+        "remarks": "A findings-sharing policy is one way to communicate risks and impacts more broadly. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-4.3",
+        "class": "example_of",
+        "remarks": "An external sharing policy is one practice that enables information sharing about AI incidents and testing. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-4.3",
+        "class": "example_of",
+        "remarks": "Sharing findings is one way incidents and errors reach relevant AI actors. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-VT-G2",
+        "class": "example_of",
+        "remarks": "Deployers sharing findings is one contribution to a more mature information-sharing ecosystem. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-IOC-B2",
+        "class": "example_of",
+        "remarks": "A standing policy gives ecosystem-wide transparency a set place in operations. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:LSI-G2",
+        "class": "example_of",
+        "remarks": "Shared incident reports let large-scale patterns appear that a single deployer's log would miss. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B3.ii",
+        "class": "example_of",
+        "remarks": "Shared findings return newly found risks and limitations to the developer for the source-attribute record. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.v",
+        "class": "example_of",
+        "remarks": "Sharing local outcome evaluations adds to the evidence base the attribute references. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-gov-05_smt",
+        "name": "statement",
+        "prose": "Monitoring findings (incidents, drift, bias, security issues, outcome evaluations) are shared with the developer and, under a defined policy and subject to legal and privacy review, with peer deployers and sector bodies such as information sharing and analysis centers or patient safety organizations."
+       },
+       {
+        "id": "gm-gov-05_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Apply a sharing policy that sets what is shared, with whom, how fast, and with what de-identification."
+       },
+       {
+        "id": "gm-gov-05_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Sharing policy; log of findings shared and recipients."
+       },
+       {
+        "id": "gm-gov-05_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "On each qualifying finding; policy reviewed annually."
+       },
+       {
+        "id": "gm-gov-05_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "AI governance office"
+       }
+      ]
+     },
+     {
+      "id": "gm-gov-06",
+      "class": "gap-m-control",
+      "title": "Monitoring resources and competence",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-GOV-06"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "XC"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-2.2",
+        "class": "example_of",
+        "remarks": "System-specific training for monitoring staff and users is one form of AI risk management training that enables them to perform their duties. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-3.4",
+        "class": "example_of",
+        "remarks": "System-specific training is one process for establishing operator and practitioner proficiency. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-2.1",
+        "class": "example_of",
+        "remarks": "A monitoring budget is one way resources required to manage AI risk are taken into account. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-RR-B1",
+        "class": "example_of",
+        "remarks": "A monitoring budget makes financial, compute, and human resource costs explicit. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-RR-B2",
+        "class": "example_of",
+        "remarks": "Training and staffing plans address the shortage of qualified monitoring staff. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-PC-B2",
+        "class": "example_of",
+        "remarks": "Planned staffing keeps human review capacity in step with rollouts. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-IOC-B3",
+        "class": "example_of",
+        "remarks": "Budgeting for tooling and automation lowers the administrative burden of monitoring. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-gov-06_smt",
+        "name": "statement",
+        "prose": "Monitoring has budgeted resources (outcome labels, compute, reviewer and clinician time, tooling), trained staff, and users trained on the intervention's intended use and limits."
+       },
+       {
+        "id": "gm-gov-06_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Set the monitoring budget in the plan; train monitoring staff and users before access and when the intervention changes."
+       },
+       {
+        "id": "gm-gov-06_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Budget line; training records; staffing assignments."
+       },
+       {
+        "id": "gm-gov-06_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Annual budget; training at onboarding and on change."
+       },
+       {
+        "id": "gm-gov-06_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "System owner"
+       }
+      ]
+     },
+     {
+      "id": "gm-gov-07",
+      "class": "gap-m-control",
+      "title": "Independent assessment of monitoring",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-GOV-07"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "XC"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-1.3",
+        "class": "example_of",
+        "remarks": "An assessor independent of both the build and operate teams is one way to involve experts who did not serve as front-line developers in regular assessments. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.13",
+        "class": "example_of",
+        "remarks": "The review evaluates how effective the monitoring metrics and processes are. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-1.2",
+        "class": "example_of",
+        "remarks": "The review regularly reassesses whether metrics are appropriate and controls effective. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-4.2",
+        "class": "example_of",
+        "remarks": "The assessor's review is one source of expert input on whether the system performs as intended. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-TMT-B2",
+        "class": "example_of",
+        "remarks": "The review examines measurement uncertainty and variability in monitoring results. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-gov-07_smt",
+        "name": "statement",
+        "prose": "An assessor independent of the team that built or operates the system periodically reviews monitoring design, metrics, thresholds, and results, and findings are tracked to closure."
+       },
+       {
+        "id": "gm-gov-07_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Schedule independent review by risk tier (for example, annually for high-risk systems); track findings in a risk register."
+       },
+       {
+        "id": "gm-gov-07_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Independent review report; findings tracker."
+       },
+       {
+        "id": "gm-gov-07_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "By risk tier; at least every two years."
+       },
+       {
+        "id": "gm-gov-07_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Internal audit or external assessor"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fun",
+    "class": "family",
+    "title": "Functionality monitoring",
+    "controls": [
+     {
+      "id": "gm-fun-01",
+      "class": "gap-m-control",
+      "title": "Performance baseline and deviation thresholds",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-FUN-01"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "FUN"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "revised"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:FUN-G2",
+        "class": "example_of",
+        "remarks": "Recording a local baseline with deviation thresholds is one response to the baseline-and-threshold gap. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:FUN",
+        "class": "example_of",
+        "remarks": "A baseline is one reference point for functionality monitoring. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-1.1",
+        "class": "example_of",
+        "remarks": "Choosing baseline metrics, and recording risks left unmeasured, is part of selecting measurement approaches. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.3",
+        "class": "example_of",
+        "remarks": "A local silent trial measures performance under conditions like the deployment setting. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.5",
+        "class": "example_of",
+        "remarks": "The baseline shows the system is valid and reliable locally and records limits on generalizability. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.1",
+        "class": "example_of",
+        "remarks": "The baseline report documents the test sets, metrics, and tools used. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-1.5",
+        "class": "example_of",
+        "remarks": "Numeric deviation thresholds state the organization's risk tolerance for this system. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-1.1",
+        "class": "example_of",
+        "remarks": "A local baseline informs the determination of whether deployment should proceed. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.i",
+        "class": "example_of",
+        "remarks": "The developer's same-source validity result is checked and recorded as part of the baseline. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.iii",
+        "class": "example_of",
+        "remarks": "The developer's external validity result is checked and recorded as part of the baseline. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B4.iv",
+        "class": "example_of",
+        "remarks": "The silent trial tests whether training data are relevant to the local deployed setting. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.ii",
+        "class": "example_of",
+        "remarks": "A baseline gives the local validity value a reference for interpretation. Pre-review audit: revised."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-fun-01_smt",
+        "name": "statement",
+        "prose": "Before go-live, the organization records the baseline the system will be monitored against (validity metrics with uncertainty from the developer's internal and external validation results and, where feasible, from a local silent trial) and sets deviation thresholds that trigger review, correction, or deactivation."
+       },
+       {
+        "id": "gm-fun-01_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Run a local silent (shadow) trial where feasible; record baseline metrics and confidence intervals; set thresholds in the monitoring plan."
+       },
+       {
+        "id": "gm-fun-01_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Baseline report; threshold table in the monitoring plan."
+       },
+       {
+        "id": "gm-fun-01_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Before go-live; after every model update."
+       },
+       {
+        "id": "gm-fun-01_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Clinical or business owner with the data science lead"
+       }
+      ]
+     },
+     {
+      "id": "gm-fun-02",
+      "class": "gap-m-control",
+      "title": "Local validity monitoring",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-FUN-02"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "FUN"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.ii",
+        "class": "integral_to",
+        "remarks": "A populated local-validity value is a measurement of validity in local data, which is this control's core. Pre-review audit: supported."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.i",
+        "class": "example_of",
+        "remarks": "Where the deploying organization runs it, local validity monitoring is the process the attribute can describe. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:FUN-B1",
+        "class": "example_of",
+        "remarks": "Measuring local validity over time is one way to detect performance degradation. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:FUN",
+        "class": "example_of",
+        "remarks": "Local validity monitoring is one form of functionality monitoring. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.4",
+        "class": "example_of",
+        "remarks": "Measuring validity in production is one way to monitor the system's functionality. Pre-review audit: unresolved."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-3.1",
+        "class": "example_of",
+        "remarks": "Local validity results are one factor for tracking emergent risk in the deployed context. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.5",
+        "class": "example_of",
+        "remarks": "Local validity results document how well the system generalizes beyond the conditions under which it was developed. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-4.2",
+        "class": "example_of",
+        "remarks": "Local validity results are measurement results on whether the system performs consistently as intended in its deployment context. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-2.2",
+        "class": "example_of",
+        "remarks": "Catching degradation early sustains the value of the deployed system. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-fun-02_smt",
+        "name": "statement",
+        "prose": "The intervention's validity in local data (for example discrimination, calibration, and positive predictive value at the operating threshold) is measured with confidence intervals at the planned cadence and compared with the baseline and thresholds."
+       },
+       {
+        "id": "gm-fun-02_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Compute validity metrics on each monitoring window; flag threshold breaches to the owner."
+       },
+       {
+        "id": "gm-fun-02_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Monitoring dashboard extracts; threshold breach log."
+       },
+       {
+        "id": "gm-fun-02_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "As set in the plan (for example monthly or quarterly), plus event-driven."
+       },
+       {
+        "id": "gm-fun-02_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Data science lead"
+       }
+      ]
+     },
+     {
+      "id": "gm-fun-03",
+      "class": "gap-m-control",
+      "title": "Input data and population drift detection",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-FUN-03"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "FUN"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:FUN-B1",
+        "class": "example_of",
+        "remarks": "Input drift detection is one way to detect drift before outcome labels arrive. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B4.iv",
+        "class": "example_of",
+        "remarks": "Drift monitoring gives local evidence on whether the training-data relevance statement holds. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B4.iii",
+        "class": "example_of",
+        "remarks": "The training data's demographic profile is the reference for population-mix monitoring. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B4.i",
+        "class": "example_of",
+        "remarks": "Inclusion and exclusion criteria define which local patients fall outside the training population. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.4",
+        "class": "example_of",
+        "remarks": "Monitoring the behavior of system components in production includes its input data. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.5",
+        "class": "example_of",
+        "remarks": "Drift alerts show when the system operates beyond the conditions it was developed under. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-3.1",
+        "class": "example_of",
+        "remarks": "Drift alerts identify emergent risks before outcome labels arrive. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-PC-B1",
+        "class": "example_of",
+        "remarks": "Upstream change logging catches shifts elsewhere in the stack that silently alter inputs. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-fun-03_smt",
+        "name": "statement",
+        "prose": "The distribution of input features, missingness, upstream data changes (for example code-set or EHR build changes), and the patient-population mix are monitored against the training-data description and the baseline, with alerts on meaningful shift."
+       },
+       {
+        "id": "gm-fun-03_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Run drift statistics on each monitoring window; review alerts with data owners; record upstream changes."
+       },
+       {
+        "id": "gm-fun-03_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Drift report; upstream change log; alert review notes."
+       },
+       {
+        "id": "gm-fun-03_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Weekly or monthly automated; on upstream change."
+       },
+       {
+        "id": "gm-fun-03_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Data engineering with the data science lead"
+       }
+      ]
+     },
+     {
+      "id": "gm-fun-04",
+      "class": "gap-m-control",
+      "title": "Outcome label acquisition",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-FUN-04"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "FUN"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "revised"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:FUN-B2",
+        "class": "example_of",
+        "remarks": "A label specification with adjudication is one response to missing ground truth. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-3.2",
+        "class": "example_of",
+        "remarks": "Proxy measures with stated uncertainty are a risk-tracking approach for when metrics are not yet available. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-2.3",
+        "class": "example_of",
+        "remarks": "Defining and adjudicating labels is construct validation for the monitored outcome. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-1.1",
+        "class": "example_of",
+        "remarks": "The label specification records which risks are not yet measurable and why. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.ii",
+        "class": "example_of",
+        "remarks": "Local outcome labels come first for outcome-based validity measures such as discrimination and calibration; whether every local validity value is label-based is unresolved. Pre-review audit: unresolved."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.iv",
+        "class": "example_of",
+        "remarks": "For label-dependent fairness measures such as subgroup calibration or error-rate parity, local outcome labels come first; label-free measures such as output-rate parity can be computed without them. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-TMT-B2",
+        "class": "example_of",
+        "remarks": "Adjudication statistics quantify uncertainty in the monitoring results themselves. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-fun-04_smt",
+        "name": "statement",
+        "prose": "The organization defines how and when reference-standard outcomes are obtained for monitored cases (source, label definition, expected delay, adjudication sample) and uses label-efficient or proxy measures, with stated uncertainty, while labels are delayed."
+       },
+       {
+        "id": "gm-fun-04_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Write a label specification; adjudicate a sample of labels; report proxy measures with their limits until labels mature."
+       },
+       {
+        "id": "gm-fun-04_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Label specification; adjudication agreement statistics; proxy-measure notes."
+       },
+       {
+        "id": "gm-fun-04_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Defined before go-live; adjudication sample each monitoring cycle."
+       },
+       {
+        "id": "gm-fun-04_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Clinical owner with the data science lead"
+       }
+      ]
+     },
+     {
+      "id": "gm-fun-05",
+      "class": "gap-m-control",
+      "title": "Longitudinal record and version comparison",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-FUN-05"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "FUN"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "revised"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:FUN-G1",
+        "class": "example_of",
+        "remarks": "Same-data comparison of model versions is one form of systematic model comparison. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:FUN-B3",
+        "class": "example_of",
+        "remarks": "A retained time series is one way to lower the overhead of longitudinal tracking. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-4.2",
+        "class": "example_of",
+        "remarks": "Version comparison makes measurable improvement part of every update. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-4.3",
+        "class": "integral_to",
+        "remarks": "Identifying a measurable improvement or decline requires performance from more than one point in time to be available for comparison. Pre-review audit: supported."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-3.1",
+        "class": "example_of",
+        "remarks": "The time series shows risks that emerge slowly over many windows. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B9.i",
+        "class": "example_of",
+        "remarks": "The comparison record shows the update process and frequency described in the attribute in practice. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B9.ii",
+        "class": "example_of",
+        "remarks": "The record shows how often performance was corrected after risks were found. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-fun-05_smt",
+        "name": "statement",
+        "prose": "Monitoring results are kept as a time series across model versions and configuration changes, and every update is compared against the current version on the same local data before it goes live where the organization controls update timing, and otherwise promptly after."
+       },
+       {
+        "id": "gm-fun-05_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Keep results in a versioned store; run a champion-challenger or before-and-after comparison for each update."
+       },
+       {
+        "id": "gm-fun-05_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Longitudinal results store; version comparison reports."
+       },
+       {
+        "id": "gm-fun-05_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Continuous retention; each update."
+       },
+       {
+        "id": "gm-fun-05_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Data science lead"
+       }
+      ]
+     },
+     {
+      "id": "gm-fun-06",
+      "class": "gap-m-control",
+      "title": "Correction and deactivation triggers",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-FUN-06"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "FUN"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-2.4",
+        "class": "integral_to",
+        "remarks": "MANAGE 2.4 names mechanisms, with assigned responsibility, to supersede, disengage, or deactivate a system; that mechanism is this control's core. Pre-review audit: supported."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-1.3",
+        "class": "example_of",
+        "remarks": "A trigger-action table is a documented response plan for performance risks the organization rates high priority. Pre-review audit: unresolved."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-1.2",
+        "class": "example_of",
+        "remarks": "Tiered actions prioritize treatment by the size of the breach. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-1.7",
+        "class": "example_of",
+        "remarks": "Deactivation procedures cover safe phase-out of an AI system. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.6",
+        "class": "example_of",
+        "remarks": "Defined response times make the system fail safely when it underperforms. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B9.ii",
+        "class": "example_of",
+        "remarks": "Deployer triggers show how often performance is corrected locally, which the attribute can describe. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:FUN-G2",
+        "class": "example_of",
+        "remarks": "AI 800-4 reports practitioners' call for deviation thresholds 'to trigger corrective actions or reviews' (p. 18); this control ties threshold breaches to set actions. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-fun-06_smt",
+        "name": "statement",
+        "prose": "Threshold breaches lead to pre-defined actions (review, recalibration or retraining request, restricted use, or deactivation) with a named authority, time limits, and user notification; reactivation requires a new baseline."
+       },
+       {
+        "id": "gm-fun-06_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Write a trigger-action table; record each breach, the action taken, and its timing."
+       },
+       {
+        "id": "gm-fun-06_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Trigger-action table; breach and action log; deactivation and reactivation records."
+       },
+       {
+        "id": "gm-fun-06_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "On each breach."
+       },
+       {
+        "id": "gm-fun-06_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "System owner with clinical leadership"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fair",
+    "class": "family",
+    "title": "Fairness monitoring",
+    "controls": [
+     {
+      "id": "gm-fair-01",
+      "class": "gap-m-control",
+      "title": "Subgroup performance baseline",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-FAIR-01"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "FUN"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "revised"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.11",
+        "class": "example_of",
+        "remarks": "A local subgroup baseline is one documented fairness evaluation. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-2.3",
+        "class": "example_of",
+        "remarks": "Subgroup analysis tests representativeness of the data for the local population. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-1.1",
+        "class": "example_of",
+        "remarks": "Choosing subgroup metrics, and recording subgroups too small to measure, is part of selecting approaches. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:FUN-G2",
+        "class": "example_of",
+        "remarks": "Disparity thresholds are performance thresholds applied to subgroups. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.ii",
+        "class": "example_of",
+        "remarks": "The developer's same-source fairness result is checked and recorded as part of the baseline. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.iv",
+        "class": "example_of",
+        "remarks": "The developer's external fairness result is checked and recorded as part of the baseline. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B4.ii",
+        "class": "example_of",
+        "remarks": "The demographic variables used as input features indicate which subgroups to monitor. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B4.iii",
+        "class": "example_of",
+        "remarks": "Training-data representativeness shows which local subgroups the model saw little of. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B6.iii",
+        "class": "example_of",
+        "remarks": "External-data representativeness shows which subgroups have external evidence. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-fair-01_smt",
+        "name": "statement",
+        "prose": "Before go-live, validity by subgroup is recorded for the characteristics listed in 45 CFR 170.315(b)(11)(iv)(A)(5)-(13) (a list the regulation gives for evidence-based interventions, used here as a reference set) that are used as inputs or available locally, from developer and local silent-trial results, and subgroup disparity thresholds are set."
+       },
+       {
+        "id": "gm-fair-01_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Compute subgroup metrics in the silent trial; compare them with developer-reported fairness; set disparity thresholds in the plan."
+       },
+       {
+        "id": "gm-fair-01_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Subgroup baseline report; disparity threshold table."
+       },
+       {
+        "id": "gm-fair-01_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Before go-live; after every model update."
+       },
+       {
+        "id": "gm-fair-01_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Data science lead with the health equity lead"
+       }
+      ]
+     },
+     {
+      "id": "gm-fair-02",
+      "class": "gap-m-control",
+      "title": "Local fairness monitoring",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-FAIR-02"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "FUN"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.iv",
+        "class": "example_of",
+        "remarks": "Measuring subgroup performance and output disparities in local data is one way to produce the local fairness value. Pre-review audit: unresolved."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.iii",
+        "class": "example_of",
+        "remarks": "Where the deploying organization runs it, local fairness monitoring is the process the attribute can describe. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.11",
+        "class": "example_of",
+        "remarks": "Measuring subgroup performance in production is one ongoing fairness evaluation. Pre-review audit: unresolved."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.4",
+        "class": "example_of",
+        "remarks": "Subgroup performance is part of monitoring system behavior in production. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-3.1",
+        "class": "example_of",
+        "remarks": "Disparities that grow after deployment are emergent risks this control tracks. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:FUN-B1",
+        "class": "example_of",
+        "remarks": "Degradation can be confined to subgroups and missed by overall metrics. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:LSI",
+        "class": "example_of",
+        "remarks": "Subgroup disparities are one downstream impact on groups and communities. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-fair-02_smt",
+        "name": "statement",
+        "prose": "Subgroup validity and disparity in local data are measured at the planned cadence, and disparities beyond thresholds are investigated."
+       },
+       {
+        "id": "gm-fair-02_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Compute subgroup metrics on each monitoring window; investigate and document breaches."
+       },
+       {
+        "id": "gm-fair-02_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Subgroup monitoring report; investigation notes."
+       },
+       {
+        "id": "gm-fair-02_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "As set in the plan, aligned with GM-FUN-02."
+       },
+       {
+        "id": "gm-fair-02_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Data science lead with the health equity lead"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ops",
+    "class": "family",
+    "title": "Operational monitoring",
+    "controls": [
+     {
+      "id": "gm-ops-01",
+      "class": "gap-m-control",
+      "title": "Central, tamper-protected monitoring logs",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-OPS-01"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "OPS"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "revised"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:3.Q",
+        "class": "integral_to",
+        "remarks": "CPG 3.Q's action covers application and service logs on all assets where feasible; collecting the AI components' administrative and security logs centrally, with an alert if logging stops, is that action applied to the AI system. Pre-review audit: supported."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:OPS-B1",
+        "class": "example_of",
+        "remarks": "A central log store is one answer to fragmented logging across distributed infrastructure. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:OPS",
+        "class": "example_of",
+        "remarks": "Complete logs are one basis for infrastructure-level monitoring. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.8",
+        "class": "example_of",
+        "remarks": "Complete logs support examining transparency and accountability risks. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-4.1",
+        "class": "example_of",
+        "remarks": "Logs provide the record that the plan's incident-response and change-management mechanisms rely on. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.4",
+        "class": "example_of",
+        "remarks": "Central logs are one data source for production monitoring. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:HF-G5",
+        "class": "example_of",
+        "remarks": "Captured logs are one source of telemetry to put to use. Pre-review audit: revised."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#59533ae0-05d2-57ae-b2e6-0132eae331a3",
+        "rel": "reference",
+        "text": "CISA CPG 2.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-ops-01_smt",
+        "name": "statement",
+        "prose": "Inference events, inputs or their hashes (minimized for protected health information), outputs, model version, user actions, and monitoring results are logged to a central, access-controlled, tamper-evident store with risk-based retention, and an alert fires when logging stops."
+       },
+       {
+        "id": "gm-ops-01_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Route AI system logs to the central log platform; test the logging-failure alert."
+       },
+       {
+        "id": "gm-ops-01_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Log pipeline configuration; retention setting; logging-failure alert test."
+       },
+       {
+        "id": "gm-ops-01_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Continuous; alert test quarterly."
+       },
+       {
+        "id": "gm-ops-01_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Platform engineering with security operations"
+       }
+      ]
+     },
+     {
+      "id": "gm-ops-02",
+      "class": "gap-m-control",
+      "title": "Service level and cost telemetry",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-OPS-02"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "OPS"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:OPS-G1",
+        "class": "example_of",
+        "remarks": "Tracking reviewer time, labeling, and energy is one way to track indirect costs beyond compute. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:OPS",
+        "class": "example_of",
+        "remarks": "Service-level monitoring is one form of operational monitoring. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-2.1",
+        "class": "example_of",
+        "remarks": "Cost data show the resources required to manage AI risk. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-2.2",
+        "class": "example_of",
+        "remarks": "Service levels and cost data show whether the system's value is being sustained. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.6",
+        "class": "example_of",
+        "remarks": "Error and timeout monitoring supports real-time monitoring and response times for failures. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-RR-B1",
+        "class": "example_of",
+        "remarks": "Measured monitoring cost makes resource demands visible for budgeting. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-ops-02_smt",
+        "name": "statement",
+        "prose": "Availability, latency, error and timeout rates, fallback use, and direct and indirect costs (compute, licensing, labeling, reviewer and clinician time, energy) are tracked per intervention."
+       },
+       {
+        "id": "gm-ops-02_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Report service levels against targets; report cost per intervention each budget cycle."
+       },
+       {
+        "id": "gm-ops-02_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Service-level report; cost report."
+       },
+       {
+        "id": "gm-ops-02_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Continuous service levels; quarterly cost."
+       },
+       {
+        "id": "gm-ops-02_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Platform engineering with finance"
+       }
+      ]
+     },
+     {
+      "id": "gm-ops-03",
+      "class": "gap-m-control",
+      "title": "Change and configuration control for AI components",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-OPS-03"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "OPS"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "revised"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:3.N",
+        "class": "integral_to",
+        "remarks": "AI configuration changes go through the change management process this CPG goal requires. Pre-review audit: supported."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:3.P",
+        "class": "example_of",
+        "remarks": "Approval of new model versions extends the hardware and software approval process. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-4.1",
+        "class": "example_of",
+        "remarks": "Change management is a named part of the post-deployment monitoring plan. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B9.i",
+        "class": "example_of",
+        "remarks": "The deployer's change process is one update process the attribute can describe. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-PC-B1",
+        "class": "example_of",
+        "remarks": "Change control keeps monitoring in step with a fast-moving AI stack. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#59533ae0-05d2-57ae-b2e6-0132eae331a3",
+        "rel": "reference",
+        "text": "CISA CPG 2.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-ops-03_smt",
+        "name": "statement",
+        "prose": "Model versions, thresholds, input mappings, and EHR build changes pass through change management with pre-change testing, a rollback plan, and an update to the monitoring baseline and the organization's source-attribute record."
+       },
+       {
+        "id": "gm-ops-03_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Require a change ticket for every AI configuration change; block closure until baseline and attributes are updated."
+       },
+       {
+        "id": "gm-ops-03_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Change tickets; rollback plans; attribute update records."
+       },
+       {
+        "id": "gm-ops-03_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "On each change."
+       },
+       {
+        "id": "gm-ops-03_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Change advisory board with the system owner"
+       }
+      ]
+     },
+     {
+      "id": "gm-ops-04",
+      "class": "gap-m-control",
+      "title": "Fallback and recovery",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-OPS-04"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "OPS"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:3.O",
+        "class": "example_of",
+        "remarks": "Backing up model artifacts and configuration applies the backup practice to the AI system. Pre-review audit: unresolved."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:6.A",
+        "class": "example_of",
+        "remarks": "A tested fallback workflow is part of recovery planning. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-2.1",
+        "class": "example_of",
+        "remarks": "The fallback workflow is the viable non-AI alternative kept ready. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-2.4",
+        "class": "example_of",
+        "remarks": "A fallback workflow lets the system be disengaged without interrupting the work it supported. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-2.3",
+        "class": "example_of",
+        "remarks": "Restoring a known-good version is one recovery from a newly found risk. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.6",
+        "class": "example_of",
+        "remarks": "A fallback lets the system fail safely. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-1.7",
+        "class": "example_of",
+        "remarks": "The fallback workflow supports phasing out a system without increasing risk. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#59533ae0-05d2-57ae-b2e6-0132eae331a3",
+        "rel": "reference",
+        "text": "CISA CPG 2.0"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-ops-04_smt",
+        "name": "statement",
+        "prose": "A documented fallback workflow runs when the intervention is unavailable or deactivated, and model artifacts and configurations are backed up and restorable to a known-good version."
+       },
+       {
+        "id": "gm-ops-04_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Document the fallback workflow; back up artifacts and configuration; test restore at least annually."
+       },
+       {
+        "id": "gm-ops-04_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Fallback procedure; backup records; restore test report."
+       },
+       {
+        "id": "gm-ops-04_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Annual restore test; procedure reviewed with each update."
+       },
+       {
+        "id": "gm-ops-04_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Platform engineering with the clinical owner"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "hf",
+    "class": "family",
+    "title": "Human factors monitoring",
+    "controls": [
+     {
+      "id": "gm-hf-01",
+      "class": "gap-m-control",
+      "title": "User feedback capture and adjudication",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-HF-01"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HF"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:HF-B1",
+        "class": "example_of",
+        "remarks": "Low-effort in-workflow capture is one way to reduce the overhead of collecting user feedback. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:HF",
+        "class": "example_of",
+        "remarks": "User feedback is one measure of human-system interaction. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-3.3",
+        "class": "integral_to",
+        "remarks": "User problem reports integrated into evaluation metrics are what this control produces. Pre-review audit: supported."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-5.2",
+        "class": "example_of",
+        "remarks": "Adjudicated end-user feedback is one stream a team can incorporate into design and implementation. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-4.1",
+        "class": "example_of",
+        "remarks": "An in-workflow problem-reporting route is one mechanism for capturing and evaluating input from users. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-5.1",
+        "class": "example_of",
+        "remarks": "In-workflow capture is one practice for collecting feedback from people outside the development team. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-5.2",
+        "class": "example_of",
+        "remarks": "Feedback triage integrates reports of unanticipated impacts. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B3.ii",
+        "class": "example_of",
+        "remarks": "Adjudicated feedback surfaces new known limitations for the source-attribute record. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-hf-01_smt",
+        "name": "statement",
+        "prose": "Users can flag outputs in the workflow (wrong, unhelpful, harmful) with little effort; feedback is triaged, adjudicated, fed into metrics, and the outcome is reported back."
+       },
+       {
+        "id": "gm-hf-01_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Provide in-workflow feedback; triage weekly; include adjudicated feedback in monitoring reports."
+       },
+       {
+        "id": "gm-hf-01_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Feedback log with adjudication outcomes; monitoring report section on feedback."
+       },
+       {
+        "id": "gm-hf-01_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Continuous capture; weekly triage."
+       },
+       {
+        "id": "gm-hf-01_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Clinical informatics"
+       }
+      ]
+     },
+     {
+      "id": "gm-hf-02",
+      "class": "gap-m-control",
+      "title": "Interaction and override telemetry",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-HF-02"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HF"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "revised"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:HF-G3",
+        "class": "example_of",
+        "remarks": "Interaction telemetry is one way to understand user interaction and behavior. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:HF-G5",
+        "class": "example_of",
+        "remarks": "Interaction reporting is one way to use telemetry that would otherwise sit unused. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:HF-G4",
+        "class": "example_of",
+        "remarks": "Results by role, specialty, and site give some insight into the characteristics of system users. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:HF-G2",
+        "class": "example_of",
+        "remarks": "Override reasons give partial insight into user intent and perception. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:HF-G1",
+        "class": "example_of",
+        "remarks": "Trends in reliance and override reveal feedback loops such as automation bias or alert fatigue. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-3.5",
+        "class": "example_of",
+        "remarks": "Override telemetry assesses whether human oversight works as defined. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.9",
+        "class": "example_of",
+        "remarks": "Override reasons show whether outputs are being interpreted within context. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-4.1",
+        "class": "example_of",
+        "remarks": "Override monitoring is one mechanism of an implemented monitoring plan. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B2.iii",
+        "class": "example_of",
+        "remarks": "Telemetry by role checks that actual users match intended users. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B2.iv",
+        "class": "example_of",
+        "remarks": "Acceptance and override rates show whether the output informs, augments, or in practice replaces decisions. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-hf-02_smt",
+        "name": "statement",
+        "prose": "How users act on outputs is measured (alert or display rates, acceptance, override and dismissal with reasons, time to action, alert-fatigue indicators), aggregated by user role and site."
+       },
+       {
+        "id": "gm-hf-02_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Report interaction metrics each monitoring cycle; review shifts in reliance or override patterns."
+       },
+       {
+        "id": "gm-hf-02_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Interaction telemetry report."
+       },
+       {
+        "id": "gm-hf-02_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Each monitoring cycle."
+       },
+       {
+        "id": "gm-hf-02_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Clinical informatics with the data science lead"
+       }
+      ]
+     },
+     {
+      "id": "gm-hf-03",
+      "class": "gap-m-control",
+      "title": "Source-attribute currency and user transparency",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-HF-03"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HF"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-2.2",
+        "class": "example_of",
+        "remarks": "A current source-attribute record is one form of documentation of knowledge limits and appropriate use. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.9",
+        "class": "example_of",
+        "remarks": "Current attributes help users interpret output within its context. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.8",
+        "class": "example_of",
+        "remarks": "A dated, evidence-linked record makes transparency risks examinable. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-4.2",
+        "class": "example_of",
+        "remarks": "The record communicates the system's risks and impacts to users. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-1.4",
+        "class": "example_of",
+        "remarks": "Known risks and limitations in the record document residual risk for end users. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-VT-G1",
+        "class": "example_of",
+        "remarks": "Current attributes give users and deployers more visibility into model properties. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:HF",
+        "class": "example_of",
+        "remarks": "Transparency to users is part of the human factors category definition. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B1.i",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B1.ii",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B1.iii",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B1.iv",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B2.i",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B2.ii",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B2.iii",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B2.iv",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B3.i",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B3.ii",
+        "class": "example_of",
+        "remarks": "Recording newly found risks and limitations is one way the deploying organization keeps this attribute current. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B4.i",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B4.ii",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B4.iii",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B4.iv",
+        "class": "example_of",
+        "remarks": "Recording local drift findings is one way to keep the relevance statement accurate. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B5.i",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B5.ii",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B6.i",
+        "class": "example_of",
+        "remarks": "Updating the record when a new external validation appears is one way to keep this attribute current. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B6.ii",
+        "class": "example_of",
+        "remarks": "Updating the record when a new external validation appears is one way to keep this attribute current. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B6.iii",
+        "class": "example_of",
+        "remarks": "Updating the record when a new external validation appears is one way to keep this attribute current. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B6.iv",
+        "class": "example_of",
+        "remarks": "Updating the record when a new external validation appears is one way to keep this attribute current. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.i",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.ii",
+        "class": "example_of",
+        "remarks": "Periodic review confirms this attribute, which GAP-M classes as set at release, is still accurate. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.iii",
+        "class": "example_of",
+        "remarks": "Updating the record when new external validity results appear is one way to keep this attribute current. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.iv",
+        "class": "example_of",
+        "remarks": "Updating the record when new external fairness results appear is one way to keep this attribute current. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.v",
+        "class": "example_of",
+        "remarks": "Adding new outcome evaluations to the record is one way to keep this attribute current. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.i",
+        "class": "example_of",
+        "remarks": "Keeping the displayed process description in line with the process actually run is one way to keep this attribute accurate. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.ii",
+        "class": "example_of",
+        "remarks": "Recording each new local validity result is one way the value shown to users stays current. Pre-review audit: unresolved."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.iii",
+        "class": "example_of",
+        "remarks": "Keeping the displayed process description in line with the process actually run is one way to keep this attribute accurate. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.iv",
+        "class": "example_of",
+        "remarks": "Recording each new local fairness result is one way the value shown to users stays current. Pre-review audit: unresolved."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B9.i",
+        "class": "example_of",
+        "remarks": "Keeping the displayed update process in line with practice is one way to keep this attribute accurate. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B9.ii",
+        "class": "example_of",
+        "remarks": "Keeping the displayed correction frequency in line with practice is one way to keep this attribute accurate. Pre-review audit: revised."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-hf-03_smt",
+        "name": "statement",
+        "prose": "The plain-language source-attribute record available to users is reviewed on a schedule and whenever monitoring changes a value, and each attribute carries a last-reviewed date and an evidence pointer. Missing information is handled by attribute: for the 11 attributes listed in 45 CFR 170.315(b)(11)(v)(A)(2), information that is not available is shown as not available rather than left blank; for the other 20 attributes, (v)(A)(1) expects complete and up-to-date descriptions, so a missing or outdated value is recorded as a gap and raised with the developer, not marked not available."
+       },
+       {
+        "id": "gm-hf-03_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Hold an attribute register with review dates; update it from monitoring outputs, developer notices, and change tickets; track gaps in the 20 attributes without a not-available allowance until the developer resolves them."
+       },
+       {
+        "id": "gm-hf-03_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Attribute register with review dates and evidence links; user-facing attribute display."
+       },
+       {
+        "id": "gm-hf-03_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "At least annually per attribute; within 30 days of any change in a monitored value."
+       },
+       {
+        "id": "gm-hf-03_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Clinical informatics with the system owner"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "sec",
+    "class": "family",
+    "title": "Security monitoring",
+    "controls": [
+     {
+      "id": "gm-sec-01",
+      "class": "gap-m-control",
+      "title": "Adversarial input, misuse, and anomalous behavior detection",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-SEC-01"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "SEC"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:SEC-B1",
+        "class": "example_of",
+        "remarks": "Comparing production with evaluation behavior is one check for deceptive behavior. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:SEC",
+        "class": "example_of",
+        "remarks": "Detecting attack and misuse attempts is one form of security monitoring. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:4.B",
+        "class": "example_of",
+        "remarks": "AI-specific anomaly rules extend the organization's adverse-event criteria to the AI system. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.7",
+        "class": "example_of",
+        "remarks": "Attack and misuse detection in production adds to the security and resilience evaluation. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.6",
+        "class": "example_of",
+        "remarks": "Detecting inputs beyond the system's knowledge limits supports safe failure. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B3.ii",
+        "class": "example_of",
+        "remarks": "Confirmed misuse patterns become known risks in the source-attribute record. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#59533ae0-05d2-57ae-b2e6-0132eae331a3",
+        "rel": "reference",
+        "text": "CISA CPG 2.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-sec-01_smt",
+        "name": "statement",
+        "prose": "Anomalous or crafted inputs, out-of-distribution queries, unexpected output distributions, and behavior that differs between test and production conditions are detected and routed to security operations."
+       },
+       {
+        "id": "gm-sec-01_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Run input and output anomaly rules; compare production behavior with evaluation behavior; route alerts to the security operations queue."
+       },
+       {
+        "id": "gm-sec-01_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Detection rules; alert log; triage records."
+       },
+       {
+        "id": "gm-sec-01_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Continuous."
+       },
+       {
+        "id": "gm-sec-01_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Security operations with the data science lead"
+       }
+      ]
+     },
+     {
+      "id": "gm-sec-02",
+      "class": "gap-m-control",
+      "title": "Vulnerability management for AI components",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-SEC-02"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "SEC"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "revised"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:2.B",
+        "class": "integral_to",
+        "remarks": "AI software components the organization operates are organizational assets, so they fall within the vulnerability management program this goal requires. Pre-review audit: supported."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:1.D",
+        "class": "example_of",
+        "remarks": "Developer vulnerability disclosure is part of supply chain reporting. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.7",
+        "class": "example_of",
+        "remarks": "Vulnerability results are evidence for the security evaluation. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-3.1",
+        "class": "example_of",
+        "remarks": "Tracking vulnerabilities in third-party AI software monitors third-party risk. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-6.1",
+        "class": "example_of",
+        "remarks": "Vulnerability disclosure terms put third-party AI risk policy into practice. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:SEC",
+        "class": "example_of",
+        "remarks": "Vulnerability tracking measures where the system is exposed to attack. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-PC-B1",
+        "class": "example_of",
+        "remarks": "Continuous scanning keeps up with changes across the AI software stack. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#59533ae0-05d2-57ae-b2e6-0132eae331a3",
+        "rel": "reference",
+        "text": "CISA CPG 2.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-sec-02_smt",
+        "name": "statement",
+        "prose": "Vulnerabilities in model-serving software and libraries (including those on CISA's Known Exploited Vulnerabilities catalog), weaknesses in model artifacts, and AI-specific weaknesses are tracked and remediated by risk, and the developer is required to disclose them."
+       },
+       {
+        "id": "gm-sec-02_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Include AI components in vulnerability scanning and patching; track AI weaknesses in the vulnerability register."
+       },
+       {
+        "id": "gm-sec-02_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Scan results; remediation records; vulnerability register entries."
+       },
+       {
+        "id": "gm-sec-02_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Continuous scanning; remediation by severity."
+       },
+       {
+        "id": "gm-sec-02_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Security operations"
+       }
+      ]
+     },
+     {
+      "id": "gm-sec-03",
+      "class": "gap-m-control",
+      "title": "Access control over models, configuration, and monitoring data",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-SEC-03"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "SEC"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "revised"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:3.H",
+        "class": "integral_to",
+        "remarks": "Least privilege over AI configuration and monitoring data is this CPG goal applied to AI. Pre-review audit: supported."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:3.F",
+        "class": "example_of",
+        "remarks": "MFA protects AI administration access. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:3.G",
+        "class": "example_of",
+        "remarks": "Administrators use separate privileged accounts for AI configuration. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:3.D",
+        "class": "example_of",
+        "remarks": "Departing staff lose access to AI configuration and monitoring data. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:3.E",
+        "class": "example_of",
+        "remarks": "Failed logins to AI administration endpoints are monitored. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.7",
+        "class": "example_of",
+        "remarks": "Access control evidence supports the security evaluation. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:SEC",
+        "class": "example_of",
+        "remarks": "Unauthorized change to models or monitoring records is a misuse path within the scope of security monitoring. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#59533ae0-05d2-57ae-b2e6-0132eae331a3",
+        "rel": "reference",
+        "text": "CISA CPG 2.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-sec-03_smt",
+        "name": "statement",
+        "prose": "Only identified roles can change model configuration, thresholds, the organization's source-attribute record, or monitoring results; privileged access is separate and MFA-protected; access is reviewed and revoked promptly."
+       },
+       {
+        "id": "gm-sec-03_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Enforce role-based access; review access quarterly; monitor failed logins to AI administration endpoints."
+       },
+       {
+        "id": "gm-sec-03_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Access control lists; access review records; login monitoring alerts."
+       },
+       {
+        "id": "gm-sec-03_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Quarterly review; continuous login monitoring."
+       },
+       {
+        "id": "gm-sec-03_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Identity and access management"
+       }
+      ]
+     },
+     {
+      "id": "gm-sec-04",
+      "class": "gap-m-control",
+      "title": "Privacy-preserving handling of monitoring data",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-SEC-04"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "SEC"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:XC-TMT-B3",
+        "class": "example_of",
+        "remarks": "Privacy-preserving handling of monitoring data is one response to the concern that monitoring may infringe privacy. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.10",
+        "class": "example_of",
+        "remarks": "Examining the privacy risk of the AI system includes the privacy risk of monitoring it. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-1.6",
+        "class": "example_of",
+        "remarks": "Privacy requirements for monitoring data are elicited system requirements. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:3.K",
+        "class": "example_of",
+        "remarks": "Monitoring data are protected with strong encryption. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#59533ae0-05d2-57ae-b2e6-0132eae331a3",
+        "rel": "reference",
+        "text": "CISA CPG 2.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-sec-04_smt",
+        "name": "statement",
+        "prose": "Monitoring data are minimized, de-identified where feasible, encrypted in transit and at rest, and retention-limited, and the privacy impact of monitoring (including telemetry about users) is assessed."
+       },
+       {
+        "id": "gm-sec-04_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Assess privacy impact of the monitoring design; apply minimization and encryption; enforce retention limits."
+       },
+       {
+        "id": "gm-sec-04_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Privacy impact assessment; data handling configuration; retention enforcement records."
+       },
+       {
+        "id": "gm-sec-04_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Before go-live; on change to monitoring data."
+       },
+       {
+        "id": "gm-sec-04_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Privacy officer"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "cmp",
+    "class": "family",
+    "title": "Compliance monitoring",
+    "controls": [
+     {
+      "id": "gm-cmp-01",
+      "class": "gap-m-control",
+      "title": "Requirements register for the deployed system",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-CMP-01"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CMP"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-1.1",
+        "class": "integral_to",
+        "remarks": "GOVERN 1.1 requires AI legal and regulatory requirements to be documented; documenting them is this control's core. Pre-review audit: supported."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:CMP-B1",
+        "class": "example_of",
+        "remarks": "A maintained requirements register is one tool for navigating a complex policy landscape. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:CMP",
+        "class": "example_of",
+        "remarks": "A requirements register lists the obligations compliance monitoring measures against. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-1.1",
+        "class": "example_of",
+        "remarks": "The register documents context-specific laws for the deployment setting. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:1.A",
+        "class": "example_of",
+        "remarks": "CPG 1.A asks that legal and regulatory cybersecurity requirements are implemented and managed. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CPG:1.B",
+        "class": "example_of",
+        "remarks": "Regulatory obligations feed the organization's governance policies. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#59533ae0-05d2-57ae-b2e6-0132eae331a3",
+        "rel": "reference",
+        "text": "CISA CPG 2.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-cmp-01_smt",
+        "name": "statement",
+        "prose": "A register lists the legal, regulatory, certification, and contractual obligations that apply to the deployed AI system and the monitoring evidence that meets each, and is reviewed when requirements change."
+       },
+       {
+        "id": "gm-cmp-01_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Maintain the register; review it at least annually and on regulatory change; link each obligation to GAP-M evidence."
+       },
+       {
+        "id": "gm-cmp-01_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Requirements register with evidence links."
+       },
+       {
+        "id": "gm-cmp-01_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Annual; on regulatory change."
+       },
+       {
+        "id": "gm-cmp-01_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Compliance officer"
+       }
+      ]
+     },
+     {
+      "id": "gm-cmp-02",
+      "class": "gap-m-control",
+      "title": "Source-attribute completeness audit",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-CMP-02"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CMP"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "revised"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B6.i",
+        "class": "example_of",
+        "remarks": "The audit checks that missing external validation information is shown as not available, the indication 170.315(b)(11)(v)(A)(2) calls for. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B6.ii",
+        "class": "example_of",
+        "remarks": "The audit checks the not-available indication for this attribute. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B6.iii",
+        "class": "example_of",
+        "remarks": "The audit checks the not-available indication for this attribute. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B6.iv",
+        "class": "example_of",
+        "remarks": "The audit checks the not-available indication for this attribute. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.iii",
+        "class": "example_of",
+        "remarks": "The audit checks the not-available indication for this attribute. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.iv",
+        "class": "example_of",
+        "remarks": "The audit checks the not-available indication for this attribute. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.v",
+        "class": "example_of",
+        "remarks": "The audit checks the not-available indication for this attribute. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.ii",
+        "class": "example_of",
+        "remarks": "The audit checks the not-available indication for this attribute. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B8.iv",
+        "class": "example_of",
+        "remarks": "The audit checks the not-available indication for this attribute. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B9.i",
+        "class": "example_of",
+        "remarks": "The audit checks the not-available indication for this attribute. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B9.ii",
+        "class": "example_of",
+        "remarks": "The audit checks the not-available indication for this attribute. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-1.1",
+        "class": "example_of",
+        "remarks": "Auditing attribute completeness documents how one regulatory requirement is being managed. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:CMP",
+        "class": "example_of",
+        "remarks": "The audit measures adherence to a specific regulatory requirement. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-cmp-02_smt",
+        "name": "statement",
+        "prose": "Each predictive-DSI source attribute is periodically audited to confirm it is populated, within its review interval, backed by evidence, or, where the regulation allows, explicitly shown as not available."
+       },
+       {
+        "id": "gm-cmp-02_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Sample the attribute register; check population, review date, and evidence; log and fix discrepancies."
+       },
+       {
+        "id": "gm-cmp-02_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Audit worksheet; discrepancy log."
+       },
+       {
+        "id": "gm-cmp-02_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Annually, before accreditation reviews, and after developer certification updates."
+       },
+       {
+        "id": "gm-cmp-02_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Compliance officer with clinical informatics"
+       }
+      ]
+     },
+     {
+      "id": "gm-cmp-03",
+      "class": "gap-m-control",
+      "title": "Out-of-scope and policy-violating use monitoring",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-CMP-03"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "CMP"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:CMP-G1",
+        "class": "example_of",
+        "remarks": "Flagging use against terms and cautioned uses is one way to track terms-of-service violations. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:HF-G2",
+        "class": "example_of",
+        "remarks": "Out-of-scope use patterns reveal how users actually intend to use the system. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B2.i",
+        "class": "example_of",
+        "remarks": "Use monitoring checks actual use against the stated intended use. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B2.ii",
+        "class": "example_of",
+        "remarks": "Use monitoring checks the patients the intervention runs on against the stated intended population. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B2.iii",
+        "class": "example_of",
+        "remarks": "Flags on unintended user roles check the intended-users attribute. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B2.iv",
+        "class": "example_of",
+        "remarks": "Flags on use beyond the intended decision role check that attribute. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B3.i",
+        "class": "example_of",
+        "remarks": "Use monitoring flags use against the stated cautioned uses. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-3.3",
+        "class": "example_of",
+        "remarks": "Monitoring enforces the documented application scope after deployment. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-1.1",
+        "class": "example_of",
+        "remarks": "Use monitoring checks deployment against the documented intended purposes. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-2.2",
+        "class": "example_of",
+        "remarks": "Out-of-scope flags check that documented knowledge limits are respected. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-2.6",
+        "class": "example_of",
+        "remarks": "Catching use beyond the system's limits supports safe operation. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-cmp-03_smt",
+        "name": "statement",
+        "prose": "Use outside the intended use, population, users, or setting, use against cautioned uses (for example on excluded populations, or as a replacement for clinical judgment), and violations of terms of use are monitored, reported, and corrected."
+       },
+       {
+        "id": "gm-cmp-03_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Run rules that flag use outside the documented boundaries; review flags each monitoring cycle."
+       },
+       {
+        "id": "gm-cmp-03_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Out-of-scope use rules; flag review log; corrective actions."
+       },
+       {
+        "id": "gm-cmp-03_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Each monitoring cycle."
+       },
+       {
+        "id": "gm-cmp-03_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Clinical informatics with compliance"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "lsi",
+    "class": "family",
+    "title": "Large-scale impacts monitoring",
+    "controls": [
+     {
+      "id": "gm-lsi-01",
+      "class": "gap-m-control",
+      "title": "AI incident and near-miss log with impact fields",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-LSI-01"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "LSI"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:LSI-G2",
+        "class": "example_of",
+        "remarks": "Impact fields are one way to capture large-scale impacts in incident logging. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:LSI",
+        "class": "example_of",
+        "remarks": "Aggregated impact data are one measure of wide downstream effects. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-4.3",
+        "class": "integral_to",
+        "remarks": "Tracking incidents and errors requires that they be recorded; that record is this control's core. Pre-review audit: supported."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-3.1",
+        "class": "example_of",
+        "remarks": "Aggregated logs identify emergent risks. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-5.1",
+        "class": "example_of",
+        "remarks": "Logged incidents inform the likelihood and magnitude of each impact. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-4.3",
+        "class": "example_of",
+        "remarks": "A shared log supports identifying incidents across teams. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B3.ii",
+        "class": "example_of",
+        "remarks": "Confirmed incident patterns become known risks in the source-attribute record. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-lsi-01_smt",
+        "name": "statement",
+        "prose": "AI-related incidents and near misses are logged with patient-, population-, and equity-impact fields (affected subgroup, severity, scale, reversibility) so diffuse and cumulative harms can be aggregated."
+       },
+       {
+        "id": "gm-lsi-01_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Add AI impact fields to the safety event system; aggregate quarterly."
+       },
+       {
+        "id": "gm-lsi-01_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Incident and near-miss log; quarterly aggregate review."
+       },
+       {
+        "id": "gm-lsi-01_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Continuous logging; quarterly aggregation."
+       },
+       {
+        "id": "gm-lsi-01_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Patient safety with the AI governance office"
+       }
+      ]
+     },
+     {
+      "id": "gm-lsi-02",
+      "class": "gap-m-control",
+      "title": "Outcome and benefit measurement",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-LSI-02"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "LSI"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:LSI-G1",
+        "class": "example_of",
+        "remarks": "Defining benefit measures is one response to the gap in metrics for beneficial impacts. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:LSI",
+        "class": "example_of",
+        "remarks": "Population-level benefit measures are one form of large-scale impact monitoring. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "HTI:B7.v",
+        "class": "example_of",
+        "remarks": "A local outcome evaluation adds a reference the attribute can cite. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-1.1",
+        "class": "example_of",
+        "remarks": "Measured benefit informs the determination of whether the system achieves its intended purposes. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-3.1",
+        "class": "example_of",
+        "remarks": "Realized benefits update the potential benefits examined before deployment. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-1.4",
+        "class": "example_of",
+        "remarks": "Benefit review re-evaluates the business value of an existing system. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-5.1",
+        "class": "example_of",
+        "remarks": "Measured effects update the likelihood and magnitude of identified impacts. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-2.2",
+        "class": "example_of",
+        "remarks": "Showing realized benefit is part of sustaining value. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-4.3",
+        "class": "example_of",
+        "remarks": "Field data on outcomes document performance improvements or declines. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       },
+       {
+        "href": "#6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+        "rel": "reference",
+        "text": "ONC HTI-1 (b)(11)"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-lsi-02_smt",
+        "name": "statement",
+        "prose": "The intended benefit (outcome, process, or experience measures) and unintended downstream effects are tracked at population level, with periodic review of whether benefits are realized and references to evaluations kept."
+       },
+       {
+        "id": "gm-lsi-02_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Define benefit measures before go-live; review realized benefit and side effects at least annually."
+       },
+       {
+        "id": "gm-lsi-02_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Benefit measure definitions; annual benefit review; evaluation references."
+       },
+       {
+        "id": "gm-lsi-02_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Annual review."
+       },
+       {
+        "id": "gm-lsi-02_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Clinical or business owner"
+       }
+      ]
+     },
+     {
+      "id": "gm-lsi-03",
+      "class": "gap-m-control",
+      "title": "Affected-community engagement and appeals",
+      "props": [
+       {
+        "name": "label",
+        "value": "GM-LSI-03"
+       },
+       {
+        "name": "a84-primary-category",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "LSI"
+       },
+       {
+        "name": "review-status",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "accepted"
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-3.3",
+        "class": "integral_to",
+        "remarks": "An appeal route for impacted communities, integrated into metrics, is what this subcategory asks for. Pre-review audit: supported."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MAP-5.2",
+        "class": "example_of",
+        "remarks": "Engagement with affected communities is one practice for regular engagement with relevant AI actors. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:GOVERN-5.1",
+        "class": "example_of",
+        "remarks": "A patient and community reporting route is one way to collect feedback from people external to the team. Pre-review audit: revised."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-1.3",
+        "class": "example_of",
+        "remarks": "Affected communities are consulted in support of assessments. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MANAGE-4.3",
+        "class": "example_of",
+        "remarks": "Engagement is a channel for communicating incidents and errors to affected communities. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "RMF:MEASURE-4.3",
+        "class": "example_of",
+        "remarks": "Community input identifies performance changes in context-relevant terms. Pre-review audit: not audited."
+       },
+       {
+        "name": "supports",
+        "ns": "https://w3id.org/gap-m/ns",
+        "value": "A84:LSI",
+        "class": "example_of",
+        "remarks": "Community reports surface downstream impacts not visible in system data. Pre-review audit: not audited."
+       }
+      ],
+      "links": [
+       {
+        "href": "#c07852ce-037a-538a-b05b-defcdae1ca5a",
+        "rel": "reference",
+        "text": "AI RMF 1.0"
+       },
+       {
+        "href": "#11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+        "rel": "reference",
+        "text": "NIST AI 800-4"
+       }
+      ],
+      "parts": [
+       {
+        "id": "gm-lsi-03_smt",
+        "name": "statement",
+        "prose": "Patients and affected communities can report problems and appeal AI-influenced outcomes, are engaged periodically on impacts, and their input is integrated into monitoring metrics."
+       },
+       {
+        "id": "gm-lsi-03_act",
+        "name": "guidance",
+        "title": "Monitoring activity",
+        "prose": "Publish a reporting and appeal route; hold periodic engagement; include results in monitoring reports."
+       },
+       {
+        "id": "gm-lsi-03_obj",
+        "name": "assessment-objective",
+        "title": "Evidence",
+        "prose": "Appeal route; appeal log; engagement summaries."
+       },
+       {
+        "id": "gm-lsi-03_cad",
+        "name": "guidance",
+        "title": "Cadence",
+        "prose": "Continuous route; engagement at least annually."
+       },
+       {
+        "id": "gm-lsi-03_own",
+        "name": "guidance",
+        "title": "Owner role",
+        "prose": "Patient experience with the AI governance office"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "back-matter": {
+   "resources": [
+    {
+     "uuid": "c07852ce-037a-538a-b05b-defcdae1ca5a",
+     "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+     "citation": {
+      "text": "National Institute of Standards and Technology. Artificial Intelligence Risk Management Framework (AI RMF 1.0). NIST AI 100-1. doi:10.6028/NIST.AI.100-1"
+     },
+     "rlinks": [
+      {
+       "href": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+      }
+     ]
+    },
+    {
+     "uuid": "11db14bc-12cf-5722-a516-6e8b92ffc9fb",
+     "title": "Challenges to the Monitoring of Deployed AI Systems",
+     "citation": {
+      "text": "National Institute of Standards and Technology. Challenges to the Monitoring of Deployed AI Systems. NIST AI 800-4. doi:10.6028/NIST.AI.800-4"
+     },
+     "rlinks": [
+      {
+       "href": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-4.pdf"
+      }
+     ]
+    },
+    {
+     "uuid": "6a132cb6-eb0c-5437-bd5d-4e5c46fc7ded",
+     "title": "45 CFR 170.315(b)(11) Decision support interventions, paragraph (iv)(B)",
+     "citation": {
+      "text": "Office of the National Coordinator for Health IT (ASTP/ONC), HHS. 45 CFR 170.315(b)(11) Decision support interventions, paragraph (iv)(B). HTI-1 Final Rule, 89 FR 1192 (2024-01-09); eCFR text as of 2026-10-01."
+     },
+     "rlinks": [
+      {
+       "href": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-C/section-170.315"
+      }
+     ]
+    },
+    {
+     "uuid": "59533ae0-05d2-57ae-b2e6-0132eae331a3",
+     "title": "Cybersecurity Performance Goals 2.0 (CPG 2.0)",
+     "citation": {
+      "text": "Cybersecurity and Infrastructure Security Agency. Cybersecurity Performance Goals 2.0 (CPG 2.0). CPG 2.0."
+     },
+     "rlinks": [
+      {
+       "href": "https://www.cisa.gov/cybersecurity-performance-goals-2-0-cpg-2-0"
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
